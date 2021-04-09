@@ -13,8 +13,11 @@ import { MatIconModule} from '@angular/material/icon';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-
-
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { CardComponent } from './components/card/card.component';
@@ -27,6 +30,9 @@ import { SearchComponent } from './components/search/search.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { VenuedetailsComponent } from './components/venuedetails/venuedetails.component';
 import { FindvenuepageComponent } from './components/findvenuepage/findvenuepage.component';
+import { VenuedetailspageComponent } from './components/venuedetailspage/venuedetailspage.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { VenuesummarycardComponent } from './components/venuesummarycard/venuesummarycard.component';
 
 
 const routes: Routes = [
@@ -48,6 +54,8 @@ const routes: Routes = [
     CategoriesComponent,
     VenuedetailsComponent,
     FindvenuepageComponent,
+    VenuedetailspageComponent,
+    VenuesummarycardComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,7 +70,13 @@ const routes: Routes = [
     AppRoutingModule,
     MatSidenavModule,
     MatDatepickerModule,
+    MatExpansionModule,
+    MatRadioModule,
+    MatSlideToggleModule,
+    CarouselModule,
+    HttpClientModule,
     RouterModule.forRoot(routes),
+    NgbModule,
   ],
   exports: [RouterModule],
   providers: [],

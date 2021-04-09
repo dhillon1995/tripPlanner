@@ -10,7 +10,7 @@
             </button>
         </mat-form-field>
         <br>
-        <h6>Distance (miles)</h6>            
+        <h5>Distance (miles)</h5>
         <mat-slider
                 thumbLabel
                 [displayWith]="formatLabel"
@@ -18,22 +18,86 @@
                 min="1"
                 max="50">
         </mat-slider>
-
-
+        <br>
+        <br>
+        <h3>Price</h3>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+        <mat-panel-title>
+        Open for price filters
+        </mat-panel-title>
+        <mat-panel-description>
+        {{panelOpenState ? 'open' : 'closed'}}
+        </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">£0-£60</mat-radio-button>
+            <mat-radio-button value="2">£60-£80</mat-radio-button>
+        </mat-radio-group>
+        <br>
+        <br>
+        <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">£80-£100</mat-radio-button>
+            <mat-radio-button value="2">£100-£120</mat-radio-button>
+        </mat-radio-group>
+        <br>
+        <br>
+        <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">£120-£140</mat-radio-button>
+            <mat-radio-button value="2">£140 +</mat-radio-button>
+        </mat-radio-group>
+        </mat-expansion-panel>
+        <br>
+        <br>
+        <h3>Select a category</h3>
+        <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">Health & Fitness</mat-radio-button>
+            <mat-radio-button value="2">Beauty & Spa</mat-radio-button>
+        </mat-radio-group>
+        <br>
+        <br>
+        <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">Personal Services</mat-radio-button>
+            <mat-radio-button value="2">Things to do</mat-radio-button>
+        </mat-radio-group>
+        <br>
+        <br>
+        <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">Automotive</mat-radio-button>
+            <mat-radio-button value="2">Retail</mat-radio-button>
+        </mat-radio-group>
+        <br>
+        <br>
+        <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">Food & Drink</mat-radio-button>
+            <mat-radio-button value="2">Sale</mat-radio-button>
+        </mat-radio-group>
+        <br>
+        <br>
+        <h3>Special Requirements</h3>
+        <mat-slide-toggle>Disability Friendly</mat-slide-toggle>
+        <br>
+        <br>
+        <mat-slide-toggle>Caters for visual difficulties</mat-slide-toggle>
+        <br>
+        <br>
+        <mat-slide-toggle>Caters for hearing or speaking difficulties</mat-slide-toggle>
+        <br>
     </mat-drawer>
 
     <mat-grid-list cols="1" rowHeight="700px">
+
+        <div class="example-sidenav-content">
+            <button type="button" mat-button (click)="drawer.toggle()">
+                Toggle Filters
+            </button>
+            </div>
         <mat-grid-list cols="3" rowHeight="700px">
             <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
             <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
             <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
         </mat-grid-list>
-    
-        <div class="example-sidenav-content">
-        <button type="button" mat-button (click)="drawer.toggle()">
-            Toggle sidenav
-        </button>
-        </div>
 
         <mat-grid-list cols="3" rowHeight="700px">
             <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>

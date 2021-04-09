@@ -9,6 +9,8 @@ import {FormGroup, FormControl} from '@angular/forms';
 export class FindvenuepageComponent implements OnInit {
   showFiller = false;
   value = 'Clear me';
+  panelOpenState = false;
+
 
   formatLabel(value: number) {
     if (value >= 1000) {
