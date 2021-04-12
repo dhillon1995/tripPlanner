@@ -1,14 +1,16 @@
 <mat-card class="example-card">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>The Old Prison</mat-card-title>
+      <mat-card-title>{{ venue.name }}</mat-card-title>
       <mat-card-subtitle>Venue</mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image src="https://images.pexels.com/photos/6380184/pexels-photo-6380184.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Photo of a Shiba Inu">
     <mat-card-content>
-      <p>
-        There is so much to DISCOVER about the Cotswolds… The Cotswolds Discovery Centre is the visitor centre for the Cotswolds Area of Outstanding Natural Beauty (AONB), a place where you will learn and discover more about this beautiful and unique protected landscape and how people have helped shape it over thousands of years. The Cotswolds Discovery Centre is housed in the grade II* listed Old Prison, a fascinating 18th century building and now a unique historic visitor attraction in the Cotswold market town of Northleach. The centre is also home to the Cotswolds Conservation Board and the Cotswolds Dry Stone Walling Academy.
-      </p>
+      <ul>
+        <li>{{ venue.name }} is located in {{ venue.locale }}</li>
+        <li>The pricing code is {{ venue.pricing }}</li>
+        <li>There are {{ venue.availibility }} rooms availible</li>
+      </ul>
     </mat-card-content>
     <mat-card-actions>
       <button mat-button>View Details</button>

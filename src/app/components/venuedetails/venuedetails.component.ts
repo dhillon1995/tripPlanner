@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as settings from "./testdata.json";
 
 @Component({
   selector: 'app-venuedetails',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VenuedetailsComponent implements OnInit {
 
+  name = settings[0].name;
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log("test")
   }
 
 }
