@@ -33,7 +33,7 @@
 </mat-grid-list>
 
 <mat-grid-list cols="5" rowHeight="700px" gutterSize="1">
-  <mat-grid-tile colspan="1" *ngFor="let currentVenue of venues"><app-card [venue]="currentVenue"></app-card>{{currentVenue.name}}</mat-grid-tile>
+  <mat-grid-tile colspan="1" *ngFor="let venue of venues"><app-card [venueData]="venue"></app-card></mat-grid-tile>
 </mat-grid-list>
 
 <mat-grid-list cols="4" rowHeight="400px">
