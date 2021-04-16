@@ -9,6 +9,7 @@
                 <mat-icon>close</mat-icon>
             </button>
         </mat-form-field>
+        <a mat-raised-button><mat-icon>location_on</mat-icon></a>
         <br>
         <h5>Distance (miles)</h5>
         <mat-slider
@@ -92,31 +93,12 @@
             <button type="button" mat-button (click)="drawer.toggle()">
                 Toggle Filters
             </button>
-            </div>
-        <mat-grid-list cols="5" rowHeight="700px">
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
+        </div>
+
+        <mat-grid-list cols="4" rowHeight="450px" gutterSize="1px">
+            <mat-grid-tile colspan="1" *ngFor="let venue of venues"><app-card [venueData]="venue"></app-card></mat-grid-tile>
         </mat-grid-list>
-        <mat-grid-list cols="5" rowHeight="700px">
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
-            <mat-grid-tile colspan="1"><app-card></app-card></mat-grid-tile>
-        </mat-grid-list>
+
     </mat-grid-list>
 
   </mat-drawer-container>

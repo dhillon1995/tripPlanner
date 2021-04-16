@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormGroup, FormControl} from '@angular/forms';
+import * as data from "../homepage/testfile.json";
 
 @Component({
   selector: 'app-findvenuepage',
@@ -7,7 +8,7 @@ import {FormGroup, FormControl} from '@angular/forms';
   styleUrls: ['./findvenuepage.component.css']
 })
 export class FindvenuepageComponent implements OnInit {
-  showFiller = false;
+  showFiller = true;
   value = 'Clear me';
   panelOpenState = false;
 
@@ -27,7 +28,17 @@ export class FindvenuepageComponent implements OnInit {
 
   constructor() { }
 
+  venues: any = (data as any).default;
+
   ngOnInit(): void {
+    console.log("FindVenue Start");
+    console.log(this.venues);
+    console.log(data);
+    console.log(this.venues.name);
+    for(var i=0; i < this.venues.length; i++){
+	console.log(this.venues[i]);
+    }
+    console.log("Homepage End");
   }
 
 }

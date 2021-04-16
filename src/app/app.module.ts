@@ -19,7 +19,6 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { HttpClientModule } from '@angular/common/http';
 
-
 import { CardComponent } from './components/card/card.component';
 import { InputComponent } from './components/input/input.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
