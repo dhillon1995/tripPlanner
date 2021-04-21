@@ -1,5 +1,15 @@
 .example-form-field {
-    padding-top: 1rem;
+    padding-top: 0rem;
     width: 400px;
     height: 100px;
   }
+
+   mat-card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 70px;
+    background-color: #fafafa;
+    vertical-align: middle;
+  }
+

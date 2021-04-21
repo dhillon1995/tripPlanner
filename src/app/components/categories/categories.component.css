@@ -1,8 +1,18 @@
 .categories-card {
-    max-width: 300px;
+  max-width: 180px;
+  max-height: 180px;
+}
+.categories-footer {
+    display: flex;
+    justify-content: center;
   }
-  
-  .categories-header-image {
-    background-image: url('https://images.pexels.com/photos/3044/restaurant-love-romantic-dinner.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    background-size: cover;
+
+.categories-button {
+    max-width: 80px;
+    display: flex;
+    justify-content: center;
+  }
+
+  mat-card-content {
+    text-transform: capitalize;
   }

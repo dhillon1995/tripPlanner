@@ -1,61 +1,71 @@
 [{
 	"name": "The Old Prison",
 	"locale": "Cheltenam",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "5ri395i59"
+	"availibility": "limited",
+	"type": "venue",
+	"pricing": "high",
+	"imgurl": "assets/img/Prison 1.jpg"
 },{
-	"name": "Cafe",
-	"locale": "somewhere",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "4342"
-},{
-	"name": "test3",
-	"locale": "a place",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "4342"
-},{
-	"name": "test4",
-	"locale": "chelt",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "4342"
-},{
-	"name": "test5",
+	"name": "Gateway Cafe",
 	"locale": "Ciren",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "4342"
+	"availibility": "open",
+	"type": "cafe",
+	"pricing": "low",
+	"imgurl": "assets/img/Gateway Cafe 1.jpg"
 },{
-	"name": "test6",
-	"locale": "Ciren",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "4342"
+	"name": "The Priory Inn",
+	"locale": "Glouster",
+	"availibility": "fair",
+	"type": "hotel",
+	"pricing": "Medium",
+	"imgurl": "assets/img/The Priory Inn 1.jpg"
 },{
-	"name": "test7",
-	"locale": "Ciren",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "4342"
+	"name": "Somewhere else",
+	"locale": "Cheltenam",
+	"availibility": "limited",
+	"type": "cafe",
+	"pricing": "low",
+	"imgurl": "assets/img/Somewhere else 4.jpg"
 },{
-	"name": "test8",
+	"name": "Sally Pusseys",
 	"locale": "Ciren",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "4342"
+	"availibility": "fair",
+	"type": "cafe",
+	"pricing": "Medium",
+	"imgurl": "assets/img/Sally Pusseys 1.JPG"
+},{
+	"name": "Jacks Cafe",
+	"locale": "Ciren",
+	"availibility": "limited",
+	"type": "cafe",
+	"pricing": "high",
+	"imgurl": "assets/img/Jacks Cafe 5edit.jpg"
+},{
+	"name": "Cotswold Wildlife Park",
+	"locale": "Ciren",
+	"availibility": "fair",
+	"type": "activity",
+	"pricing": "Medium",
+	"imgurl": "assets/img/Cotswold Wildlife Park 2.jpg"
+},{
+	"name": "Cotswold Distillery",
+	"locale": "Ciren",
+	"availibility": "open",
+	"type": "activity",
+	"pricing": "Medium",
+	"imgurl": "assets/img/Cotswold Distillery 1.jpg"
 },{
 	"name": "test9",
 	"locale": "Ciren",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "4342"
+	"availibility": "fair",
+	"type": "cafe",
+	"pricing": "low",
+	"imgurl": "assets/img/Cotswold Wildlife Park 2.jpg"
 },{
 	"name": "test10",
 	"locale": "Ciren",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "4342"
+	"availibility": "open",
+	"type": "cafe",
+	"pricing": "high",
+	"imgurl": "assets/img/Gateway Cafe 1.jpg"
 }]

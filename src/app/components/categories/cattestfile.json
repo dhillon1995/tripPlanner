@@ -1,61 +1,37 @@
 [{
-	"name": "The Old Prison",
-	"locale": "Cheltenam",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "5ri395i59"
+	"category": "Nearby",
+    "imgurl": "assets/img/nearby.PNG"
 },{
-	"name": "Cafe",
-	"locale": "somewhere",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "4342"
+	"category": "Activities",
+    "imgurl": "assets/img/things.PNG"
 },{
-	"name": "test3",
-	"locale": "a place",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "4342"
+	"category": "Shopping",
+    "imgurl": "assets/img/shopping.PNG"
 },{
-	"name": "test4",
-	"locale": "chelt",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "4342"
+	"category": "Hotels & Travel",
+    "imgurl": "assets/img/hotels.PNG"
 },{
-	"name": "test5",
-	"locale": "Ciren",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "4342"
+	"category": "Things to do",
+    "imgurl": "assets/img/things.PNG"
 },{
-	"name": "test6",
-	"locale": "Ciren",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "4342"
+	"category": "Beauty & Spa",
+    "imgurl": "assets/img/beauty.PNG"
 },{
-	"name": "test7",
-	"locale": "Ciren",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "4342"
+	"category": "Food & Drink",
+    "imgurl": "assets/img/food.PNG"
 },{
-	"name": "test8",
-	"locale": "Ciren",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "4342"
+	"category": "Electronics",
+    "imgurl": "assets/img/electronics.PNG"
 },{
-	"name": "test9",
-	"locale": "Ciren",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "4342"
+	"category": "Health & Fitness",
+    "imgurl": "assets/img/health.PNG"
 },{
-	"name": "test10",
-	"locale": "Ciren",
-	"availibility": "4",
-	"type": "Cafe",
-	"pricing": "4342"
+	"category": "Retail",
+    "imgurl": "assets/img/retail.PNG"
+},{
+	"category": "For the Home",
+    "imgurl": "assets/img/home.PNG"
+},{
+	"category": "Sale",
+    "imgurl": "assets/img/sale.PNG"
 }]

@@ -1,4 +1,3 @@
-
 <ngb-carousel>
   <ng-template ngbSlide>
     <div class="picsum-img-wrapper">
@@ -29,14 +28,19 @@
 <br>
 
 <mat-grid-list cols="1" rowHeight="50px">
+  <mat-grid-tile colspan="1"><h2>Categories</h2></mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list cols="6" rowHeight="200px" gutterSize="1px">
+  <mat-grid-tile colspan="1" *ngFor="let venue of categories"><app-categories [venueData]="venue"></app-categories></mat-grid-tile>
+</mat-grid-list>
+
+<br>
+
+<mat-grid-list cols="1" rowHeight="50px">
   <mat-grid-tile colspan="1"><h2>Limited Spaces Remaining</h2></mat-grid-tile>
 </mat-grid-list>
 
 <mat-grid-list cols="4" rowHeight="450px" gutterSize="1px">
   <mat-grid-tile colspan="1" *ngFor="let venue of venues"><app-card [venueData]="venue"></app-card></mat-grid-tile>
 </mat-grid-list>
-
-<mat-grid-list cols="4" rowHeight="450px" gutterSize="1px">
-  <mat-grid-tile colspan="1" *ngFor="let venue of venues"><app-categories [venueData]="venue"></app-categories></mat-grid-tile>
-</mat-grid-list>
-

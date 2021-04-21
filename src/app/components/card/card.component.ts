@@ -21,6 +21,7 @@ export class CardComponent implements OnInit {
     this.JSONData = JSON.parse(JSON.stringify(this.venueData));
     console.log(this.JSONData);
     console.log(this.JSONData.name);
+    console.log(this.JSONData.imgurl);
     console.log("Card Component End");
   }
 

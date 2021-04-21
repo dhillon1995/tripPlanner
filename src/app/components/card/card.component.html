@@ -2,15 +2,13 @@
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>{{JSONData.name}}</mat-card-title>
-      <mat-card-subtitle>Venue</mat-card-subtitle>
+      <mat-card-subtitle><div class="card-category">{{JSONData.type}}</div></mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="https://images.pexels.com/photos/6380184/pexels-photo-6380184.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Photo of a Shiba Inu">
+    <img mat-card-image src="{{JSONData.imgurl}}" alt="Photo of a test">
     <mat-card-content>
-	 <ul>
-        <li>{{ JSONData.name }} is located in {{JSONData.locale }}</li>
-        <li>The pricing code is {{ JSONData.pricing }}</li>
-        <li>There are {{ JSONData.availibility }} rooms availible</li>
-      </ul>
+      <p>
+        {{JSONData.name}} is located in {{JSONData.locale}}, it's a {{JSONData.type}} in the {{JSONData.pricing}} price bracket. Availiblity is {{JSONData.availibility}}.
+      </p>
     </mat-card-content>
     <mat-card-actions>
       <button mat-button>View Details</button>

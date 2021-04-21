@@ -1,6 +1,6 @@
 <mat-drawer-container class="example-container" autosize>
 
-    <mat-drawer #drawer class="example-sidenav" mode="side">
+    <mat-drawer #drawer class="example-sidenav" opened="true" mode="side">
 
         <mat-form-field class="example-form-field">
             <mat-label>Enter Your Location</mat-label>
@@ -91,11 +91,11 @@
 
         <div class="example-sidenav-content">
             <button type="button" mat-button (click)="drawer.toggle()">
-                Toggle Filters
+                <mat-icon>keyboard_arrow_right</mat-icon>
             </button>
         </div>
 
-        <mat-grid-list cols="5" rowHeight="450px" gutterSize="1px">
+        <mat-grid-list cols="4" rowHeight="450px" gutterSize="1px">
             <mat-grid-tile colspan="1" *ngFor="let venue of venues"><app-card [venueData]="venue"></app-card></mat-grid-tile>
         </mat-grid-list>
 
