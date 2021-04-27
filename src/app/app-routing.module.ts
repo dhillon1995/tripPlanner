@@ -5,11 +5,13 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { VenueComponent } from './components/venue/venue.component';
 import { FindvenuepageComponent } from './components/findvenuepage/findvenuepage.component';
 import { VenuedetailspageComponent } from './components/venuedetailspage/venuedetailspage.component';
+import { AdmimportalpageComponent } from './components/admimportalpage/admimportalpage.component';
 
 const appRoutes: Routes = [
     { path: 'home', component: HomepageComponent },
     { path: 'venue', component: FindvenuepageComponent },
-    { path: 'venuepage', component: VenuedetailspageComponent }
+    { path: 'venuepage', component: VenuedetailspageComponent },
+    { path: 'adminPortal', component: AdmimportalpageComponent }
 ];
 
 @NgModule({

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as data from "../homepage/testfile.json";
 
 @Component({
   selector: 'app-venuedetailspage',
@@ -8,7 +7,8 @@ import * as data from "../homepage/testfile.json";
 })
 export class VenuedetailspageComponent implements OnInit {
 
-  venues: any = (data as any).default;
+
+
 
   constructor() { }
 

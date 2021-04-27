@@ -19,6 +19,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { HttpClientModule } from '@angular/common/http';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatBadgeModule} from '@angular/material/badge';
 
 import { CardComponent } from './components/card/card.component';
 import { InputComponent } from './components/input/input.component';
@@ -34,6 +35,7 @@ import { VenuedetailspageComponent } from './components/venuedetailspage/venuede
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { VenuesummarycardComponent } from './components/venuesummarycard/venuesummarycard.component';
 import { FoodcardsComponent } from './components/foodcards/foodcards.component';
+import { AdmimportalpageComponent } from './components/admimportalpage/admimportalpage.component';
 
 
 const routes: Routes = [
@@ -58,6 +60,7 @@ const routes: Routes = [
     VenuedetailspageComponent,
     VenuesummarycardComponent,
     FoodcardsComponent,
+    AdmimportalpageComponent,
   ],
   imports: [
     BrowserModule,
@@ -80,6 +83,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     NgbModule,
     MatTabsModule,
+    MatBadgeModule,
   ],
   exports: [RouterModule],
   providers: [],

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import * as data from "../venuedetails/testdata.json";
 
 @Component({
   selector: 'app-foodcards',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FoodcardsComponent implements OnInit {
 
+  @Input() venueData!: object;
   constructor() { }
+  JSONData: any;
 
   ngOnInit(): void {
+    console.log(this.JSONData);
   }
 
 }

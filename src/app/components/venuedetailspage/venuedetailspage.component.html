@@ -11,25 +11,25 @@
             <ngb-carousel>
                 <ng-template ngbSlide>
                   <div class="picsum-img-wrapper">
-                    <img src="assets/img/theoldprison.PNG" alt="Random first slide">
+                    <img src="assets/img/Waterside Cafe 2edit.jpg" alt="Random first slide">
                   </div>
                 </ng-template>
                 <ng-template ngbSlide>
                   <div class="picsum-img-wrapper">
-                    <img src="assets/img/theoldprison2.PNG" alt="Random second slide">
+                    <img src="assets/img/Waterside Cafe 2edit.jpg" alt="Random second slide">
                   </div>
                 </ng-template>
                 <ng-template ngbSlide>
                   <div class="picsum-img-wrapper">
-                    <img src="assets/img/theoldprison3.PNG" alt="Random third slide">
+                    <img src="assets/img/Waterside Cafe 2edit.jpg" alt="Random third slide">
                   </div>
                 </ng-template>
               </ngb-carousel>
         </mat-grid-tile>
 
-        <mat-grid-tile class="title" colspan="1" rowspan="1">
+        <mat-grid-tile class="title" colspan="1" rowspan="2">
             <div class="titletext">
-                <h1>The Old Prison</h1>
+                <h1>Lake Pochard Waterside Cafe</h1>
             </div>
         </mat-grid-tile>
 
@@ -54,7 +54,7 @@
             </div>
             <div class="itemdesc">
                 <br>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                Waterside offers a delicious breakfast, lunch, afternoon and early dinner menu using locally sourced ingredients. Stunning views across the Walters Lake.
             </div>
         </mat-grid-tile>
 
@@ -66,7 +66,7 @@
                 <h6>Opening Hours</h6>
             </div>
             <div class="times">
-                09:00-22:00
+                09:00-15:00
             </div>
         </mat-grid-tile>
 
@@ -90,7 +90,7 @@
                 <h6>Address</h6>
             </div>
             <div class="address">
-                The Old Prison Fosse Way,<br>Northleach GL54 3JH England
+                Lake 15 Wickwater Lane,<br>South Cerney Cirencester GL7 5RL
             </div>
         </mat-grid-tile>
 
@@ -150,7 +150,7 @@
                         
                     </div>
             </mat-tab>
-            <mat-tab label="Find The Old Prison">
+            <mat-tab label="Find Waterside Cafe">
                 <div class="findus">
                     <mat-card>
                 <mat-grid-list cols=2 rowHeight=50px>
@@ -218,8 +218,93 @@
 
 <div class="recomended">
     <mat-card>
-        <mat-grid-list cols="5" rowHeight="450px" gutterSize="1px">
-            <mat-grid-tile colspan="1" *ngFor="let venue of venues"><app-card [venueData]="venue"></app-card></mat-grid-tile>
+        <mat-grid-list cols=4 rowHeight=40px>
+
+            <mat-grid-tile colspan=4>
+                <h5>Recomended Venues</h5>
+            </mat-grid-tile>
+
+            <mat-grid-tile rowspan=12>
+                <mat-card class="example-card">
+                    <mat-card-header>
+                      <div mat-card-avatar class="example-header-image-cd"></div>
+                      <mat-card-title><h6>Cotswold Distillery</h6></mat-card-title>
+                      <mat-card-subtitle><div class="card-category">Test tYpe</div></mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="assets/img/Cotswold Distillery 3.jpg" alt="Photo of a test">
+                    <mat-card-content>
+                      <p>
+                        Nestled in the heart of the Cotswolds is the award-winning first full-scale distillery in the Cotswolds. Specialising in craft single malt whiskies, gins and liqueurs.Open 7 days a week, offering Tour & Tastings, and Cocktail Masterclasses.
+                    </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button mat-button>View Details</button>
+                      <button mat-raised-button color="accent">Book Now</button>
+                    </mat-card-actions>
+                  </mat-card>
+            </mat-grid-tile>
+
+            <mat-grid-tile rowspan=12>
+                <mat-card class="example-card">
+                    <mat-card-header>
+                      <div mat-card-avatar class="example-header-image-cw"></div>
+                      <mat-card-title><h6>Cotswold Wildlife Park</h6></mat-card-title>
+                      <mat-card-subtitle><div class="card-category">Test tYpe</div></mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="assets/img/Cotswold Wildlife Park 1.jpg" alt="Photo of a test">
+                    <mat-card-content>
+                      <p>
+                        The Cotswold Wildlife Park & Gardens exhibits over 260 different species of animals. The park is set in 160 acres of landscaped parkland and gardens 2 miles south of Burford, on the A361, Oxfordshire, England
+                    </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button mat-button>View Details</button>
+                      <button mat-raised-button color="accent">Book Now</button>
+                    </mat-card-actions>
+                  </mat-card>
+            </mat-grid-tile>
+
+            <mat-grid-tile rowspan=12>
+                <mat-card class="example-card">
+                    <mat-card-header>
+                      <div mat-card-avatar class="example-header-image-jc"></div>
+                      <mat-card-title><h6>Jacks Cafe</h6></mat-card-title>
+                      <mat-card-title></mat-card-title>
+                      <mat-card-subtitle><div class="card-category">Cafe</div></mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="assets/img/Jacks Cafe 1.jpg" alt="Photo of a test">
+                    <mat-card-content>
+                      <p>
+                        Jacks Tearoom & Kitchen is nestled in the backstreets of Cirencester. Highlighting market-fresh ingredients, honest cooking, and an enjoyable atmosphere. Our menu features a selection of dishes, all made in-house.
+                    </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button mat-button>View Details</button>
+                      <button mat-raised-button color="accent">Book Now</button>
+                    </mat-card-actions>
+                  </mat-card>
+            </mat-grid-tile>
+
+            <mat-grid-tile rowspan=12>
+                <mat-card class="example-card">
+                    <mat-card-header>
+                      <div mat-card-avatar class="example-header-image-wc"></div>
+                      <mat-card-title><h6><span matBadge="notification_important" matBadgeOverlap="false" matBadgeColor="warn">Lake Pochard Waterside Cafe</span></h6></mat-card-title>
+                      <mat-card-subtitle><div class="card-category">Cafe</div></mat-card-subtitle>
+                    </mat-card-header>
+                        <img mat-card-image src="assets/img/Waterside Cafe 2edit.jpg" alt="Photo of a test">
+                    <mat-card-content>
+                      <p>
+                        Waterside offers a delicious breakfast, lunch, afternoon and early dinner menu using locally sourced ingredients. Stunning views across the Walters Lake.
+                    </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button mat-button>View Details</button>
+                      <button mat-raised-button color="accent">Book Now</button>
+                    </mat-card-actions>
+                  </mat-card>
+            </mat-grid-tile>
+
         </mat-grid-list>
     </mat-card>
 </div>
