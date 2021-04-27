@@ -1,10 +1,225 @@
-<mat-grid-list cols="2" rowHeight="400px">
-    <mat-grid-tile colspan="1"><img src="Downloads\pexels-samuel-sweet-6135766(2).jpg"></mat-grid-tile>
-    <mat-grid-tile colspan="1">
-        <app-venuesummarycard></app-venuesummarycard>
-    </mat-grid-tile>
-    <mat-grid-tile colspan="1"><app-venuesummarycard></app-venuesummarycard></mat-grid-tile>
-    <mat-grid-tile colspan="1"><app-venuesummarycard></app-venuesummarycard></mat-grid-tile>
-    <mat-grid-tile colspan="1"><app-venuesummarycard></app-venuesummarycard></mat-grid-tile>
-  </mat-grid-list>
-  
+<div class="detailscard">
+<mat-card class="maincard" class="">
+    
+    <mat-grid-list cols="3" rowHeight="40px">
+
+        <mat-grid-tile colspan="1" rowspan="1">
+
+        </mat-grid-tile>
+
+        <mat-grid-tile colspan="2" rowspan="11">
+            <ngb-carousel>
+                <ng-template ngbSlide>
+                  <div class="picsum-img-wrapper">
+                    <img src="assets/img/theoldprison.PNG" alt="Random first slide">
+                  </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                  <div class="picsum-img-wrapper">
+                    <img src="assets/img/theoldprison2.PNG" alt="Random second slide">
+                  </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                  <div class="picsum-img-wrapper">
+                    <img src="assets/img/theoldprison3.PNG" alt="Random third slide">
+                  </div>
+                </ng-template>
+              </ngb-carousel>
+        </mat-grid-tile>
+
+        <mat-grid-tile class="title" colspan="1" rowspan="1">
+            <div class="titletext">
+                <h1>The Old Prison</h1>
+            </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile colspan="1" rowspan="1">
+            <div class="titletext">
+                <mat-icon color="accent">star</mat-icon>
+                <mat-icon color="accent">star</mat-icon>
+                <mat-icon color="accent">star</mat-icon>
+                <mat-icon color="accent">star</mat-icon>
+                <mat-icon color="accent">star_half</mat-icon>
+                &nbsp;&nbsp;
+                <mat-icon color="primary"> rate_review</mat-icon>
+            </div>
+            <div class="reviewlink">
+                47 Reviews
+            </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile colspan="1" rowspan="3">
+            <div class="overviewheading">
+                <h6>Overview</h6>
+            </div>
+            <div class="itemdesc">
+                <br>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+            </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile colspan="1" rowspan="1">
+            <div class="icon">
+                <h6><mat-icon>access_time</mat-icon></h6>
+            </div>
+            <div class="openinghours">
+                <h6>Opening Hours</h6>
+            </div>
+            <div class="times">
+                09:00-22:00
+            </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile colspan="1" rowspan="1">
+            <div class="icon">
+                <mat-icon>timelapse</mat-icon>
+            </div>
+            <div class="openinghours">
+                <h6>Suggested Duration</h6>
+            </div>
+            <div class="hours">
+                2 Hours
+            </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile colspan="1" rowspan="1">
+            <div class="icon">
+                    <mat-icon> location_on</mat-icon>
+            </div>
+            <div class="openinghours">
+                <h6>Address</h6>
+            </div>
+            <div class="address">
+                The Old Prison Fosse Way,<br>Northleach GL54 3JH England
+            </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile colspan="1" rowspan="1">
+            <div class="icon">
+                <mat-icon>launch</mat-icon>
+            </div>
+            <div class="openinghours">
+                Suggest some Information
+            </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile colspan="1" rowspan="1">
+            <div class="bookingbutton">
+                <a mat-raised-button color="accent">Book Now</a>
+            </div>
+        </mat-grid-tile>
+
+    </mat-grid-list>
+
+</mat-card>
+</div>
+
+<div class="recomended">
+    <mat-card class="">
+        <mat-tab-group>
+            <mat-tab label="Overview">
+                <div class="overviewtext">
+                    <mat-card>
+                        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                    </mat-card>
+                </div>
+            </mat-tab>
+            <mat-tab label="Reviews">
+                    <div class="overviewtext">
+                        <mat-grid-list cols=2 rowHeight=180px>
+                            
+                            <mat-grid-tile>
+                                <div class="reviewcards">
+                                    <mat-card class="mat-elevation-z2">
+                                        <mat-icon> rate_review</mat-icon><h6>Review left by Firstname Lastname</h6>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+                                    </mat-card>
+                                </div>
+                            </mat-grid-tile>
+                            
+                            <mat-grid-tile>
+                                <div class="reviewcards">
+                                    <mat-card class="mat-elevation-z2">
+                                        <mat-icon> rate_review</mat-icon><h6>Review left by Firstname Lastname</h6>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+                                    </mat-card>
+                                </div>
+                            </mat-grid-tile>
+
+                        </mat-grid-list>
+                        
+                    </div>
+            </mat-tab>
+            <mat-tab label="Find The Old Prison">
+                <div class="findus">
+                    <mat-card>
+                <mat-grid-list cols=2 rowHeight=50px>
+                    
+                        <mat-grid-tile rowspan=1>
+                            This venue has private parking, but does not have local pulic transit routes. There are local coach and taxi services in the area. Find more of the venue amenities below:
+                        </mat-grid-tile>
+
+                        <mat-grid-tile rowspan=4>
+
+                            <div class="mapimage">
+                                <img class="mapclass" src="assets/img/map.PNG" alt="map placeholer">
+                            </div>
+
+                        </mat-grid-tile>
+
+                        <mat-grid-tile rowspan=1>
+
+                            <mat-icon>accessible_forward</mat-icon>Disability Friendly
+
+                        </mat-grid-tile>
+                        <mat-grid-tile rowspan=1>
+
+                            <mat-icon>visibility</mat-icon>Visually Impared Friendly
+
+                        </mat-grid-tile>
+                        <mat-grid-tile rowspan=1>
+
+                            <mat-icon>speaker_notes</mat-icon><mat-icon>hearing</mat-icon>Hearing & Speaking Impared Friendly
+
+                        </mat-grid-tile>
+                </mat-grid-list>
+            </mat-card>
+                </div>
+            </mat-tab>
+
+            <mat-tab label="Pricing Info">
+                <div class="infotab">
+                    <mat-grid-list cols=2 rowHeight=60px>
+                        <mat-grid-tile colspan=2> 
+                            <div>
+                                <h5>Pricing Information</h5>
+                            </div>
+                        </mat-grid-tile>
+                        <mat-grid-tile rowspan=2>
+                            <mat-card>
+                            <div class="infoitems">
+                                <mat-icon> fastfood</mat-icon><mat-icon> attach_money</mat-icon>Cafe Price Bracket <h6>£10-£40</h6>
+                            </div>
+                            </mat-card>
+                        </mat-grid-tile>
+                        <mat-grid-tile rowspan=2>
+                            <mat-card>
+                            <div class="infoitems">
+                                <mat-icon> hotel</mat-icon><mat-icon> attach_money</mat-icon>Price per night <h6>£80</h6>
+                            </div>
+                            </mat-card>
+                        </mat-grid-tile>
+                    </mat-grid-list>
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+</div>
+
+<div class="recomended">
+    <mat-card>
+        <mat-grid-list cols="5" rowHeight="450px" gutterSize="1px">
+            <mat-grid-tile colspan="1" *ngFor="let venue of venues"><app-card [venueData]="venue"></app-card></mat-grid-tile>
+        </mat-grid-list>
+    </mat-card>
+</div>

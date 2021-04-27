@@ -1,0 +1,115 @@
+
+.detailscard{
+    padding: 30px;
+}
+
+.recomended{
+    padding: 16px;
+}
+
+mat-tab{
+    padding: 10px;
+    background-color: blue;
+}
+
+.maincard{
+    max-width: auto;
+    padding: 10px;
+}
+
+.titletext{
+    position: absolute;
+    left: 5px;
+}
+
+.overviewheading{
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    font: bold;
+}
+
+.overviewtext{
+    padding: 6px;
+}
+
+.itemdesc{
+    position: absolute;
+    left: 5px;
+    padding-right: 40px;
+}
+
+.reviewlink{
+    position: absolute;
+    left: 170px;
+    top: 4px;
+}
+
+.icon{
+    position: absolute;
+    left: 10px;
+}
+
+.openinghours{
+    position: absolute;
+    left: 40px;
+    top: 5px;
+}
+
+.times{
+    position: absolute;
+    left: 150px;
+    top: 4px;
+}
+
+.hours{
+    position: absolute;
+    left: 180px;
+    top: 4px;
+}
+
+.address{
+    position: absolute;
+    left: 110px;
+    top: -3px;
+}
+
+.bookingbutton{
+    position: absolute;
+    right: 40px;
+}
+
+.picsum-img-wrapper img {
+    width: 100%;
+    object-fit: cover;
+    height: 450px;
+    object-position: 50% bottom;
+}
+
+.mapclass {
+    object-fit: scale-down;
+    height: 320px;
+    padding: 20px;
+}
+
+.mapimage{
+    padding-top: 100px;
+}
+
+.infotab{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.infoitems{
+    max-height: 50px;
+}
+
+.findus{
+    padding: 10px;
+}
+
+.reviewcards{
+    padding-left: 40px;
+    padding-right: 40px;
+}

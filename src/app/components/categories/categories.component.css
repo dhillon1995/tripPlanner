@@ -1,6 +1,8 @@
 .categories-card {
-  max-width: 180px;
-  max-height: 180px;
+  min-width: 180px;
+  max-height: 240px;
+  min-height: 240px;
+
 }
 .categories-footer {
     display: flex;
@@ -8,7 +10,7 @@
   }
 
 .categories-button {
-    max-width: 80px;
+    max-width: 200px;
     display: flex;
     justify-content: center;
   }

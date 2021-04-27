@@ -18,6 +18,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { HttpClientModule } from '@angular/common/http';
+import {MatTabsModule} from '@angular/material/tabs';
 
 import { CardComponent } from './components/card/card.component';
 import { InputComponent } from './components/input/input.component';
@@ -32,6 +33,7 @@ import { FindvenuepageComponent } from './components/findvenuepage/findvenuepage
 import { VenuedetailspageComponent } from './components/venuedetailspage/venuedetailspage.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { VenuesummarycardComponent } from './components/venuesummarycard/venuesummarycard.component';
+import { FoodcardsComponent } from './components/foodcards/foodcards.component';
 
 
 const routes: Routes = [
@@ -55,6 +57,7 @@ const routes: Routes = [
     FindvenuepageComponent,
     VenuedetailspageComponent,
     VenuesummarycardComponent,
+    FoodcardsComponent,
   ],
   imports: [
     BrowserModule,
@@ -76,6 +79,7 @@ const routes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(routes),
     NgbModule,
+    MatTabsModule,
   ],
   exports: [RouterModule],
   providers: [],

@@ -1,12 +1,6 @@
 [{
-	"category": "Nearby",
+	"category": "Information",
     "imgurl": "assets/img/nearby.PNG"
-},{
-	"category": "Activities",
-    "imgurl": "assets/img/things.PNG"
-},{
-	"category": "Shopping",
-    "imgurl": "assets/img/shopping.PNG"
 },{
 	"category": "Hotels & Travel",
     "imgurl": "assets/img/hotels.PNG"
@@ -14,24 +8,18 @@
 	"category": "Things to do",
     "imgurl": "assets/img/things.PNG"
 },{
-	"category": "Beauty & Spa",
+	"category": "Health & Wellbieng",
     "imgurl": "assets/img/beauty.PNG"
 },{
 	"category": "Food & Drink",
     "imgurl": "assets/img/food.PNG"
 },{
-	"category": "Electronics",
+	"category": "Cinema & Theatre",
     "imgurl": "assets/img/electronics.PNG"
-},{
-	"category": "Health & Fitness",
-    "imgurl": "assets/img/health.PNG"
 },{
 	"category": "Retail",
     "imgurl": "assets/img/retail.PNG"
 },{
-	"category": "For the Home",
+	"category": "Exhibitions & Theatre",
     "imgurl": "assets/img/home.PNG"
-},{
-	"category": "Sale",
-    "imgurl": "assets/img/sale.PNG"
 }]
