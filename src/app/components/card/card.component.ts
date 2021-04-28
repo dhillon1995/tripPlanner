@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -12,7 +12,7 @@ export class CardComponent implements OnInit {
 
 
   @Input() venueData!: object;
-  constructor() { }
+  constructor(private router: Router) { }
   JSONData: any;
 
   ngOnInit(): void {
@@ -24,5 +24,14 @@ export class CardComponent implements OnInit {
     console.log(this.JSONData.imgurl);
     console.log("Card Component End");
   }
+  
+  onViewDetails(): any {
 
+  // ToDo - Go to Correct Venue Page
+	console.log(this.JSONData);
+   if (this.JSONData.name === "Lake Pochard Waterside Cafe"){
+	console.log("HERE");
+	this.router.navigateByUrl('/venuepage');
+	}
+  }
 }

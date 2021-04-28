@@ -13,6 +13,13 @@
 	"pricing": "low",
 	"imgurl": "assets/img/Gateway Cafe 1.jpg"
 },{
+	"name": "Lake Pochard Waterside Cafe",
+	"locale": "South Cerney",
+	"availibility": "open",
+	"type": "cafe",
+	"pricing": "low",
+	"imgurl": "assets/img/Waterside Cafe 2edit.jpg"
+}, {
 	"name": "The Priory Inn",
 	"locale": "Glouster",
 	"availibility": "fair",
@@ -54,18 +61,4 @@
 	"type": "activity",
 	"pricing": "Medium",
 	"imgurl": "assets/img/Cotswold Distillery 1.jpg"
-},{
-	"name": "test9",
-	"locale": "Ciren",
-	"availibility": "fair",
-	"type": "cafe",
-	"pricing": "low",
-	"imgurl": "assets/img/Cotswold Wildlife Park 2.jpg"
-},{
-	"name": "test10",
-	"locale": "Ciren",
-	"availibility": "open",
-	"type": "cafe",
-	"pricing": "high",
-	"imgurl": "assets/img/Gateway Cafe 1.jpg"
 }]
