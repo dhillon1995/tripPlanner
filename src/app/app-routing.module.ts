@@ -11,7 +11,8 @@ const appRoutes: Routes = [
     { path: 'home', component: HomepageComponent },
     { path: 'venue', component: FindvenuepageComponent },
     { path: 'venuepage', component: VenuedetailspageComponent },
-    { path: 'adminPortal', component: AdmimportalpageComponent }
+    { path: 'adminPortal', component: AdmimportalpageComponent },
+    { path: '**', component: HomepageComponent }
 ];
 
 @NgModule({

@@ -127,22 +127,22 @@ mat-tab{
   }
   
 .example-header-image-cd {
-  background-image: url('C:\Users\Sandip Dhillon\angular-destinations1\src\assets\img\Cotswold Distillery 4.jpg');
+  background-image: url('src\assets\img\Cotswold Distillery 4.jpg');
   background-size: cover;
 }
 
 .example-header-image-cw {
-    background-image: url('C:\Users\Sandip Dhillon\angular-destinations1\src\assets\img\Cotswold Wildlife Park 5.jpg');
+    background-image: url('src\assets\img\Cotswold Wildlife Park 5.jpg');
     background-size: cover;
   }
 
 .example-header-image-jc {
-    background-image: url('C:\Users\Sandip Dhillon\angular-destinations1\src\assets\img\Jacks Cafe 5.JPG');
+    background-image: url('src\assets\img\Jacks Cafe 5.JPG');
     background-size: cover;
   }
 
 .example-header-image-wc {
-    background-image: url('C:\Users\Sandip Dhillon\angular-destinations1\src\assets\img\Waterside Cafe 1.JPG');
+    background-image: url('src\assets\img\Waterside Cafe 1.JPG');
     background-size: cover;
   }
 
