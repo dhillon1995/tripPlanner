@@ -25,6 +25,81 @@
   </ng-template>
 </ngb-carousel>
 
+<mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Search With Filters here
+      </mat-panel-title>
+      <mat-panel-description>
+        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+      <mat-grid-list cols=6 rowHeight=50px>
+        <mat-grid-tile>
+          <mat-slider
+                thumbLabel
+                [displayWith]="formatLabel"
+                tickInterval="1"
+                min="1"
+                max="50">
+        </mat-slider>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">£0-£60</mat-radio-button>&nbsp;
+            <mat-radio-button value="2">£60-£80</mat-radio-button>
+        </mat-radio-group>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">Health & Fitness</mat-radio-button>&nbsp;
+            <mat-radio-button value="2">Beauty & Spa</mat-radio-button>
+        </mat-radio-group>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">Automotive</mat-radio-button>&nbsp;
+            <mat-radio-button value="2">Retail</mat-radio-button>
+        </mat-radio-group>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-slide-toggle>Caters for visual difficulties</mat-slide-toggle>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-slide-toggle>Caters for hearing or speaking difficulties</mat-slide-toggle>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <input matInput type="text">
+            <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+                <mat-icon>close</mat-icon>
+            </button>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">£80-£100</mat-radio-button>&nbsp;
+            <mat-radio-button value="2">£100-£120</mat-radio-button>
+        </mat-radio-group>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">Personal Services</mat-radio-button>&nbsp;
+            <mat-radio-button value="2">Things to do</mat-radio-button>
+        </mat-radio-group>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">Food & Drink</mat-radio-button>&nbsp;
+            <mat-radio-button value="2">Sale</mat-radio-button>
+        </mat-radio-group>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-slide-toggle>Disability Friendly</mat-slide-toggle>
+        </mat-grid-tile>
+      </mat-grid-list>
+  </mat-expansion-panel>
+
+
 <br>
 
 <mat-grid-list cols="1" rowHeight="50px">

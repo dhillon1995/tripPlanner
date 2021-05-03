@@ -9,11 +9,22 @@ import * as catdata from "../categories/cattestfile.json";
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
+  panelOpenState = false;
   title = 'Cotswolds Destinations';
 
   venues: any = (data as any).default;
 
   categories: any = (catdata as any).default;
+
+  formatLabel(value: number) {
+    if (value >= 1000) {
+      return Math.round(value / 1000) + 'm';
+    }
+
+    return value;
+  }
+
+  value = 'Clear me!';
 
 
   ngOnInit(): void {
