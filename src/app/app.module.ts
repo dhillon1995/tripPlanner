@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 import { CardComponent } from './components/card/card.component';
 import { InputComponent } from './components/input/input.component';
@@ -88,6 +89,7 @@ const routes: Routes = [
     MatTabsModule,
     MatBadgeModule,
     MatDialogModule,
+    MatCheckboxModule,
   ],
   exports: [RouterModule],
   providers: [],

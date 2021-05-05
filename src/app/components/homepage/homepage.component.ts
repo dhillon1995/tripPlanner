@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as data from "./testfile.json";
 import * as catdata from "../categories/cattestfile.json";
+import {VenueserviceService} from "../../services/venueservice.service"
 
 
 @Component({
@@ -9,6 +10,9 @@ import * as catdata from "../categories/cattestfile.json";
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
+
+  constructor(private venueService: VenueserviceService) { }
+
   panelOpenState = false;
   title = 'Cotswolds Destinations';
 
@@ -37,5 +41,6 @@ export class HomepageComponent implements OnInit {
 	console.log(this.venues[i]);
     }
     console.log("Homepage End");
+    this.venueService.httpGetFeatures()
   }
 }
