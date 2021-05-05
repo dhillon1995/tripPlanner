@@ -12,7 +12,8 @@
     "imgurl": "assets/img/beauty.PNG"
 },{
 	"category": "Food & Drink",
-    "imgurl": "assets/img/food.PNG"
+    "imgurl": "assets/img/food.PNG",
+    "routerLink": "category"
 },{
 	"category": "Cinema & Theatre",
     "imgurl": "assets/img/electronics.PNG"

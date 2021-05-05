@@ -25,17 +25,35 @@
   </ng-template>
 </ngb-carousel>
 
+<div class="filtercontainer">
 <mat-expansion-panel (opened)="panelOpenState = true"
                        (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Search With Filters here
+        <h6>Search With Filters here!</h6>
       </mat-panel-title>
       <mat-panel-description>
-        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+        Filter drawer {{panelOpenState ? 'open' : 'closed'}}
       </mat-panel-description>
     </mat-expansion-panel-header>
-      <mat-grid-list cols=6 rowHeight=50px>
+      <mat-grid-list cols=6 rowHeight=40px>
+
+        <mat-grid-tile rowspan=2>
+          <h6>Distance & Location</h6>
+        </mat-grid-tile>
+
+        <mat-grid-tile rowspan=2>
+          <h6>Price Range</h6>
+        </mat-grid-tile>
+
+        <mat-grid-tile colspan="2" rowspan=2>
+          <h6>Features</h6>
+        </mat-grid-tile>
+
+        <mat-grid-tile colspan="2" rowspan=2>
+          <h6>Special Requirements</h6>
+        </mat-grid-tile>
+
         <mat-grid-tile>
           <mat-slider
                 thumbLabel
@@ -46,16 +64,16 @@
         </mat-slider>
         </mat-grid-tile>
         <mat-grid-tile>
-          <mat-checkbox class="example-margin">£0-£60</mat-checkbox>&nbsp;
-          <mat-checkbox class="example-margin">£60-£80!</mat-checkbox>
+          <mat-checkbox class="example-margin">£0-£60</mat-checkbox>&nbsp;&nbsp;
+          &nbsp;&nbsp;<mat-checkbox class="example-margin">£60-£80</mat-checkbox>
         </mat-grid-tile>
         <mat-grid-tile>
-          <mat-checkbox class="example-margin">Health & Fitness</mat-checkbox>&nbsp;
-          <mat-checkbox class="example-margin">Beauty & Spa</mat-checkbox>
+          <mat-checkbox class="example-margin">Health & Fitness</mat-checkbox>&nbsp;&nbsp;
+          &nbsp;&nbsp;<mat-checkbox class="example-margin">Beauty & Spa</mat-checkbox>
         </mat-grid-tile>
         <mat-grid-tile>
-          <mat-checkbox class="example-margin">Automotive</mat-checkbox>&nbsp;
-          <mat-checkbox class="example-margin">Retail</mat-checkbox>
+          <mat-checkbox class="example-margin">Automotive</mat-checkbox>&nbsp;&nbsp;
+          &nbsp;&nbsp;<mat-checkbox class="example-margin">Retail</mat-checkbox>
         </mat-grid-tile>
         <mat-grid-tile>
           <mat-slide-toggle>Caters for visual difficulties</mat-slide-toggle>
@@ -70,22 +88,23 @@
             </button>
         </mat-grid-tile>
         <mat-grid-tile>
-          <mat-checkbox class="example-margin">£80-£100</mat-checkbox>&nbsp;
-          <mat-checkbox class="example-margin">£100-£120</mat-checkbox>
+          <mat-checkbox class="example-margin">£80-£100</mat-checkbox>&nbsp;&nbsp;
+          &nbsp;&nbsp;<mat-checkbox class="example-margin">£100-£120</mat-checkbox>
         </mat-grid-tile>
         <mat-grid-tile>
-          <mat-checkbox class="example-margin">Personal Services</mat-checkbox>&nbsp;
-          <mat-checkbox class="example-margin">Things to do</mat-checkbox>
+          <mat-checkbox class="example-margin">Personal Services</mat-checkbox>&nbsp;&nbsp;
+          &nbsp;&nbsp;<mat-checkbox class="example-margin">Things to do</mat-checkbox>
         </mat-grid-tile>
         <mat-grid-tile>
-          <mat-checkbox class="example-margin">Food & Drink</mat-checkbox>&nbsp;
-          <mat-checkbox class="example-margin">Sale</mat-checkbox>
+          <mat-checkbox class="example-margin">Food & Drink</mat-checkbox>&nbsp;&nbsp;
+          &nbsp;&nbsp;<mat-checkbox class="example-margin">Sale</mat-checkbox>
         </mat-grid-tile>
         <mat-grid-tile>
           <mat-slide-toggle>Disability Friendly</mat-slide-toggle>
         </mat-grid-tile>
       </mat-grid-list>
   </mat-expansion-panel>
+</div>
 
 
 <br>

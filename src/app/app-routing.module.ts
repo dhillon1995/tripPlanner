@@ -6,13 +6,15 @@ import { VenueComponent } from './components/venue/venue.component';
 import { FindvenuepageComponent } from './components/findvenuepage/findvenuepage.component';
 import { VenuedetailspageComponent } from './components/venuedetailspage/venuedetailspage.component';
 import { AdmimportalpageComponent } from './components/admimportalpage/admimportalpage.component';
+import { FindvenuepagetwoComponent } from './components/findvenuepagetwo/findvenuepagetwo.component';
 
 const appRoutes: Routes = [
     { path: 'home', component: HomepageComponent },
     { path: 'venue', component: FindvenuepageComponent },
     { path: 'venuepage', component: VenuedetailspageComponent },
     { path: 'adminPortal', component: AdmimportalpageComponent },
-    { path: '**', component: HomepageComponent }
+    { path: '**', component: HomepageComponent },
+    { path: 'categroy', component: FindvenuepagetwoComponent }
 ];
 
 @NgModule({

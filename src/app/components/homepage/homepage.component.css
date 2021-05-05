@@ -2,9 +2,17 @@ mat-form-field {
     width: 100%
   }
 
+  mat-slider {
+    width: 280px;
+  }
+
 .picsum-img-wrapper img {
     width: 100%;
     object-fit: cover;
     height: 450px;
     object-position: 50% bottom;
+}
+
+.filtercontainer{
+  padding: 20px;
 }
