@@ -1,8 +1,8 @@
 .example-card {
-    max-width: 280px;
-    min-width: 280px;
-    min-height: 440px;
-    max-height: 440px;
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 500px;
+    max-height: 500px;
   }
   
 .example-header-image {
@@ -13,4 +13,15 @@
 .card-category {
   text-transform: capitalize;
 
+}
+
+.cardimg img {
+  width: 100%;
+  object-fit: cover;
+  height: 160px;
+  object-position: 50% center;
+}
+
+mat-card-image {
+  margin-right: 16px;
 }

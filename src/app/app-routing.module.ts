@@ -13,8 +13,9 @@ const appRoutes: Routes = [
     { path: 'venue', component: FindvenuepageComponent },
     { path: 'venuepage', component: VenuedetailspageComponent },
     { path: 'adminPortal', component: AdmimportalpageComponent },
-    { path: '**', component: HomepageComponent },
-    { path: 'categroy', component: FindvenuepagetwoComponent }
+    { path: 'category', component: FindvenuepagetwoComponent },
+    { path: '**', component: HomepageComponent }
+    
 ];
 
 @NgModule({

@@ -15,4 +15,20 @@ mat-form-field {
 
 .filtercontainer{
   padding: 20px;
+  position: relative;
+  top: -60px;
+}
+
+#parent{
+  position: relative;
+}
+
+.searchClass{
+  position: relative;
+  top: -140px;
+}
+
+.cardsSection{
+  position: relative;
+  top: -80px;
 }

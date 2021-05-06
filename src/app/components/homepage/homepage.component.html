@@ -1,29 +1,32 @@
-<ngb-carousel>
-  <ng-template ngbSlide>
-    <div class="picsum-img-wrapper">
-      <img src="assets/img/Gateway Cafe 1.jpg" alt="Random first slide">
-    </div>
-    <div class="carousel-caption">
-      <app-search></app-search>
-    </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <div class="picsum-img-wrapper">
-      <img src="assets/img/Cotswold Distillery 1.jpg" alt="Random second slide">
-    </div>
-    <div class="carousel-caption">
-      <app-search></app-search>
-    </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <div class="picsum-img-wrapper">
-      <img src="assets/img/Cotswold Wildlife Park 2.jpg" alt="Random third slide">
-    </div>
-    <div class="carousel-caption">
-      <app-search></app-search>
-    </div>
-  </ng-template>
-</ngb-carousel>
+
+<div id="parent">
+  
+
+  <div class="carouselClass">
+  <ngb-carousel>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="assets/img/Gateway Cafe 1.jpg" alt="Random first slide">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="assets/img/Cotswold Distillery 1.jpg" alt="Random second slide">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="assets/img/Cotswold Wildlife Park 2.jpg" alt="Random third slide">
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  </div>
+
+  <div class="searchClass">
+    <app-search></app-search>
+  </div>
+
+</div>
 
 <div class="filtercontainer">
 <mat-expansion-panel (opened)="panelOpenState = true"
@@ -106,23 +109,24 @@
   </mat-expansion-panel>
 </div>
 
+<div class="cardsSection">
+  <br>
 
-<br>
+  <mat-grid-list cols="1" rowHeight="50px">
+    <mat-grid-tile colspan="1"><h2>Categories</h2></mat-grid-tile>
+  </mat-grid-list>
 
-<mat-grid-list cols="1" rowHeight="50px">
-  <mat-grid-tile colspan="1"><h2>Categories</h2></mat-grid-tile>
-</mat-grid-list>
+  <mat-grid-list cols="4" rowHeight="300px" gutterSize="1px">
+    <mat-grid-tile colspan="1" *ngFor="let venue of categories"><app-categories [venueData]="venue"></app-categories></mat-grid-tile>
+  </mat-grid-list>
 
-<mat-grid-list cols="4" rowHeight="300px" gutterSize="1px">
-  <mat-grid-tile colspan="1" *ngFor="let venue of categories"><app-categories [venueData]="venue"></app-categories></mat-grid-tile>
-</mat-grid-list>
+  <br>
 
-<br>
+  <mat-grid-list cols="1" rowHeight="50px">
+    <mat-grid-tile colspan="1"><h2>Limited Spaces Remaining</h2></mat-grid-tile>
+  </mat-grid-list>
 
-<mat-grid-list cols="1" rowHeight="50px">
-  <mat-grid-tile colspan="1"><h2>Limited Spaces Remaining</h2></mat-grid-tile>
-</mat-grid-list>
-
-<mat-grid-list cols="4" rowHeight="450px" gutterSize="1px">
-  <mat-grid-tile colspan="1" *ngFor="let venue of venues"><app-card [venueData]="venue"></app-card></mat-grid-tile>
-</mat-grid-list>
+  <mat-grid-list cols="4" rowHeight="520px" gutterSize="1px">
+    <mat-grid-tile colspan="1" *ngFor="let venue of venues"><app-card [venueData]="venue"></app-card></mat-grid-tile>
+  </mat-grid-list>
+</div>

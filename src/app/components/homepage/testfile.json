@@ -4,61 +4,70 @@
 	"availibility": "limited",
 	"type": "venue",
 	"pricing": "high",
-	"imgurl": "assets/img/Prison 1.jpg"
+	"imgurl": "assets/img/Prison 1.jpg",
+	"desc" : "The Old Prison Kitchen & Café serves artisan coffees, brunch classics, homemade cakes, lunchtime specials and afternoon teas, all made with locally sourced ingredients. Complementary access is available to the original Prison Cells and Court Room and the Lloyd Baker wagon collection for all to enjoy."
 },{
 	"name": "Gateway Cafe",
 	"locale": "Ciren",
 	"availibility": "open",
 	"type": "cafe",
 	"pricing": "low",
-	"imgurl": "assets/img/Gateway Cafe 1.jpg"
+	"imgurl": "assets/img/Gateway Cafe 1.jpg",
+	"desc" : "The Gateway Cafe is situated opposite the Cotswold Outdoor in South Cerney, there is an abundance of free parking and offers a great meeting place for cyclists, walkers, bird watchers, families and real foodies. All our produce is locally sourced and hand made by our talented team of Chefs."
 },{
 	"name": "Lake Pochard Waterside Cafe",
 	"locale": "South Cerney",
 	"availibility": "open",
 	"type": "cafe",
 	"pricing": "low",
-	"imgurl": "assets/img/Waterside Cafe 2edit.jpg"
+	"imgurl": "assets/img/Waterside Cafe 2edit.jpg",
+	"desc" : "Waterside offers a delicious breakfast, lunch, afternoon and early dinner menu using locally sourced ingredients. Stunning views across the Walters Lake."
 }, {
 	"name": "The Priory Inn",
 	"locale": "Glouster",
 	"availibility": "fair",
 	"type": "hotel",
 	"pricing": "Medium",
-	"imgurl": "assets/img/The Priory Inn 1.jpg"
+	"imgurl": "assets/img/The Priory Inn 1.jpg",
+	"desc" : "Idyllic Hotel, Pub & Restaurant Our hotel is rated the best value in Tetbury! Our hotel’s en-suite rooms are simple, calming and comfortable. The Priory Inn is also home to our beloved restaurant., Committed to using fresh, local produce within 30 miles."
 },{
 	"name": "Somewhere else",
 	"locale": "Cheltenam",
 	"availibility": "limited",
 	"type": "cafe",
 	"pricing": "low",
-	"imgurl": "assets/img/Somewhere else 4.jpg"
+	"imgurl": "assets/img/Somewhere else 4.jpg",
+	"desc" : "Situated in the heart of historic Cirencester, Somewhere Else Deli Bar is the ideal venue for breakfast, lunch and dinner. From a casual family brunch to light bites and snacks over a few cocktails in the evening."
 },{
 	"name": "Sally Pusseys",
 	"locale": "Ciren",
 	"availibility": "fair",
 	"type": "cafe",
 	"pricing": "Medium",
-	"imgurl": "assets/img/Sally Pusseys 1.JPG"
+	"imgurl": "assets/img/Sally Pusseys 1.JPG",
+	"desc" : "With the help of Arkells Brewery, Sally Pussey's boasts 200 seats, 100 covered and 40 covered and heated outdoor dining couldn't get any better!"
 },{
 	"name": "Jacks Cafe",
 	"locale": "Ciren",
 	"availibility": "limited",
 	"type": "cafe",
 	"pricing": "high",
-	"imgurl": "assets/img/Jacks Cafe 5edit.jpg"
+	"imgurl": "assets/img/Jacks Cafe 5edit.jpg",
+	"desc" : "blah"
 },{
 	"name": "Cotswold Wildlife Park",
 	"locale": "Ciren",
 	"availibility": "fair",
 	"type": "activity",
 	"pricing": "Medium",
-	"imgurl": "assets/img/Cotswold Wildlife Park 2.jpg"
+	"imgurl": "assets/img/Cotswold Wildlife Park 2.jpg",
+	"desc" : "blah"
 },{
 	"name": "Cotswold Distillery",
 	"locale": "Ciren",
 	"availibility": "open",
 	"type": "activity",
 	"pricing": "Medium",
-	"imgurl": "assets/img/Cotswold Distillery 1.jpg"
+	"imgurl": "assets/img/Cotswold Distillery 1.jpg",
+	"desc" : "blah"
 }]

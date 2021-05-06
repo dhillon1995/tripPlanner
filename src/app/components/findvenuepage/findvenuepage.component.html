@@ -51,7 +51,7 @@
         </mat-expansion-panel>
         <br>
         <br>
-        <h3>Select a category</h3>
+        <h3>Select a feature</h3>
         <mat-radio-group aria-label="Select an option">
             <mat-radio-button value="1">Health & Fitness</mat-radio-button>
             <mat-radio-button value="2">Beauty & Spa</mat-radio-button>
@@ -95,7 +95,7 @@
             </button>
         </div>
 
-        <mat-grid-list cols="4" rowHeight="450px" gutterSize="1px">
+        <mat-grid-list cols="3" rowHeight="520px" gutterSize="1px">
             <mat-grid-tile colspan="1" *ngFor="let venue of venues"><app-card [venueData]="venue"></app-card></mat-grid-tile>
         </mat-grid-list>
 

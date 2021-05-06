@@ -4,10 +4,12 @@
       <mat-card-title>{{JSONData.name}}</mat-card-title>
       <mat-card-subtitle><div class="card-category">{{JSONData.type}}</div></mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="{{JSONData.imgurl}}" alt="Photo of a test">
+    <div class="cardimg">
+      <img mat-card-image src="{{JSONData.imgurl}}" alt="Photo of a test">
+    </div>
     <mat-card-content>
       <p>
-        {{JSONData.name}} is located in {{JSONData.locale}}, it's a {{JSONData.type}} in the {{JSONData.pricing}} price bracket. Availiblity is {{JSONData.availibility}}.
+        {{JSONData.desc}}
       </p>
     </mat-card-content>
     <mat-card-actions>
