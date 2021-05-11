@@ -212,6 +212,34 @@
                     </mat-grid-list>
                 </div>
             </mat-tab>
+
+
+            <mat-tab label="Notifications">
+                <div class="infotab">
+                    <mat-grid-list cols=2 rowHeight=60px>
+                        <mat-grid-tile colspan=2> 
+                            <div>
+                                <h5>Latest Notifications</h5>
+                            </div>
+                        </mat-grid-tile>
+                        <mat-grid-tile colspan=2 rowspan=2>
+                            <mat-card class="notifications">
+                            <div class="notificationCards">
+                                <mat-icon color="warn">notifications_active</mat-icon>&nbsp;&nbsp;<mat-icon>night_shelter</mat-icon>&nbsp;&nbsp;Only a limited number of spaces are remaining!
+                            </div>
+                            </mat-card>
+                        </mat-grid-tile>
+                        <mat-grid-tile colspan=2 rowspan=2>
+                            <mat-card class="notifications">
+                            <div class="notificationCards">
+                                <mat-icon>notifications_active</mat-icon>&nbsp;&nbsp;<mat-icon>local_cafe</mat-icon>&nbsp;&nbsp;The cafe is now fully booked!
+                            </div>
+                            </mat-card>
+                        </mat-grid-tile>
+                    </mat-grid-list>
+                </div>
+            </mat-tab>
+
         </mat-tab-group>
     </mat-card>
 </div>

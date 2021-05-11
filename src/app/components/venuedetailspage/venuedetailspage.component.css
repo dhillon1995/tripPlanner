@@ -153,3 +153,8 @@ mat-tab{
 .mat-badge-content {
     font-family: 'Material Icons';
 }
+
+.notifications{
+    max-height: 80px;
+    border-radius: 10px;
+}
