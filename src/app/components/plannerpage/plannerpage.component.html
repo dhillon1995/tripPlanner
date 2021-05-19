@@ -1,0 +1,81 @@
+
+<div class="cardContainer">
+
+  <mat-card>
+    <mat-grid-list cols="2" rowHeight="60px">
+
+      <mat-grid-tile>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter a date range</mat-label>
+          <mat-date-range-input [rangePicker]="picker">
+            <input matStartDate placeholder="Start date">
+            <input matEndDate placeholder="End date">
+          </mat-date-range-input>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-date-range-picker #picker></mat-date-range-picker>
+        </mat-form-field>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Search</mat-label>
+            <input matInput placeholder="Ex. Cafe" value="Cotswolds">
+          </mat-form-field>
+        </form>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+  </mat-card>
+
+</div>
+
+<mat-grid-list cols="4" rowHeight="200px">
+
+  <mat-grid-tile>
+    <mat-card>
+      <h6>Select Food</h6>
+      <mat-checkbox class="example-margin">Steak</mat-checkbox><br>
+      <mat-checkbox class="example-margin">Pizza</mat-checkbox><br>
+      <mat-checkbox class="example-margin">Taco's</mat-checkbox><br>
+      <mat-checkbox class="example-margin">Pasta</mat-checkbox>
+    </mat-card>
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <mat-card>
+      <h6>Select Topping</h6>
+      <mat-checkbox class="example-margin">Chicken</mat-checkbox><br>
+      <mat-checkbox class="example-margin">Extra cheese</mat-checkbox><br>
+      <mat-checkbox class="example-margin">bacon</mat-checkbox><br>
+      <mat-checkbox class="example-margin">garlic butter</mat-checkbox>
+    </mat-card>
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+
+    <button mat-button [matMenuTriggerFor]="category">Select Category</button>
+      <mat-menu #category="matMenu">
+        <button mat-menu-item>Cafe</button>
+        <button mat-menu-item>Hotel</button>
+        <button mat-menu-item>Entertainment</button>
+        <button mat-menu-item>Activity</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="time">Select Time's</button>
+      <mat-menu #time="matMenu">
+        <button mat-menu-item>Breakfast</button>
+        <button mat-menu-item>Morning</button>
+        <button mat-menu-item>Lunch</button>
+        <button mat-menu-item>Afternoon</button>
+        <button mat-menu-item>Dinner</button>
+        <button mat-menu-item>Where to stay</button>
+    </mat-menu>
+
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <button mat-button (click)="openDialog()">Select option</button>
+  </mat-grid-tile>
+
+</mat-grid-list>
