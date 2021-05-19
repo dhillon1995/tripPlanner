@@ -13,6 +13,7 @@ import { MatIconModule} from '@angular/material/icon';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
@@ -22,6 +23,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatMenuModule} from '@angular/material/menu';
 
 import { CardComponent } from './components/card/card.component';
 import { InputComponent } from './components/input/input.component';
@@ -39,6 +41,7 @@ import { VenuesummarycardComponent } from './components/venuesummarycard/venuesu
 import { FoodcardsComponent } from './components/foodcards/foodcards.component';
 import { AdmimportalpageComponent } from './components/admimportalpage/admimportalpage.component';
 import { FindvenuepagetwoComponent } from './components/findvenuepagetwo/findvenuepagetwo.component';
+import { PlannerpageComponent } from './components/plannerpage/plannerpage.component';
 
 
 const routes: Routes = [
@@ -65,6 +68,7 @@ const routes: Routes = [
     FoodcardsComponent,
     AdmimportalpageComponent,
     FindvenuepagetwoComponent,
+    PlannerpageComponent,
   ],
   imports: [
     BrowserModule,
@@ -88,11 +92,15 @@ const routes: Routes = [
     NgbModule,
     MatTabsModule,
     MatBadgeModule,
-    MatDialogModule,
     MatCheckboxModule,
+    MatNativeDateModule,
+    MatMenuModule,
   ],
   exports: [RouterModule],
-  providers: [],
+  providers: [
+    MatDatepickerModule,
+    MatNativeDateModule,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

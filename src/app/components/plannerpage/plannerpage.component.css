@@ -1,0 +1,20 @@
+
+
+mat-card {
+    margin-top: 2px;
+    margin-bottom: 1px;
+}
+
+.cardContainer{
+    padding: 10px;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }

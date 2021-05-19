@@ -7,6 +7,7 @@ import { FindvenuepageComponent } from './components/findvenuepage/findvenuepage
 import { VenuedetailspageComponent } from './components/venuedetailspage/venuedetailspage.component';
 import { AdmimportalpageComponent } from './components/admimportalpage/admimportalpage.component';
 import { FindvenuepagetwoComponent } from './components/findvenuepagetwo/findvenuepagetwo.component';
+import { PlannerpageComponent } from './components/plannerpage/plannerpage.component';
 
 const appRoutes: Routes = [
     { path: 'home', component: HomepageComponent },
@@ -14,6 +15,7 @@ const appRoutes: Routes = [
     { path: 'venuepage', component: VenuedetailspageComponent },
     { path: 'adminPortal', component: AdmimportalpageComponent },
     { path: 'category', component: FindvenuepagetwoComponent },
+    { path: 'planner', component: PlannerpageComponent },
     { path: '**', component: HomepageComponent }
     
 ];
