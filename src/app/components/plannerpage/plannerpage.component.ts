@@ -11,16 +11,12 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H', time:'Breakfast'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He', time:'Morning'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li', time:'Lunch'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be', time:'Afternoon'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B', time:'Dinner'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C', time:'Where to stay'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N', time:'Morning'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O', time:'Morning'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F', time:'Morning'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne', time:'Morning'},
+  {position: 1, name: 'Card Here', weight: 1.0079, symbol: 'Card Here', time:'Breakfast'},
+  {position: 2, name: 'Card Here', weight: 4.0026, symbol: 'Card Here', time:'Morning'},
+  {position: 3, name: 'Card Here', weight: 6.941, symbol: 'Card Here', time:'Lunch'},
+  {position: 4, name: 'Card Here', weight: 9.0122, symbol: 'Card Here', time:'Afternoon'},
+  {position: 5, name: 'Card Here', weight: 10.811, symbol: 'Card Here', time:'Dinner'},
+  {position: 6, name: 'Card Here', weight: 12.0107, symbol: 'Card Here', time:'Where to stay'},
 ];
 
 @Component({

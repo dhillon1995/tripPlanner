@@ -25,6 +25,8 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatTableModule} from '@angular/material/table';
+import {MatChipsModule} from '@angular/material/chips';
+
 
 
 import { CardComponent } from './components/card/card.component';
@@ -98,6 +100,7 @@ const routes: Routes = [
     MatNativeDateModule,
     MatMenuModule,
     MatTableModule,
+    MatChipsModule,
   ],
   exports: [RouterModule],
   providers: [
