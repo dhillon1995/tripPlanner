@@ -24,6 +24,8 @@ import {MatBadgeModule} from '@angular/material/badge';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatTableModule} from '@angular/material/table';
+
 
 import { CardComponent } from './components/card/card.component';
 import { InputComponent } from './components/input/input.component';
@@ -95,6 +97,7 @@ const routes: Routes = [
     MatCheckboxModule,
     MatNativeDateModule,
     MatMenuModule,
+    MatTableModule,
   ],
   exports: [RouterModule],
   providers: [
