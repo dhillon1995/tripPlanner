@@ -1,6 +1,5 @@
-
 import { Component, OnInit } from '@angular/core';
-import {MatDialog} from '@angular/material/dialog';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 export interface PeriodicElement {
   name: string;
@@ -24,6 +23,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   templateUrl: './plannerpage.component.html',
   styleUrls: ['./plannerpage.component.css']
 })
+
 export class PlannerpageComponent implements OnInit {
 
   displayedColumns: string[] = ['time', 'name', 'weight', 'symbol'];
@@ -48,4 +48,5 @@ export class PlannerpageComponent implements OnInit {
   selector: 'dialog-content-example-dialog',
   templateUrl: 'dialog-content-example-dialog.html',
 })
+
 export class PlannerpageComponentDialog {}
