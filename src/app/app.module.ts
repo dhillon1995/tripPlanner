@@ -101,6 +101,7 @@ const routes: Routes = [
     MatMenuModule,
     MatTableModule,
     MatChipsModule,
+    MatDialogModule
   ],
   exports: [RouterModule],
   providers: [

@@ -2,7 +2,7 @@
 <div class="cardContainer">
 
   <mat-card>
-    <mat-grid-list cols="2" rowHeight="60px">
+    <mat-grid-list cols="2" rowHeight="70px">
 
       <mat-grid-tile>
         <mat-form-field appearance="fill">
@@ -30,27 +30,8 @@
 
 </div>
 
-<mat-grid-list cols="4" rowHeight="200px">
+<mat-grid-list cols="4" rowHeight="80px">
 
-  <mat-grid-tile>
-    <mat-card>
-      <h6>Select Food</h6>
-      <mat-checkbox class="example-margin">Steak</mat-checkbox><br>
-      <mat-checkbox class="example-margin">Pizza</mat-checkbox><br>
-      <mat-checkbox class="example-margin">Taco's</mat-checkbox><br>
-      <mat-checkbox class="example-margin">Pasta</mat-checkbox>
-    </mat-card>
-  </mat-grid-tile>
-
-  <mat-grid-tile>
-    <mat-card>
-      <h6>Select Topping</h6>
-      <mat-checkbox class="example-margin">Chicken</mat-checkbox><br>
-      <mat-checkbox class="example-margin">Extra cheese</mat-checkbox><br>
-      <mat-checkbox class="example-margin">bacon</mat-checkbox><br>
-      <mat-checkbox class="example-margin">garlic butter</mat-checkbox>
-    </mat-card>
-  </mat-grid-tile>
 
   <mat-grid-tile>
 
@@ -62,16 +43,17 @@
         <button mat-menu-item>Activity</button>
     </mat-menu>
 
+  </mat-grid-tile>
+  <mat-grid-tile>
     <button mat-button [matMenuTriggerFor]="time">Select Time's</button>
-      <mat-menu #time="matMenu">
-        <button mat-menu-item>Breakfast</button>
-        <button mat-menu-item>Morning</button>
-        <button mat-menu-item>Lunch</button>
-        <button mat-menu-item>Afternoon</button>
-        <button mat-menu-item>Dinner</button>
-        <button mat-menu-item>Where to stay</button>
-    </mat-menu>
-
+    <mat-menu #time="matMenu">
+      <button mat-menu-item>Breakfast</button>
+      <button mat-menu-item>Morning</button>
+      <button mat-menu-item>Lunch</button>
+      <button mat-menu-item>Afternoon</button>
+      <button mat-menu-item>Dinner</button>
+      <button mat-menu-item>Where to stay</button>
+  </mat-menu>
   </mat-grid-tile>
 
   <mat-grid-tile>
@@ -89,6 +71,148 @@
   </mat-chip-list>
 </mat-card>
 
+<mat-grid-list cols="8" rowHeight="100px">
+  <mat-grid-tile>
+    <mat-card>
+      Time of day
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+      Monday
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+      Teusday
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+      Wednesday
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+      Thursday
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+      Friday
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+      Saturday
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+      Sunday
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list cols="8" rowHeight="200px" gutterSize="6px">
+
+  <mat-grid-tile>
+    Morning
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <mat-card class="tablecard">
+      <img mat-card-image src="assets/img/Cotswold Distillery 3.jpg" alt="Photo of a test">
+      <mat-card-content>
+        <p>
+          Test Data
+        </p>
+        <button mat-raised-button color="accent">Book Now</button>
+      </mat-card-content>
+    </mat-card>
+    </mat-grid-tile>
+
+  <mat-grid-tile>
+  <mat-card class="tablecard">
+    <img mat-card-image src="assets/img/Cotswold Distillery 3.jpg" alt="Photo of a test">
+    <mat-card-content>
+      <p>
+        Test Data
+      </p>
+      <button mat-raised-button color="accent">Book Now</button>
+    </mat-card-content>
+  </mat-card>
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <mat-card class="tablecard">
+      <img mat-card-image src="assets/img/Cotswold Distillery 3.jpg" alt="Photo of a test">
+      <mat-card-content>
+        <p>
+          Test Data
+        </p>
+        <button mat-raised-button color="accent">Book Now</button>
+      </mat-card-content>
+    </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <mat-card class="tablecard">
+        <img mat-card-image src="assets/img/Cotswold Distillery 3.jpg" alt="Photo of a test">
+        <mat-card-content>
+          <p>
+            Test Data
+          </p>
+          <button mat-raised-button color="accent"><mat-icon>event</mat-icon>></button>
+        </mat-card-content>
+      </mat-card>
+      </mat-grid-tile>
+
+</mat-grid-list>
+
+<mat-grid-list cols="8" rowHeight="200px" gutterSize="6px">
+
+  <mat-grid-tile>
+    Tuesday
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <mat-card class="tablecard">
+      <img mat-card-image src="assets/img/Cotswold Distillery 3.jpg" alt="Photo of a test">
+      <mat-card-content>
+        <p>
+          Test Card Data
+        </p>
+        <button mat-raised-button color="accent">Book Now</button>
+      </mat-card-content>
+    </mat-card>
+    </mat-grid-tile>
+
+  <mat-grid-tile>
+    <mat-card class="tablecard">
+      <img mat-card-image src="assets/img/Cotswold Distillery 3.jpg" alt="Photo of a test">
+      <mat-card-content>
+        <p>
+          Test Data
+        </p>
+        <button mat-raised-button color="accent">Book Now</button>
+      </mat-card-content>
+    </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <mat-card class="tablecard">
+        <img mat-card-image src="assets/img/Cotswold Distillery 3.jpg" alt="Photo of a test">
+        <mat-card-content>
+          <p>
+            Test Data
+          </p>
+          <button mat-raised-button color="accent"><mat-icon>event</mat-icon>></button>
+        </mat-card-content>
+      </mat-card>
+      </mat-grid-tile>
+
+</mat-grid-list>
 
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
