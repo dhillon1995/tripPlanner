@@ -5,7 +5,7 @@
 	"type": "venue",
 	"pricing": "high",
 	"imgurl": "assets/img/Prison 1.jpg",
-	"desc" : "The Old Prison Kitchen & Café serves artisan coffees, brunch classics, homemade cakes, lunchtime specials and afternoon teas, all made with locally sourced ingredients. Complementary access is available to the original Prison Cells and Court Room and the Lloyd Baker wagon collection for all to enjoy."
+	"desc" : "Offering lunchtime specials and afternoon teas, all made with locally sourced ingredients. Free access to the Prison Cells, Court Room and Lloyd Baker wagon collection."
 },{
 	"name": "Gateway Cafe",
 	"locale": "Ciren",
@@ -13,7 +13,7 @@
 	"type": "cafe",
 	"pricing": "low",
 	"imgurl": "assets/img/Gateway Cafe 1.jpg",
-	"desc" : "The Gateway Cafe is situated opposite the Cotswold Outdoor in South Cerney, there is an abundance of free parking and offers a great meeting place for cyclists, walkers, bird watchers, families and real foodies. All our produce is locally sourced and hand made by our talented team of Chefs."
+	"desc" : "Great meeting place for cyclists, walkers, bird watchers, families and real foodies. All our produce is locally sourced and hand made by our talented team of Chefs."
 },{
 	"name": "Lake Pochard Waterside Cafe",
 	"locale": "South Cerney",
@@ -29,7 +29,7 @@
 	"type": "hotel",
 	"pricing": "Medium",
 	"imgurl": "assets/img/The Priory Inn 1.jpg",
-	"desc" : "Idyllic Hotel, Pub & Restaurant Our hotel is rated the best value in Tetbury! Our hotel’s en-suite rooms are simple, calming and comfortable. The Priory Inn is also home to our beloved restaurant., Committed to using fresh, local produce within 30 miles."
+	"desc" : "Idyllic Hotel, Pub & Restaurant. Committed to using fresh, local produce within 30 miles. Rated the best value in Tetbury."
 },{
 	"name": "Somewhere else",
 	"locale": "Cheltenam",
@@ -37,7 +37,7 @@
 	"type": "cafe",
 	"pricing": "low",
 	"imgurl": "assets/img/Somewhere else 4.jpg",
-	"desc" : "Situated in the heart of historic Cirencester, Somewhere Else Deli Bar is the ideal venue for breakfast, lunch and dinner. From a casual family brunch to light bites and snacks over a few cocktails in the evening."
+	"desc" : "Situated in the heart of historic Cirencester. Ideal venue for breakfast, lunch and dinner. From a casual family brunch to light bites and snacks over a few cocktails in the evening."
 },{
 	"name": "Sally Pusseys",
 	"locale": "Ciren",
@@ -53,7 +53,7 @@
 	"type": "cafe",
 	"pricing": "high",
 	"imgurl": "assets/img/Jacks Cafe 5edit.jpg",
-	"desc" : "blah"
+	"desc" : "Nestled in the backstreets of Cirencester. Highlighting a market-fresh ingredient menu, featuring a selection of dishes all made in-house."
 },{
 	"name": "Cotswold Wildlife Park",
 	"locale": "Ciren",
@@ -61,7 +61,7 @@
 	"type": "activity",
 	"pricing": "Medium",
 	"imgurl": "assets/img/Cotswold Wildlife Park 2.jpg",
-	"desc" : "blah"
+	"desc" : "The Cotswold Wildlife Park & Gardens exhibits over 260 different species of animals. The park is set in 160 acres of landscaped parkland and gardens."
 },{
 	"name": "Cotswold Distillery",
 	"locale": "Ciren",
@@ -69,5 +69,5 @@
 	"type": "activity",
 	"pricing": "Medium",
 	"imgurl": "assets/img/Cotswold Distillery 1.jpg",
-	"desc" : "blah"
+	"desc" : "Award-winning distillery, specialising in craft single malt whiskies, gins and liqueurs. Open 7 days a week, offering Tour & Tastings, and Cocktail Masterclasses."
 }]
