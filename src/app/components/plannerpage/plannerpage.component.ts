@@ -9,15 +9,6 @@ export interface PeriodicElement {
   time: string;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Card Here', weight: 1.0079, symbol: 'Card Here', time:'Breakfast'},
-  {position: 2, name: 'Card Here', weight: 4.0026, symbol: 'Card Here', time:'Morning'},
-  {position: 3, name: 'Card Here', weight: 6.941, symbol: 'Card Here', time:'Lunch'},
-  {position: 4, name: 'Card Here', weight: 9.0122, symbol: 'Card Here', time:'Afternoon'},
-  {position: 5, name: 'Card Here', weight: 10.811, symbol: 'Card Here', time:'Dinner'},
-  {position: 6, name: 'Card Here', weight: 12.0107, symbol: 'Card Here', time:'Where to stay'},
-];
-
 @Component({
   selector: 'app-plannerpage',
   templateUrl: './plannerpage.component.html',
@@ -25,9 +16,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 
 export class PlannerpageComponent implements OnInit {
-
-  displayedColumns: string[] = ['time', 'name', 'weight', 'symbol'];
-  dataSource = ELEMENT_DATA;
 
   constructor(public dialog: MatDialog) { }
 

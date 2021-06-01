@@ -9,10 +9,12 @@
                 <mat-icon>close</mat-icon>
             </button>
         </mat-form-field>
+        <br>
         <a mat-raised-button><mat-icon>location_on</mat-icon></a>
         <br>
+        <br>
         <h5>Distance (miles)</h5>
-        <mat-slider
+        &nbsp;<mat-slider
                 thumbLabel
                 [displayWith]="formatLabel"
                 tickInterval="1"
@@ -21,69 +23,34 @@
         </mat-slider>
         <br>
         <br>
-        <h3>Price</h3>
-        <mat-expansion-panel (opened)="panelOpenState = true"
-                       (closed)="panelOpenState = false">
-        <mat-expansion-panel-header>
-        <mat-panel-title>
-        Open for price filters
-        </mat-panel-title>
-        <mat-panel-description>
-        {{panelOpenState ? 'open' : 'closed'}}
-        </mat-panel-description>
-        </mat-expansion-panel-header>
-        <mat-radio-group aria-label="Select an option">
-            <mat-radio-button value="1">£0-£60</mat-radio-button>
-            <mat-radio-button value="2">£60-£80</mat-radio-button>
-        </mat-radio-group>
+        <h5>Price</h5>
+        &nbsp;<mat-checkbox value="1">£0 - £60</mat-checkbox><br>
+        &nbsp;<mat-checkbox value="1">£60 - £80</mat-checkbox><br>
+        &nbsp;<mat-checkbox value="1">£80 - £100</mat-checkbox><br>
+        &nbsp;<mat-checkbox value="1">£100 - £120</mat-checkbox><br>
+        &nbsp;<mat-checkbox value="1">£120 +</mat-checkbox>
+    
         <br>
         <br>
-        <mat-radio-group aria-label="Select an option">
-            <mat-radio-button value="1">£80-£100</mat-radio-button>
-            <mat-radio-button value="2">£100-£120</mat-radio-button>
-        </mat-radio-group>
+
+        <h5>Select features</h5>
+        &nbsp;<mat-checkbox value="1">Health & Fitness</mat-checkbox><br>
+        &nbsp;<mat-checkbox value="1">Beauty & Spa</mat-checkbox><br>
+        &nbsp;<mat-checkbox value="1">Personal Services</mat-checkbox><br>
+        &nbsp;<mat-checkbox value="1">Things to do</mat-checkbox><br>
+        &nbsp;<mat-checkbox value="1">Food & Drink</mat-checkbox><br>
+        &nbsp;<mat-checkbox value="1">Retail</mat-checkbox><br>
+        &nbsp;<mat-checkbox value="1">Health & Fitness</mat-checkbox><br>
+        &nbsp;<mat-checkbox value="1">Sale</mat-checkbox><br>
+        
+        <h5>Special Requirements</h5>
+        <mat-slide-toggle>&nbsp;<mat-icon>accessible_forward</mat-icon></mat-slide-toggle>
         <br>
         <br>
-        <mat-radio-group aria-label="Select an option">
-            <mat-radio-button value="1">£120-£140</mat-radio-button>
-            <mat-radio-button value="2">£140 +</mat-radio-button>
-        </mat-radio-group>
-        </mat-expansion-panel>
+        <mat-slide-toggle>&nbsp;<mat-icon>disabled_visible</mat-icon></mat-slide-toggle>
         <br>
         <br>
-        <h3>Select a feature</h3>
-        <mat-radio-group aria-label="Select an option">
-            <mat-radio-button value="1">Health & Fitness</mat-radio-button>
-            <mat-radio-button value="2">Beauty & Spa</mat-radio-button>
-        </mat-radio-group>
-        <br>
-        <br>
-        <mat-radio-group aria-label="Select an option">
-            <mat-radio-button value="1">Personal Services</mat-radio-button>
-            <mat-radio-button value="2">Things to do</mat-radio-button>
-        </mat-radio-group>
-        <br>
-        <br>
-        <mat-radio-group aria-label="Select an option">
-            <mat-radio-button value="1">Automotive</mat-radio-button>
-            <mat-radio-button value="2">Retail</mat-radio-button>
-        </mat-radio-group>
-        <br>
-        <br>
-        <mat-radio-group aria-label="Select an option">
-            <mat-radio-button value="1">Food & Drink</mat-radio-button>
-            <mat-radio-button value="2">Sale</mat-radio-button>
-        </mat-radio-group>
-        <br>
-        <br>
-        <h3>Special Requirements</h3>
-        <mat-slide-toggle>Disability Friendly</mat-slide-toggle>
-        <br>
-        <br>
-        <mat-slide-toggle>Caters for visual difficulties</mat-slide-toggle>
-        <br>
-        <br>
-        <mat-slide-toggle>Caters for hearing or speaking difficulties</mat-slide-toggle>
+        <mat-slide-toggle>&nbsp;<mat-icon>hearing_disabled</mat-icon></mat-slide-toggle>
         <br>
     </mat-drawer>
 

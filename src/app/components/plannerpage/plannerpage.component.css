@@ -22,3 +22,20 @@ mat-card {
 table {
   width: 100%;
 }
+
+.tableContainer{
+  padding: 10px;
+}
+
+.tableCard{
+  padding: 10px;
+}
+
+.chipContainer{
+  padding: 10px;
+}
+
+.tableDate{
+  text-align: center;
+  padding: 10px;
+}
