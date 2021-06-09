@@ -1,9 +1,32 @@
 <mat-card class="tablecard">
+
     <img mat-card-image src="assets/img/The Priory Inn 1.jpg" alt="Photo of a test">
+
     <mat-card-content>
+
         <p>
             Great meeting place for cyclists.
         </p>
-        <button mat-mini-fab color="accent"><mat-icon>event</mat-icon></button>
+        <div class="line"></div>
+        <mat-grid-list cols="3" rowHieght="10px">
+
+            <mat-grid-tile class="cardIcon">
+                <mat-icon>pedal_bike</mat-icon>
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+                <mat-icon color="primary">restaurant</mat-icon>
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+                <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+                    <mat-icon color="accent">book</mat-icon>
+                </button>
+            </mat-grid-tile>
+
+        </mat-grid-list>
+        
+        
     </mat-card-content>
+
 </mat-card>
