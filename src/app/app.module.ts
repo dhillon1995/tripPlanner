@@ -47,6 +47,7 @@ import { AdmimportalpageComponent } from './components/admimportalpage/admimport
 import { FindvenuepagetwoComponent } from './components/findvenuepagetwo/findvenuepagetwo.component';
 import { PlannerpageComponent } from './components/plannerpage/plannerpage.component';
 import { PlannercardComponent } from './components/plannercard/plannercard.component';
+import { TestComponentComponent } from './components/test-component/test-component.component';
 
 
 const routes: Routes = [
@@ -75,6 +76,7 @@ const routes: Routes = [
     FindvenuepagetwoComponent,
     PlannerpageComponent,
     PlannercardComponent,
+    TestComponentComponent,
   ],
   imports: [
     BrowserModule,
