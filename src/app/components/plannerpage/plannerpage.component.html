@@ -1,22 +1,12 @@
 
+
+
 <div class="cardContainer">
-
-  <mat-card>
+  
     <mat-grid-list cols="2" rowHeight="70px">
-
+      
       <mat-grid-tile>
-        <mat-form-field appearance="fill">
-          <mat-label>Enter a date range</mat-label>
-          <mat-date-range-input [rangePicker]="picker">
-            <input matStartDate placeholder="Start date">
-            <input matEndDate placeholder="End date">
-          </mat-date-range-input>
-          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-          <mat-date-range-picker #picker></mat-date-range-picker>
-        </mat-form-field>
-      </mat-grid-tile>
-
-      <mat-grid-tile>
+      
         <form class="example-form">
           <mat-form-field class="example-full-width">
             <mat-label>Search</mat-label>
@@ -24,18 +14,46 @@
           </mat-form-field>
         </form>
       </mat-grid-tile>
+    
+      <mat-grid-tile>
+        <mat-form-field appearance="fill" class="example-form-field">
+          <mat-label>Choose a date</mat-label>
+          <input matInput [matDatepicker]="datepicker">
+          <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+          <mat-datepicker #datepicker>
+            <mat-datepicker-actions>
+              <button mat-button matDatepickerCancel>Cancel</button>
+              <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+            </mat-datepicker-actions>
+          </mat-datepicker>
+        </mat-form-field>
+        &nbsp;&nbsp;
+        <mat-form-field appearance="fill" class="example-form-field">
+          <mat-label>Enter a date range</mat-label>
+          <mat-date-range-input [rangePicker]="rangePicker">
+            <input matStartDate placeholder="Start date">
+            <input matEndDate placeholder="End date">
+          </mat-date-range-input>
+          <mat-datepicker-toggle matSuffix [for]="rangePicker"></mat-datepicker-toggle>
+          <mat-date-range-picker #rangePicker>
+            <mat-date-range-picker-actions>
+              <button mat-button matDateRangePickerCancel>Cancel</button>
+              <button mat-raised-button color="primary" matDateRangePickerApply>Apply</button>
+            </mat-date-range-picker-actions>
+          </mat-date-range-picker>
+        </mat-form-field>
+      </mat-grid-tile>
 
     </mat-grid-list>
-  </mat-card>
-
+  
 </div>
 
-<mat-grid-list cols="4" rowHeight="80px">
 
-
+<div class="optionRowContainer">
+<mat-grid-list cols="6" rowHeight="50px">
   <mat-grid-tile>
 
-    <button mat-button [matMenuTriggerFor]="category">Select Category</button>
+    <button mat-button [matMenuTriggerFor]="category">Select Type</button>
       <mat-menu #category="matMenu">
         <button mat-menu-item>Cafe</button>
         <button mat-menu-item>Hotel</button>
@@ -57,192 +75,313 @@
   </mat-grid-tile>
 
   <mat-grid-tile>
-    <button mat-button (click)="openDialog()">Select option</button>
+    <button mat-button [matMenuTriggerFor]="features">Features</button>
+    <mat-menu #features="matMenu">
+      <button mat-menu-item>Information</button>
+      <button mat-menu-item>Hotels & Travel</button>
+      <button mat-menu-item>Things to do</button>
+      <button mat-menu-item>Health and Wellbeing</button>
+      <button mat-menu-item>Food & Drink</button>
+      <button mat-menu-item>Reatil</button>
+      <button mat-menu-item>Exhibitions & Shows</button>
+  </mat-menu>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-button [matMenuTriggerFor]="Accessibility">Accessibility</button>
+    <mat-menu #Accessibility="matMenu">
+      <button mat-menu-item><mat-icon>accessible_forward</mat-icon></button>
+      <button mat-menu-item><mat-icon>disabled_visible</mat-icon></button>
+      <button mat-menu-item><mat-icon>hearing_disabled</mat-icon></button>
+  </mat-menu>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button mat-button [matMenuTriggerFor]="Ranges">Price Ranges</button>
+    <mat-menu #Ranges="matMenu">
+      <button mat-menu-item>£0-40</button>
+      <button mat-menu-item>£40-60</button>
+      <button mat-menu-item>£60-80</button>
+      <button mat-menu-item>£80-100</button>
+      <button mat-menu-item>£100+</button>
+  </mat-menu>
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <button mat-button (click)="openDialog()">Misc Options</button>
   </mat-grid-tile>
 
 </mat-grid-list>
+</div>
 
-<mat-card>
-  <mat-chip-list aria-label="Fish selection">
-    <mat-chip>Cafe</mat-chip>
-    <mat-chip>Morning</mat-chip>
-    <mat-chip color="primary" selected>Disability Firendly</mat-chip>
-    <mat-chip color="accent" selected>10km Radius</mat-chip>
-  </mat-chip-list>
-</mat-card>
-
-<mat-grid-list cols="8" rowHeight="100px">
-  <mat-grid-tile>
-    <mat-card>
-      Time of day
-    </mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <mat-card>
-      Monday
-    </mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <mat-card>
-      Teusday
-    </mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <mat-card>
-      Wednesday
-    </mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <mat-card>
-      Thursday
-    </mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <mat-card>
-      Friday
-    </mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <mat-card>
-      Saturday
-    </mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <mat-card>
-      Sunday
-    </mat-card>
-  </mat-grid-tile>
-</mat-grid-list>
-
-<mat-grid-list cols="8" rowHeight="200px" gutterSize="6px">
-
-  <mat-grid-tile>
-    Morning
-  </mat-grid-tile>
-
-  <mat-grid-tile>
-    <mat-card class="tablecard">
-      <img mat-card-image src="assets/img/Cotswold Distillery 3.jpg" alt="Photo of a test">
-      <mat-card-content>
-        <p>
-          Test Data
-        </p>
-        <button mat-raised-button color="accent">Book Now</button>
-      </mat-card-content>
-    </mat-card>
-    </mat-grid-tile>
-
-  <mat-grid-tile>
-  <mat-card class="tablecard">
-    <img mat-card-image src="assets/img/Cotswold Distillery 3.jpg" alt="Photo of a test">
-    <mat-card-content>
-      <p>
-        Test Data
-      </p>
-      <button mat-raised-button color="accent">Book Now</button>
-    </mat-card-content>
-  </mat-card>
-  </mat-grid-tile>
-
-  <mat-grid-tile>
-    <mat-card class="tablecard">
-      <img mat-card-image src="assets/img/Cotswold Distillery 3.jpg" alt="Photo of a test">
-      <mat-card-content>
-        <p>
-          Test Data
-        </p>
-        <button mat-raised-button color="accent">Book Now</button>
-      </mat-card-content>
-    </mat-card>
-    </mat-grid-tile>
-
-    <mat-grid-tile>
-      <mat-card class="tablecard">
-        <img mat-card-image src="assets/img/Cotswold Distillery 3.jpg" alt="Photo of a test">
-        <mat-card-content>
-          <p>
-            Test Data
-          </p>
-          <button mat-raised-button color="accent"><mat-icon>event</mat-icon>></button>
-        </mat-card-content>
+    <div class="chipContainer">
+      <mat-card class="chipCard">
+        <div class="chipCardContent">
+          <mat-chip-list aria-label="exampeChips">
+            <mat-chip>Cafe</mat-chip>
+            <mat-chip>Morning</mat-chip>
+            <mat-chip color="primary" selected>Disability Firendly</mat-chip>
+            <mat-chip color="accent" selected>10km Radius</mat-chip>
+            <mat-chip>£40-£60</mat-chip>
+            <mat-chip>Things to do</mat-chip>
+            <button class="chipButton" mat-button>Refresh Schedule&nbsp;<mat-icon>restart_alt</mat-icon></button>
+          </mat-chip-list>
+        </div>
       </mat-card>
+    </div>
+
+
+
+<div class="tableContainer">
+    
+    <div class="topRow">
+    <mat-grid-list cols="7" rowHeight="50px">
+ 
+
+      <mat-grid-tile class="dayTile">
+        <mat-card class="dayCards">
+          <div class="tilediv">
+            <h6 class="dayText">Monday</h6>
+          </div>
+        </mat-card>
       </mat-grid-tile>
 
-</mat-grid-list>
-
-<mat-grid-list cols="8" rowHeight="200px" gutterSize="6px">
-
-  <mat-grid-tile>
-    Breakfast
-  </mat-grid-tile>
-
-  <mat-grid-tile>
-    <mat-card class="tablecard">
-      <img mat-card-image src="assets/img/Cotswold Distillery 3.jpg" alt="Photo of a test">
-      <mat-card-content>
-        <p>
-          Test Card Data
-        </p>
-        <button mat-raised-button color="accent">Book Now</button>
-      </mat-card-content>
-    </mat-card>
-    </mat-grid-tile>
-
-  <mat-grid-tile>
-    <mat-card class="tablecard">
-      <img mat-card-image src="assets/img/Cotswold Distillery 3.jpg" alt="Photo of a test">
-      <mat-card-content>
-        <p>
-          Test Data
-        </p>
-        <button mat-raised-button color="accent">Book Now</button>
-      </mat-card-content>
-    </mat-card>
-    </mat-grid-tile>
-
-    <mat-grid-tile>
-      <mat-card class="tablecard">
-        <img mat-card-image src="assets/img/Cotswold Distillery 3.jpg" alt="Photo of a test">
-        <mat-card-content>
-          <p>
-            Test Data
-          </p>
-          <button mat-raised-button color="accent"><mat-icon>event</mat-icon>></button>
-        </mat-card-content>
-      </mat-card>
+      <mat-grid-tile class="dayTile">
+        <mat-card class="dayCards">
+          <div class="tilediv">
+          <h6>Teusday</h6>
+          </div>
+        </mat-card>
       </mat-grid-tile>
 
-</mat-grid-list>
+      <mat-grid-tile class="dayTile">
+        <mat-card class="dayCards">
+          <div class="tilediv">
+          <h6>Wednesday</h6>
+          </div>
+        </mat-card>
+      </mat-grid-tile>
 
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <mat-grid-tile class="dayTile">
+        <mat-card class="dayCards">
+          <div class="tilediv">
+          <h6>Thursday</h6>
+          </div>
+        </mat-card>
+      </mat-grid-tile>
 
-  <!--- Note that these columns can be defined in any order.
-        The actual rendered columns are set as a property on the row definition" -->
+      <mat-grid-tile class="dayTile">
+        <mat-card class="dayCards">
+          <div class="tilediv">
+          <h6>Friday</h6>
+          </div>
+        </mat-card>
+      </mat-grid-tile>
 
-  <!-- Position Column -->
-  <ng-container matColumnDef="time">
-    <th mat-header-cell *matHeaderCellDef> Time </th>
-    <td mat-cell *matCellDef="let element"> {{element.time}} </td>
-  </ng-container>
+      <mat-grid-tile class="dayTile">
+        <mat-card class="dayCards">
+          <div class="tilediv">
+          <h6>Saturday</h6>
+          </div>
+        </mat-card>
+      </mat-grid-tile>
 
-  <!-- Name Column -->
-  <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef> Monday </th>
-    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-  </ng-container>
+      <mat-grid-tile class="dayTile">
+        <mat-card class="dayCards">
+          <div class="tilediv">
+          <h6>Sunday</h6>
+          </div>
+        </mat-card>
+      </mat-grid-tile>
 
-  <!-- Weight Column -->
-  <ng-container matColumnDef="weight">
-    <th mat-header-cell *matHeaderCellDef> Tuesday </th>
-    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-  </ng-container>
+    </mat-grid-list>
+  </div>
 
-  <!-- Symbol Column -->
-  <ng-container matColumnDef="symbol">
-    <th mat-header-cell *matHeaderCellDef> Wednesday </th>
-    <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
-  </ng-container>
+  <div class="breakfastRow">
+    <mat-grid-list cols="7" rowHeight="26px" gutterSize="4px">
 
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-</table>
+      <mat-grid-tile colspan="7" rowspan="1">
+        Breakfast
+      </mat-grid-tile>
+
+      <mat-grid-tile rowspan="8">
+        <app-plannercard></app-plannercard>
+      </mat-grid-tile>
+  
+      <mat-grid-tile rowspan="8">
+        <app-plannercard></app-plannercard>
+      </mat-grid-tile>
+  
+      <mat-grid-tile rowspan="8">
+        <app-plannercard></app-plannercard>
+      </mat-grid-tile>
+  
+      <mat-grid-tile rowspan="8">
+        <app-plannercard></app-plannercard>
+      </mat-grid-tile>
+  
+      <mat-grid-tile rowspan="8">
+        <app-plannercard></app-plannercard>
+      </mat-grid-tile>
+  
+      <mat-grid-tile rowspan="8">
+        <app-plannercard></app-plannercard>
+      </mat-grid-tile>
+  
+      <mat-grid-tile rowspan="8">
+        <app-plannercard></app-plannercard>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+  </div>
+
+  <div class="morningRow">
+    <mat-grid-list cols="7" rowHeight="26px" gutterSize="4px">
+
+      <mat-grid-tile colspan="7" rowspan="1">
+        Morning
+      </mat-grid-tile>
+
+      <mat-grid-tile rowspan="8">
+        <app-plannercard></app-plannercard>
+      </mat-grid-tile>
+  
+      <mat-grid-tile rowspan="8">
+        <app-plannercard></app-plannercard>
+      </mat-grid-tile>
+  
+      <mat-grid-tile rowspan="8">
+        <app-plannercard></app-plannercard>
+      </mat-grid-tile>
+  
+      <mat-grid-tile rowspan="8">
+        <app-plannercard></app-plannercard>
+      </mat-grid-tile>
+  
+      <mat-grid-tile rowspan="8">
+        <app-plannercard></app-plannercard>
+      </mat-grid-tile>
+  
+      <mat-grid-tile rowspan="8">
+        <app-plannercard></app-plannercard>
+      </mat-grid-tile>
+  
+      <mat-grid-tile rowspan="8">
+        <app-plannercard></app-plannercard>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+  </div>
+
+  <mat-grid-list cols="7" rowHeight="26px" gutterSize="4px">
+
+    <mat-grid-tile colspan="7" rowspan="1">
+      Lunch
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+
+  <mat-grid-list cols="7" rowHeight="26px" gutterSize="4px">
+
+    <mat-grid-tile colspan="7" rowspan="1">
+      Afternoon
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+
+  <mat-grid-list cols="7" rowHeight="26px" gutterSize="4px">
+
+    <mat-grid-tile colspan="7" rowspan="1">
+      Dinner
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="8">
+      <app-plannercard></app-plannercard>
+    </mat-grid-tile>
+    
+
+  </mat-grid-list>
+
+
+
+</div>
+
+<app-test-component></app-test-component>

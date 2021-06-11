@@ -1,19 +1,24 @@
 <mat-card class="example-card">
+
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title><h6>{{JSONData.name}}</h6></mat-card-title>
       <mat-card-subtitle><div class="card-category">{{JSONData.type}}</div></mat-card-subtitle>
     </mat-card-header>
+
     <div class="cardimg">
       <img mat-card-image src="{{JSONData.imgurl}}" alt="Photo of a test">
     </div>
+
     <mat-card-content>
       <p>
         {{JSONData.desc}}
       </p>
     </mat-card-content>
+    
     <mat-card-actions>
       <button type="button" (click)="onViewDetails()" mat-button>View Details</button>
       <button mat-raised-button color="accent">Book Now</button>
     </mat-card-actions>
+
   </mat-card>

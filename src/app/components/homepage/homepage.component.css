@@ -9,7 +9,7 @@ mat-form-field {
 .picsum-img-wrapper img {
     width: 100%;
     object-fit: cover;
-    height: 450px;
+    height: 400px;
     object-position: 50% bottom;
 }
 
@@ -25,7 +25,7 @@ mat-form-field {
 
 .searchClass{
   position: relative;
-  top: -140px;
+  top: -220px;
 }
 
 .cardsSection{
