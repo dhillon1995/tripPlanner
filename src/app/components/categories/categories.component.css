@@ -15,6 +15,12 @@
     justify-content: center;
   }
 
-  mat-card-content {
-    text-transform: capitalize;
-  }
+mat-card-content {
+  text-transform: capitalize;
+}
+
+mat-card img {
+  object-fit: top;
+  height: 160px;
+  padding-top: 4px;
+}
