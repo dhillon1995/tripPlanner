@@ -15,6 +15,7 @@ export class VenueserviceService {
          "command": "get_feature",
          "classes":"F,G"
   })
+  
   .subscribe(
          (val) => {
                          this.parseFeatures(val);
