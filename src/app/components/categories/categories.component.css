@@ -14,10 +14,12 @@
     justify-content: center;
   }
 
+mat-card-content {
+  text-transform: capitalize;
+}
 
-  mat-card img {
-    object-fit: cover;
-    height: 160px;
-    width: 280px;
-    padding-top: 0;
-  }
+mat-card img {
+  object-fit: top;
+  height: 160px;
+  padding-top: 4px;
+}
