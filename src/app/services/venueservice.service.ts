@@ -13,8 +13,10 @@ export class VenueserviceService {
     this.http.post("http://cotswoldsdestinations.co.uk:8443",
   {
          "command": "get_feature",
-         "classes":"F,G"
+         "classes":"F,G,"
   })
+
+
   .subscribe(
          (val) => {
                          this.parseFeatures(val);
@@ -31,4 +33,3 @@ export class VenueserviceService {
   }
 
 }
-
