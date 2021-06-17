@@ -9,17 +9,19 @@ export class VenueserviceService {
   constructor(private http: HttpClient) { }
 
   httpGetFeatures() {
-
+    console.log("inFeatures")
     this.http.post("http://cotswoldsdestinations.co.uk:8443",
   {
          "command": "get_feature",
-         "classes":"F,G,"
+         "classes":"F,G"
   })
-
 
   .subscribe(
          (val) => {
-                         this.parseFeatures(val);
+        console.log("inSubscribe")
+        console.log(val)
+          return(val)
+          //this.parseFeatures(val)
          },
          response => {
          console.log("POST call in error", response);
@@ -28,8 +30,12 @@ export class VenueserviceService {
   });
   }
 
+
+
   parseFeatures (val: any) {
     console.log(val)
   }
+
+
 
 }

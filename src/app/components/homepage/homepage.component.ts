@@ -30,7 +30,6 @@ export class HomepageComponent implements OnInit {
 
   value = 'Clear me!';
 
-
   ngOnInit(): void {
     console.log("Homepage Start");
     console.log(this.categories);
@@ -41,6 +40,13 @@ export class HomepageComponent implements OnInit {
 	console.log(this.venues[i]);
     }
     console.log("Homepage End");
-    this.venueService.httpGetFeatures()
+    let categories = this.venueService.httpGetFeatures()
+
+    console.log(categories)
+
   }
 }
+
+ // myfunction = as getFeatures() {
+  let categories = this.venueService.httpGetFeatures()
+// }
