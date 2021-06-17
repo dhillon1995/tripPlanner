@@ -47,6 +47,9 @@ export class HomepageComponent implements OnInit {
   }
 }
 
- // myfunction = as getFeatures() {
-  let categories = this.venueService.httpGetFeatures()
-// }
+
+
+const getData =  async () => {
+  const data  = await this.venueService.httpGetFeatures()
+  console.log(data)
+}

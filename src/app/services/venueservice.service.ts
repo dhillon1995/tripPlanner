@@ -33,6 +33,7 @@ export class VenueserviceService {
 
 
   parseFeatures (val: any) {
+    console.log("in parse Features")
     console.log(val)
   }
 
