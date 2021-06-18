@@ -12,6 +12,7 @@
 .categories-button {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
   }
 
 mat-card-content {
@@ -21,5 +22,6 @@ mat-card-content {
 mat-card img {
   object-fit: top;
   height: 160px;
+  width: 260px;
   padding-top: 4px;
 }

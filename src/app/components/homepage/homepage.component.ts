@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import * as data from "./testfile.json";
 import * as catdata from "../categories/cattestfile.json";
-import {VenueserviceService} from "../../services/venueservice.service"
+import {VenueserviceService} from "../../services/venueservice.service";
+import { HttpClient } from "@angular/common/http";
 
 
 @Component({
@@ -11,7 +12,16 @@ import {VenueserviceService} from "../../services/venueservice.service"
 })
 export class HomepageComponent implements OnInit {
 
-  constructor(private venueService: VenueserviceService) { }
+  //constructor(private venueService: VenueserviceService) { }
+
+  url = "http://cotswoldsdestinations.co.uk:8443"
+
+  constructor(private http: HttpClient) { 
+    this.http.get(this.url).toPromise().then(data => {
+      console.log(data);
+    });
+  }
+
 
   panelOpenState = false;
   title = 'Cotswolds Destinations';
@@ -40,9 +50,9 @@ export class HomepageComponent implements OnInit {
 	console.log(this.venues[i]);
     }
     console.log("Homepage End");
-    let categories = this.venueService.httpGetFeatures()
+    //let categories = this.venueService.httpGetFeatures()
 
-    console.log(categories)
+    //console.log(categories)
 
   }
 }
