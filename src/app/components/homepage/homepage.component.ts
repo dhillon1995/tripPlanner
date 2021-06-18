@@ -48,8 +48,19 @@ export class HomepageComponent implements OnInit {
 }
 
 
-
+/**
 const getData =  async () => {
   const data  = await this.venueService.httpGetFeatures()
   console.log(data)
 }
+ */
+
+/**
+ * 
+ fetchedData:any;
+const getData =  async () => {
+  this.venueService.httpGetFeatures()
+    .subscribe( data => { this.fetchedData = data });
+}
+
+ */

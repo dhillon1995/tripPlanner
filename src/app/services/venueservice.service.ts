@@ -16,7 +16,7 @@ export class VenueserviceService {
          "classes":"F,G"
   })
 
-  .subscribe(
+.subscribe(
          (val) => {
         console.log("inSubscribe")
         console.log(val)
