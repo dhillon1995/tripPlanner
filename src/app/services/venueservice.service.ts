@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
+
 export class VenueserviceService {
 
   constructor(private http: HttpClient) { }
@@ -15,6 +16,7 @@ export class VenueserviceService {
          "command": "get_feature",
          "classes":"F,G"
   })
+
 
 .subscribe(
          (val) => {
@@ -31,12 +33,9 @@ export class VenueserviceService {
   }
 
 
-
   parseFeatures (val: any) {
     console.log("in parse Features")
     console.log(val)
   }
-
-
 
 }

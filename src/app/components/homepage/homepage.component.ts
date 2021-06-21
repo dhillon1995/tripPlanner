@@ -14,14 +14,34 @@ export class HomepageComponent implements OnInit {
 
   //constructor(private venueService: VenueserviceService) { }
 
+  
+
+ // constructor(private http: HttpClient) { 
+ //   this.http.get(this.url).toPromise().then(data => {
+ //     console.log(data);
+ //   });
+ // }
+
+  postData = {
+    command: 'get_feature',
+    classes: 'F,G',
+  }
+  
   url = "http://cotswoldsdestinations.co.uk:8443"
 
-  constructor(private http: HttpClient) { 
-    this.http.get(this.url).toPromise().then(data => {
-      console.log(data);
+  json;
+
+  constructor(private http: HttpClient) {
+    this.http.post<any>(this.url, this.postData).toPromise().then((data) => {
+      console.log("post request in progress")
+      console.log("printing data array")
+      console.log(data)
+      this.json = data.json
+      console.log("printing json variable")
+      console.log(this.json)
+      console.log("post request finished")
     });
   }
-
 
   panelOpenState = false;
   title = 'Cotswolds Destinations';
