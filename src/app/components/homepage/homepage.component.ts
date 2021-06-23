@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import * as data from "./testfile.json";
 import * as catdata from "../categories/cattestfile.json";
+
 import {VenueserviceService} from "../../services/venueservice.service";
 import { HttpClient } from "@angular/common/http";
+import { ConstantPool } from '@angular/compiler';
 
 
 @Component({
@@ -10,8 +12,20 @@ import { HttpClient } from "@angular/common/http";
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.css']
 })
-export class HomepageComponent implements OnInit {
 
+export class HomepageComponent implements OnInit {
+  
+
+/**
+  fetchedData:any;
+   getData =  async () => {
+    this.venueService.httpGetFeatures()
+      .subscribe( data => { this.fetchedData = data });
+      console.log("fetched data here")
+      console.log(this.fetchedData)
+      console.log("fetched data end")
+  }
+ */
   //constructor(private venueService: VenueserviceService) { }
 
   
@@ -27,6 +41,7 @@ export class HomepageComponent implements OnInit {
     classes: 'F,G',
   }
   
+/**
   url = "http://cotswoldsdestinations.co.uk:8443"
 
   json;
@@ -42,6 +57,7 @@ export class HomepageComponent implements OnInit {
       console.log("post request finished")
     });
   }
+ */
 
   panelOpenState = false;
   title = 'Cotswolds Destinations';
@@ -70,12 +86,15 @@ export class HomepageComponent implements OnInit {
 	console.log(this.venues[i]);
     }
     console.log("Homepage End");
-    //let categories = this.venueService.httpGetFeatures()
-
+    //let categories = this.venueService.httpGetFeatures2()
+    //console.log("get categories 2")
     //console.log(categories)
+    //this.getData()
 
   }
 }
+
+
 
 
 /**

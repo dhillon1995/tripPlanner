@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { HomepageComponent } from './components/homepage/homepage.component';
-import { VenueComponent } from './components/venue/venue.component';
 import { FindvenuepageComponent } from './components/findvenuepage/findvenuepage.component';
 import { VenuedetailspageComponent } from './components/venuedetailspage/venuedetailspage.component';
 import { AdmimportalpageComponent } from './components/admimportalpage/admimportalpage.component';

@@ -12,6 +12,15 @@ export class VenueserviceService {
   httpGetFeatures() {
     console.log("inFeatures")
     this.http.post("http://cotswoldsdestinations.co.uk:8443",
+    {
+        "command": "get_feature",
+        "classes":"F,G"
+    })
+  }
+
+  httpGetFeatures2() {
+    console.log("inFeatures")
+    this.http.post("http://cotswoldsdestinations.co.uk:8443",
   {
          "command": "get_feature",
          "classes":"F,G"
