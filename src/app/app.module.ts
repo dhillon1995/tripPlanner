@@ -34,20 +34,18 @@ import { InputComponent } from './components/input/input.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { AppRoutingModule } from './app-routing.module';
-import { VenueComponent } from './components/venue/venue.component';
 import { SearchComponent } from './components/search/search.component';
 import { CategoriesComponent } from './components/categories/categories.component';
-import { VenuedetailsComponent } from './components/venuedetails/venuedetails.component';
 import { FindvenuepageComponent } from './components/findvenuepage/findvenuepage.component';
 import { VenuedetailspageComponent } from './components/venuedetailspage/venuedetailspage.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { VenuesummarycardComponent } from './components/venuesummarycard/venuesummarycard.component';
 import { FoodcardsComponent } from './components/foodcards/foodcards.component';
 import { AdmimportalpageComponent } from './components/admimportalpage/admimportalpage.component';
 import { FindvenuepagetwoComponent } from './components/findvenuepagetwo/findvenuepagetwo.component';
 import { PlannerpageComponent } from './components/plannerpage/plannerpage.component';
 import { PlannercardComponent } from './components/plannercard/plannercard.component';
 import { TestComponentComponent } from './components/test-component/test-component.component';
+import { FeaturesComponent } from './components/features/features.component';
 
 
 const routes: Routes = [
@@ -64,19 +62,17 @@ const routes: Routes = [
     InputComponent,
     NavbarComponent,
     HomepageComponent,
-    VenueComponent,
     SearchComponent,
     CategoriesComponent,
-    VenuedetailsComponent,
     FindvenuepageComponent,
     VenuedetailspageComponent,
-    VenuesummarycardComponent,
     FoodcardsComponent,
     AdmimportalpageComponent,
     FindvenuepagetwoComponent,
     PlannerpageComponent,
     PlannercardComponent,
     TestComponentComponent,
+    FeaturesComponent,
   ],
   imports: [
     BrowserModule,

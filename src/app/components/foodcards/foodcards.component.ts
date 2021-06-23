@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import * as data from "../venuedetails/testdata.json";
 
 @Component({
   selector: 'app-foodcards',

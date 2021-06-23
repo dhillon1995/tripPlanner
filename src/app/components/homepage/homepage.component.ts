@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as data from "./testfile.json";
 import * as catdata from "../categories/cattestfile.json";
+
 import {VenueserviceService} from "../../services/venueservice.service";
 import { HttpClient } from "@angular/common/http";
 import { ConstantPool } from '@angular/compiler';
@@ -11,18 +12,20 @@ import { ConstantPool } from '@angular/compiler';
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.css']
 })
+
 export class HomepageComponent implements OnInit {
+  
 
-  constructor(private venueService: VenueserviceService) {}
-
+/**
   fetchedData:any;
    getData =  async () => {
     this.venueService.httpGetFeatures()
       .subscribe( data => { this.fetchedData = data });
       console.log("fetched data here")
       console.log(this.fetchedData)
+      console.log("fetched data end")
   }
-
+ */
   //constructor(private venueService: VenueserviceService) { }
 /**
   url = "http://cotswoldsdestinations.co.uk:8443"
@@ -61,12 +64,15 @@ export class HomepageComponent implements OnInit {
 	console.log(this.venues[i]);
     }
     console.log("Homepage End");
-    let categories = this.venueService.httpGetFeatures2()
-    console.log("get categories 2")
-    console.log(categories)
+    //let categories = this.venueService.httpGetFeatures2()
+    //console.log("get categories 2")
+    //console.log(categories)
+    //this.getData()
 
   }
 }
+
+
 
 
 /**

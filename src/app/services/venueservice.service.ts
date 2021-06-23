@@ -10,7 +10,7 @@ export class VenueserviceService {
 
   httpGetFeatures() {
     console.log("inFeatures")
-    return this.http.post("http://cotswoldsdestinations.co.uk:8443",
+    this.http.post("http://cotswoldsdestinations.co.uk:8443",
     {
         "command": "get_feature",
         "classes":"F,G"
