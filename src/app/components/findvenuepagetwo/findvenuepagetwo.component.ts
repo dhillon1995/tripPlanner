@@ -50,7 +50,7 @@ export class FindvenuepagetwoComponent implements OnInit {
       Object.entries(data).forEach(venue => {
           console.log(venue[1][1]);
           //let venueData = (name: "", descriptin: "");
-          var venueData = {"name": venue[1][1], "locale": venue[1][2], "availability": venue[1][3], "type": "Hardcoded", "pricing": "hard coded", "imgurl": "assets/img/Prison 1.jpg", "desc": "hardcoded"};
+          var venueData = {"name": venue[1][1], "locale": venue[1][2], "availability": venue[1][4], "type": venue[1][3], "pricing": venue[1][5], "imgurl": "assets/img/Prison 1.jpg", "desc": venue[1][6]};
 
           this.venues2.push(venueData);
   
@@ -75,7 +75,6 @@ export class FindvenuepagetwoComponent implements OnInit {
     console.log("FindVenue Start");
     console.log(this.venues);
     console.log(data);
-    console.log(this.venues.name);
     for(var i=0; i < this.venues.length; i++){
 	console.log(this.venues[i]);
     }
