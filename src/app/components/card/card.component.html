@@ -3,7 +3,7 @@
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title><h6>{{JSONData.name}}</h6></mat-card-title>
-      <mat-card-subtitle><div class="card-category">{{JSONData.type}}</div></mat-card-subtitle>
+      <mat-card-subtitle><div class="card-category">{{JSONData.locale}}</div></mat-card-subtitle>
     </mat-card-header>
 
     <div class="cardimg">
@@ -12,7 +12,8 @@
 
     <mat-card-content>
       <p>
-        {{JSONData.desc}}
+        {{JSONData.desc}}<br>
+        Availibility = {{JSONData.availability}}
       </p>
     </mat-card-content>
     <div class="actions">
