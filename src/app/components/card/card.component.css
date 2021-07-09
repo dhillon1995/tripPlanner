@@ -1,8 +1,8 @@
 .example-card {
   max-width: 300px;
   min-width: 300px;
-  min-height: 480px;
-  max-height: 480px;
+  min-height: 440px;
+  max-height: 460px;
 }
 
 .example-header-image {
@@ -22,7 +22,7 @@ mat-card img {
 }
 
 .actions {
-  position: absoloute;
-  top: 0px;
-  background-color: aqua;
+  position: absolute;
+  bottom: 6px;
+  align-items: center;
 }

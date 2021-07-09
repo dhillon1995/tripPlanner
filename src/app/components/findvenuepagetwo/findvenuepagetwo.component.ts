@@ -28,7 +28,7 @@ export class FindvenuepagetwoComponent implements OnInit {
   });
 
   postData = {
-    command: 'get_venue',
+    command: 'get_foodVenues',
   }
   
   url = "http://cotswoldsdestinations.co.uk:8443"
@@ -50,7 +50,7 @@ export class FindvenuepagetwoComponent implements OnInit {
       Object.entries(data).forEach(venue => {
           console.log(venue[1][1]);
           //let venueData = (name: "", descriptin: "");
-          var venueData = {"name": venue[1][1], "locale": venue[1][2], "availability": venue[1][4], "type": venue[1][3], "pricing": venue[1][5], "imgurl": "assets/img/Prison 1.jpg", "desc": venue[1][6]};
+          var venueData = {"name": venue[1][1], "locale": venue[1][2], "availability": venue[1][4], "type": venue[1][3], "pricing": venue[1][5], "imgurl": venue[1][7], "desc": venue[1][6]};
 
           this.venues2.push(venueData);
   
@@ -62,11 +62,8 @@ export class FindvenuepagetwoComponent implements OnInit {
 
       console.log(this.venues2)
       //this.venues2 = data
-      
-
-
     });
-   }
+  } //constructor end
 
  
    //venues: any = (data as any).default;

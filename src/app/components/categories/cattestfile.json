@@ -1,26 +1,33 @@
 [{
 	"category": "Information",
-    "imgurl": "assets/img/Information.jpg"
+    "imgurl": "assets/img/Information.jpg",
+    "routerLink": "information"
 },{
 	"category": "Hotels & Travel",
-    "imgurl": "assets/img/hotel.jpg"
+    "imgurl": "assets/img/hotel.jpg",
+    "routerLink": "hotels"
 },{
 	"category": "Things to do",
-    "imgurl": "assets/img/Things to do.jpg"
+    "imgurl": "assets/img/Things to do.jpg",
+    "routerLink": "things"
 },{
-	"category": "Health & Wellbieng",
-    "imgurl": "assets/img/Health and Wellbeing.jpg"
+	"category": "Health & Wellbeing",
+    "imgurl": "assets/img/Health and Wellbeing.jpg",
+    "routerLink": "health"
 },{
 	"category": "Food & Drink",
     "imgurl": "assets/img/food and drink.jpg",
     "routerLink": "category"
 },{
 	"category": "Cinema & Theatre",
-    "imgurl": "assets/img/Cinema and Theatre.jpg"
+    "imgurl": "assets/img/Cinema and Theatre.jpg",
+    "routerLink": "cinema"
 },{
 	"category": "Retail",
-    "imgurl": "assets/img/Retail.jpg"
+    "imgurl": "assets/img/Retail.jpg",
+    "routerLink": "retail"
 },{
 	"category": "Exhibitions & Shows",
-    "imgurl": "assets/img/Exhibition and shows.jpg"
+    "imgurl": "assets/img/Exhibition and shows.jpg",
+    "routerLink": "exhibitions"
 }]

@@ -1,0 +1,160 @@
+
+.detailscard{
+    padding: 30px;
+}
+
+.recomended{
+    padding: 18px;
+}
+
+mat-tab{
+    padding: 10px;
+    background-color: blue;
+}
+
+.maincard{
+    max-width: auto;
+    padding: 10px;
+}
+
+.titletext{
+    position: absolute;
+    left: 5px;
+}
+
+.overviewheading{
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    font: bold;
+}
+
+.overviewtext{
+    padding: 6px;
+}
+
+.itemdesc{
+    position: absolute;
+    left: 5px;
+    padding-right: 40px;
+}
+
+.reviewlink{
+    position: absolute;
+    left: 170px;
+    top: 4px;
+}
+
+.icon{
+    position: absolute;
+    left: 10px;
+}
+
+.openinghours{
+    position: absolute;
+    left: 40px;
+    top: 5px;
+}
+
+.times{
+    position: absolute;
+    left: 150px;
+    top: 4px;
+}
+
+.hours{
+    position: absolute;
+    left: 180px;
+    top: 4px;
+}
+
+.address{
+    position: absolute;
+    left: 110px;
+    top: -3px;
+}
+
+.bookingbutton{
+    position: absolute;
+    right: 40px;
+}
+
+.picsum-img-wrapper img {
+    width: 100%;
+    object-fit: fill;
+    height: 450px;
+    object-position: 50% bottom;
+}
+
+.mapclass {
+    object-fit: scale-down;
+    height: 320px;
+    padding: 20px;
+}
+
+.mapimage{
+    padding-top: 100px;
+}
+
+.infotab{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.infoitems{
+    max-height: 50px;
+}
+
+.findus{
+    padding: 10px;
+}
+
+.reviewcards{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.example-card {
+    max-width: 280px;
+    min-width: 280px;
+    min-height: 450px;
+    max-height: 450px;
+
+  }
+
+.cardimage {
+    width: 85%;
+  }
+  
+.example-header-image-cd {
+  background-image: url('src\assets\img\Cotswold Distillery 4.jpg');
+  background-size: cover;
+}
+
+.example-header-image-cw {
+    background-image: url('src\assets\img\Cotswold Wildlife Park 5.jpg');
+    background-size: cover;
+  }
+
+.example-header-image-jc {
+    background-image: url('src\assets\img\Jacks Cafe 5.JPG');
+    background-size: cover;
+  }
+
+.example-header-image-wc {
+    background-image: url('src\assets\img\Waterside Cafe 1.JPG');
+    background-size: cover;
+  }
+
+.card-category {
+  text-transform: capitalize;
+
+}
+.mat-badge-content {
+    font-family: 'Material Icons';
+}
+
+.notifications{
+    max-height: 80px;
+    border-radius: 10px;
+}

@@ -1,0 +1,338 @@
+<div class="detailscard">
+    <mat-card class="maincard" class="">
+        
+        <mat-grid-list cols="3" rowHeight="40px">
+    
+            <mat-grid-tile colspan="1" rowspan="1">
+    
+            </mat-grid-tile>
+    
+            <mat-grid-tile colspan="2" rowspan="11">
+                <ngb-carousel>
+                    <ng-template ngbSlide>
+                      <div class="picsum-img-wrapper">
+                        <img src="assets/img/Images/Jacks Cafe/Jacks Cafe 1.jpg" alt="Random first slide">
+                      </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                      <div class="picsum-img-wrapper">
+                        <img src="assets/img/Images/Jacks Cafe/Jacks Cafe 2.jpg" alt="Random second slide">
+                      </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                      <div class="picsum-img-wrapper">
+                        <img src="assets/img/Images/Jacks Cafe/Jacks Cafe 3.jpg" alt="Random third slide">
+                      </div>
+                    </ng-template>
+                  </ngb-carousel>
+            </mat-grid-tile>
+    
+            <mat-grid-tile class="title" colspan="1" rowspan="2">
+                <div class="titletext">
+                    <h1>{{ venues[3].name }}</h1>
+                </div>
+            </mat-grid-tile>
+    
+            <mat-grid-tile colspan="1" rowspan="1">
+                <div class="titletext">
+                    <mat-icon color="accent">star</mat-icon>
+                    <mat-icon color="accent">star</mat-icon>
+                    <mat-icon color="accent">star</mat-icon>
+                    <mat-icon color="accent">star</mat-icon>
+                    <mat-icon color="accent">star_half</mat-icon>
+                    &nbsp;&nbsp;
+                    <mat-icon color="primary"> rate_review</mat-icon>
+                </div>
+                <div class="reviewlink">
+                    47 Reviews
+                </div>
+            </mat-grid-tile>
+    
+            <mat-grid-tile colspan="1" rowspan="3">
+                <div class="overviewheading">
+                    <h6>Overview</h6>
+                </div>
+                <div class="itemdesc">
+                    <br>
+                    {{ venues[3].desc }}
+                </div>
+            </mat-grid-tile>
+    
+            <mat-grid-tile colspan="1" rowspan="1">
+                <div class="icon">
+                    <h6><mat-icon>access_time</mat-icon></h6>
+                </div>
+                <div class="openinghours">
+                    <h6>Opening Hours</h6>
+                </div>
+                <div class="times">
+                  {{ items[3].mon_to_fri }}
+                </div>
+            </mat-grid-tile>
+    
+            <mat-grid-tile colspan="1" rowspan="1">
+                <div class="icon">
+                    <mat-icon>timelapse</mat-icon>
+                </div>
+                <div class="openinghours">
+                    <h6>Suggested Duration</h6>
+                </div>
+                <div class="hours">
+                    48+ Hours
+                </div>
+            </mat-grid-tile>
+    
+            <mat-grid-tile colspan="1" rowspan="1">
+                <div class="icon">
+                        <mat-icon> location_on</mat-icon>
+                </div>
+                <div class="openinghours">
+                    <h6>Address</h6>
+                </div>
+                <div class="address">
+                  {{ addresses[3].name }} {{ addresses[3].address1 }},<br>{{ addresses[3].address2 }} {{ addresses[3].postcode }}
+                </div>
+            </mat-grid-tile>
+    
+            <mat-grid-tile colspan="1" rowspan="1">
+                <div class="icon">
+                    <mat-icon>launch</mat-icon>
+                </div>
+                <div class="openinghours">
+                    Suggest some Information
+                </div>
+            </mat-grid-tile>
+    
+            <mat-grid-tile colspan="1" rowspan="1">
+                <div class="bookingbutton">
+                    <a mat-raised-button color="accent">Book Now</a>
+                </div>
+            </mat-grid-tile>
+    
+        </mat-grid-list>
+    
+    </mat-card>
+    </div>
+    
+    <div class="recomended">
+        <mat-card class="">
+            <mat-tab-group>
+                <mat-tab label="Overview">
+                    <div class="overviewtext">
+                        <mat-card>
+                            <p>{{ venues[3].overview }}</p>
+                        </mat-card>
+                    </div>
+                </mat-tab>
+                <mat-tab label="Reviews">
+                        <div class="overviewtext">
+                            <mat-grid-list cols=2 rowHeight=180px>
+                                
+                                <mat-grid-tile>
+                                    <div class="reviewcards">
+                                        <mat-card class="mat-elevation-z2">
+                                            <mat-icon> rate_review</mat-icon><h6>Review left by Firstname Lastname</h6>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+                                        </mat-card>
+                                    </div>
+                                </mat-grid-tile>
+                                
+                                <mat-grid-tile>
+                                    <div class="reviewcards">
+                                        <mat-card class="mat-elevation-z2">
+                                            <mat-icon> rate_review</mat-icon><h6>Review left by Firstname Lastname</h6>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+                                        </mat-card>
+                                    </div>
+                                </mat-grid-tile>
+    
+                            </mat-grid-list>
+                            
+                        </div>
+                </mat-tab>
+                <mat-tab label="Find Waterside Cafe">
+                    <div class="findus">
+                        <mat-card>
+                    <mat-grid-list cols=2 rowHeight=50px>
+                        
+                            <mat-grid-tile rowspan=1>
+                                This venue has private parking, but does not have local pulic transit routes. There are local coach and taxi services in the area. Find more of the venue amenities below:
+                            </mat-grid-tile>
+    
+                            <mat-grid-tile rowspan=4>
+    
+                                <div class="mapimage">
+                                    <img class="mapclass" src="assets/img/map.PNG" alt="map placeholer">
+                                </div>
+    
+                            </mat-grid-tile>
+    
+                            <mat-grid-tile rowspan=1>
+    
+                                <mat-icon>accessible_forward</mat-icon>Disability Friendly
+    
+                            </mat-grid-tile>
+                            <mat-grid-tile rowspan=1>
+    
+                                <mat-icon>visibility</mat-icon>Visually Impared Friendly
+    
+                            </mat-grid-tile>
+                            <mat-grid-tile rowspan=1>
+    
+                                <mat-icon>speaker_notes</mat-icon><mat-icon>hearing</mat-icon>Hearing & Speaking Impared Friendly
+    
+                            </mat-grid-tile>
+                    </mat-grid-list>
+                </mat-card>
+                    </div>
+                </mat-tab>
+    
+                <mat-tab label="Pricing Info">
+                    <div class="infotab">
+                        <mat-grid-list cols=2 rowHeight=60px>
+                            <mat-grid-tile colspan=2> 
+                                <div>
+                                    <h5>Pricing Information</h5>
+                                </div>
+                            </mat-grid-tile>
+                            <mat-grid-tile rowspan=2>
+                                <mat-card>
+                                <div class="infoitems">
+                                    <mat-icon> fastfood</mat-icon><mat-icon> attach_money</mat-icon>Cafe Price Bracket <h6>£10-£40</h6>
+                                </div>
+                                </mat-card>
+                            </mat-grid-tile>
+                            <mat-grid-tile rowspan=2>
+                                <mat-card>
+                                <div class="infoitems">
+                                    <mat-icon> hotel</mat-icon><mat-icon> attach_money</mat-icon>Price per night <h6>£80</h6>
+                                </div>
+                                </mat-card>
+                            </mat-grid-tile>
+                        </mat-grid-list>
+                    </div>
+                </mat-tab>
+    
+    
+                <mat-tab label="Notifications">
+                    <div class="infotab">
+                        <mat-grid-list cols=2 rowHeight=60px>
+                            <mat-grid-tile colspan=2> 
+                                <div>
+                                    <h5>Latest Notifications</h5>
+                                </div>
+                            </mat-grid-tile>
+                            <mat-grid-tile colspan=2 rowspan=2>
+                                <mat-card class="notifications">
+                                <div class="notificationCards">
+                                    <mat-icon color="warn">notifications_active</mat-icon>&nbsp;&nbsp;<mat-icon>night_shelter</mat-icon>&nbsp;&nbsp;Only a limited number of spaces are remaining!
+                                </div>
+                                </mat-card>
+                            </mat-grid-tile>
+                            <mat-grid-tile colspan=2 rowspan=2>
+                                <mat-card class="notifications">
+                                <div class="notificationCards">
+                                    <mat-icon>notifications_active</mat-icon>&nbsp;&nbsp;<mat-icon>local_cafe</mat-icon>&nbsp;&nbsp;The cafe is now fully booked!
+                                </div>
+                                </mat-card>
+                            </mat-grid-tile>
+                        </mat-grid-list>
+                    </div>
+                </mat-tab>
+    
+            </mat-tab-group>
+        </mat-card>
+    </div>
+    
+    <div class="recomended">
+        <mat-card>
+            <mat-grid-list cols=4 rowHeight=40px>
+    
+                <mat-grid-tile colspan=4>
+                    <h5>Recomended Venues</h5>
+                </mat-grid-tile>
+    
+                <mat-grid-tile rowspan=12>
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                          <div mat-card-avatar class="example-header-image-cd"></div>
+                          <mat-card-title><h6>Cotswold Distillery</h6></mat-card-title>
+                          <mat-card-subtitle><div class="card-category">Test tYpe</div></mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image src="assets/img/Cotswold Distillery 3.jpg" alt="Photo of a test">
+                        <mat-card-content>
+                          <p>
+                            Nestled in the heart of the Cotswolds is the award-winning first full-scale distillery in the Cotswolds. Specialising in craft single malt whiskies, gins and liqueurs.Open 7 days a week, offering Tour & Tastings, and Cocktail Masterclasses.
+                        </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                          <button mat-button>View Details</button>
+                          <button mat-raised-button color="accent">Book Now</button>
+                        </mat-card-actions>
+                      </mat-card>
+                </mat-grid-tile>
+    
+                <mat-grid-tile rowspan=12>
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                          <div mat-card-avatar class="example-header-image-cw"></div>
+                          <mat-card-title><h6>Cotswold Wildlife Park</h6></mat-card-title>
+                          <mat-card-subtitle><div class="card-category">Test tYpe</div></mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image src="assets/img/Cotswold Wildlife Park 1.jpg" alt="Photo of a test">
+                        <mat-card-content>
+                          <p>
+                            The Cotswold Wildlife Park & Gardens exhibits over 260 different species of animals. The park is set in 160 acres of landscaped parkland and gardens 2 miles south of Burford, on the A361, Oxfordshire, England
+                        </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                          <button mat-button>View Details</button>
+                          <button mat-raised-button color="accent">Book Now</button>
+                        </mat-card-actions>
+                      </mat-card>
+                </mat-grid-tile>
+    
+                <mat-grid-tile rowspan=12>
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                          <div mat-card-avatar class="example-header-image-jc"></div>
+                          <mat-card-title><h6>Jacks Cafe</h6></mat-card-title>
+                          <mat-card-title></mat-card-title>
+                          <mat-card-subtitle><div class="card-category">Cafe</div></mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image src="assets/img/Jacks Cafe 1.jpg" alt="Photo of a test">
+                        <mat-card-content>
+                          <p>
+                            Jacks Tearoom & Kitchen is nestled in the backstreets of Cirencester. Highlighting market-fresh ingredients, honest cooking, and an enjoyable atmosphere. Our menu features a selection of dishes, all made in-house.
+                        </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                          <button mat-button>View Details</button>
+                          <button mat-raised-button color="accent">Book Now</button>
+                        </mat-card-actions>
+                      </mat-card>
+                </mat-grid-tile>
+    
+                <mat-grid-tile rowspan=12>
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                          <div mat-card-avatar class="example-header-image-wc"></div>
+                          <mat-card-title><h6><span matBadge="notification_important" matBadgeOverlap="false" matBadgeColor="warn">Lake Pochard Waterside Cafe</span></h6></mat-card-title>
+                          <mat-card-subtitle><div class="card-category">Cafe</div></mat-card-subtitle>
+                        </mat-card-header>
+                            <img mat-card-image src="assets/img/Waterside Cafe 2edit.jpg" alt="Photo of a test">
+                        <mat-card-content>
+                          <p>
+                            Waterside offers a delicious breakfast, lunch, afternoon and early dinner menu using locally sourced ingredients. Stunning views across the Walters Lake.
+                        </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                          <button mat-button>View Details</button>
+                          <button mat-raised-button color="accent">Book Now</button>
+                        </mat-card-actions>
+                      </mat-card>
+                </mat-grid-tile>
+    
+            </mat-grid-list>
+        </mat-card>
+    </div>
