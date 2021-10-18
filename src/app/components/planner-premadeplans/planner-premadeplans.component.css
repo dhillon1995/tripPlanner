@@ -1,0 +1,15 @@
+.mainGrid{
+    background-color: brown;
+}
+
+.days {
+    background-color: brown;
+    margin-bottom: 20px;
+    font-size: 20px;
+    min-width: 100px;
+}
+
+.example-margin {
+    background-color: brown;
+    padding-top: 10px;
+}

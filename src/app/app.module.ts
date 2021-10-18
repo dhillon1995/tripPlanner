@@ -83,6 +83,10 @@ import { VenueDetailsStrattonHouseHotelComponent } from './components/venue-deta
 import { VenueDetailsCineworldCheltenhamComponent } from './components/venue-details-cineworld-cheltenham/venue-details-cineworld-cheltenham.component';
 import { VenueDetailsCheltenhamMusicFestivalComponent } from './components/venue-details-cheltenham-music-festival/venue-details-cheltenham-music-festival.component';
 import { VenueDetailsCotswoldOutdoorComponent } from './components/venue-details-cotswold-outdoor/venue-details-cotswold-outdoor.component';
+import { ActivityplannerComponent } from './components/activityplanner/activityplanner.component';
+
+import {MatSelectModule} from '@angular/material/select';
+import { PlannerPremadeplansComponent } from './components/planner-premadeplans/planner-premadeplans.component';
 
 
 const routes: Routes = [
@@ -145,6 +149,8 @@ const routes: Routes = [
     VenueDetailsCineworldCheltenhamComponent,
     VenueDetailsCheltenhamMusicFestivalComponent,
     VenueDetailsCotswoldOutdoorComponent,
+    ActivityplannerComponent,
+    PlannerPremadeplansComponent,
   ],
   imports: [
     BrowserModule,
@@ -176,7 +182,8 @@ const routes: Routes = [
     MatDialogModule,
     MatAutocompleteModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSelectModule
   ],
   exports: [RouterModule],
   providers: [

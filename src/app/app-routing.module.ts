@@ -42,6 +42,7 @@ import { VenueDetailsStrattonHouseHotelComponent } from './components/venue-deta
 import { VenueDetailsCineworldCheltenhamComponent } from './components/venue-details-cineworld-cheltenham/venue-details-cineworld-cheltenham.component';
 import { VenueDetailsCheltenhamMusicFestivalComponent } from './components/venue-details-cheltenham-music-festival/venue-details-cheltenham-music-festival.component';
 import { VenueDetailsCotswoldOutdoorComponent } from './components/venue-details-cotswold-outdoor/venue-details-cotswold-outdoor.component';
+import { ActivityplannerComponent } from './components/activityplanner/activityplanner.component';
 
 const appRoutes: Routes = [
     //{ path: '', component: HomepageComponent, pathMatch: 'full'},
@@ -87,6 +88,7 @@ const appRoutes: Routes = [
     { path: 'cineworld', component: VenueDetailsCineworldCheltenhamComponent },
     { path: 'musicFestival', component: VenueDetailsCheltenhamMusicFestivalComponent },
     { path: 'cotswoldOutdoor', component: VenueDetailsCotswoldOutdoorComponent },
+    { path: 'activity', component: ActivityplannerComponent },
 
     { path: '**', component: HomepageComponent }
     

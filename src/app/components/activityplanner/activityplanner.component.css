@@ -1,0 +1,45 @@
+.mainContainer{
+    padding: 20px;
+}
+
+.maincard{
+    margin: 0px;
+    padding: 8px;
+    min-height: 50px;
+}
+
+.maingrid {
+    margin: 0px;
+}
+
+.adultSelect{
+    max-width: 120px;
+}
+
+.childrenSelect{
+    max-width: 120px;
+}
+
+.secondGrid {
+    background-color: brown;
+}
+
+.preMadePlansGrid {
+    max-width: 300px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.activityTypes {
+    max-width: 500px;
+    margin-left: 350px;
+    margin-right: 250px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+}
