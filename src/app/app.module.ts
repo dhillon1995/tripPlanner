@@ -27,6 +27,8 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatTableModule} from '@angular/material/table';
 import {MatChipsModule} from '@angular/material/chips';
 
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import { CardComponent } from './components/card/card.component';
@@ -171,7 +173,10 @@ const routes: Routes = [
     MatMenuModule,
     MatTableModule,
     MatChipsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatAutocompleteModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [RouterModule],
   providers: [
