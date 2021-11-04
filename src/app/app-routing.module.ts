@@ -43,6 +43,9 @@ import { VenueDetailsCineworldCheltenhamComponent } from './components/venue-det
 import { VenueDetailsCheltenhamMusicFestivalComponent } from './components/venue-details-cheltenham-music-festival/venue-details-cheltenham-music-festival.component';
 import { VenueDetailsCotswoldOutdoorComponent } from './components/venue-details-cotswold-outdoor/venue-details-cotswold-outdoor.component';
 import { ActivityplannerComponent } from './components/activityplanner/activityplanner.component';
+import { ActivityResultsComponent } from './components/activity-results/activity-results.component';
+import { SearchComponent } from './components/search/search.component';
+import { SearchPageComponent } from './components/search-page/search-page.component';
 
 const appRoutes: Routes = [
     //{ path: '', component: HomepageComponent, pathMatch: 'full'},
@@ -88,7 +91,10 @@ const appRoutes: Routes = [
     { path: 'cineworld', component: VenueDetailsCineworldCheltenhamComponent },
     { path: 'musicFestival', component: VenueDetailsCheltenhamMusicFestivalComponent },
     { path: 'cotswoldOutdoor', component: VenueDetailsCotswoldOutdoorComponent },
+    { path: 'activityResults', component: ActivityResultsComponent },
     { path: 'activity', component: ActivityplannerComponent },
+    { path: 'activity', redirectTo: '' },
+    { path: 'searchpage', component: SearchPageComponent},
 
     { path: '**', component: HomepageComponent }
     

@@ -16,7 +16,7 @@ export class CategoriesComponent implements OnInit {
     console.log("Card Component Start");
     console.log(this.venueData);
     this.JSONData = JSON.parse(JSON.stringify(this.venueData));
-    console.log(this.JSONData);
+    console.log("categories", this.JSONData);
     console.log(this.JSONData.name);
     console.log("Card Component End");
   }

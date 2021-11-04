@@ -1,0 +1,24 @@
+.insideTabContainer {
+    padding: 14px 2px 14px 2px;
+}
+
+.headingCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 34px;
+    min-width: 110px;
+    border-radius: 0;
+    background-color: rgba(252, 99, 61, 0.842);
+    color: rgb(250, 250, 250);
+}
+
+.heading {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.icons {
+    font-size: 20px;
+    color: rgb(250, 250, 250);
+}

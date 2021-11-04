@@ -10,12 +10,12 @@
         </mat-label>
         <input formControlName="venue" matInput type="text" [matAutocomplete]="auto" />
         <mat-autocomplete #auto="matAutocomplete">
-          <mat-option *ngFor="let item of filteredOptions" [value]="item">
+          <mat-option *ngFor="let item of filteredOptions" (click)="onViewDetails()" [value]="item">
             {{item}}
           </mat-option>
         </mat-autocomplete>
       </mat-form-field>
-      <a mat-icon-button color="link"><mat-icon>search</mat-icon></a>
+      <a mat-icon-button color="link" (click)="onSearch()"><mat-icon>search</mat-icon></a>
     </form>
 
     

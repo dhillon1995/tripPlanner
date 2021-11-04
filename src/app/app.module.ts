@@ -87,6 +87,17 @@ import { ActivityplannerComponent } from './components/activityplanner/activityp
 
 import {MatSelectModule} from '@angular/material/select';
 import { PlannerPremadeplansComponent } from './components/planner-premadeplans/planner-premadeplans.component';
+import { ActivityFiltersComponent } from './components/activity-filters/activity-filters.component';
+import { ActivityResultsComponent } from './components/activity-results/activity-results.component';
+import { ActivityfilterTabsComponent } from './components/activityfilter-tabs/activityfilter-tabs.component';
+import { MiniCardsComponent } from './components/mini-cards/mini-cards.component';
+import { MiniCards1Component } from './components/mini-cards1/mini-cards1.component';
+import { MiniCards2Component } from './components/mini-cards2/mini-cards2.component';
+import { MiniCards3Component } from './components/mini-cards3/mini-cards3.component';
+import { MiniCards4Component } from './components/mini-cards4/mini-cards4.component';
+import { MiniCards5Component } from './components/mini-cards5/mini-cards5.component';
+import { MiniCards6Component } from './components/mini-cards6/mini-cards6.component';
+import { SearchPageComponent } from './components/search-page/search-page.component';
 
 
 const routes: Routes = [
@@ -151,6 +162,17 @@ const routes: Routes = [
     VenueDetailsCotswoldOutdoorComponent,
     ActivityplannerComponent,
     PlannerPremadeplansComponent,
+    ActivityFiltersComponent,
+    ActivityResultsComponent,
+    ActivityfilterTabsComponent,
+    MiniCardsComponent,
+    MiniCards1Component,
+    MiniCards2Component,
+    MiniCards3Component,
+    MiniCards4Component,
+    MiniCards5Component,
+    MiniCards6Component,
+    SearchPageComponent,
   ],
   imports: [
     BrowserModule,

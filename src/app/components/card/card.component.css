@@ -26,3 +26,12 @@ mat-card img {
   bottom: 6px;
   align-items: center;
 }
+
+.line{
+  width: 250px;
+  height: 0px;
+  border-bottom: 1px solid palevioletred;
+  position: absolute;
+  top: -6px;
+  left: 8px;
+}

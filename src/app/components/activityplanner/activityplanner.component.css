@@ -1,11 +1,57 @@
+.borderCard {
+    margin: 10px;
+}
+.titleDiv {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+}
+.titleCard {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: rgb(63, 63, 63);
+    margin: 4px;
+}
+.titleIcon {
+    color: #4054b4;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+}
+.newContainer{
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+}
+
+.anotherCaontainer {
+}
+
+.innerCardTitle {
+    display: grid;
+    justify-content: center;
+}
+
+.cardHeading {
+    display: flex;
+}
+
+.testCard{
+    min-height: 200px;
+}
+
 .mainContainer{
-    padding: 20px;
+    display: flex;
+    padding: 10px;
 }
 
 .maincard{
-    margin: 0px;
     padding: 8px;
-    min-height: 50px;
+    min-height: 0px;
 }
 
 .maingrid {
@@ -20,20 +66,12 @@
     max-width: 120px;
 }
 
-.secondGrid {
-    background-color: brown;
-}
-
 .preMadePlansGrid {
     max-width: 300px;
-    margin-left: 500px;
-    margin-right: 500px;
 }
 
 .activityTypes {
     max-width: 500px;
-    margin-left: 350px;
-    margin-right: 250px;
 }
 
 .buttonContainer {

@@ -1,0 +1,26 @@
+<mat-card class="example-card">
+
+    <!--<mat-card-header>
+      <mat-card-title><p class="miniTitle"></p></mat-card-title>
+      <mat-card-subtitle><div class="card-category">{{JSONData.locale}}</div></mat-card-subtitle>
+    </mat-card-header>-->
+
+    <div class="cardimg">
+      <img mat-card-image src="{{JSONData.imgurl}}" alt="Photo of a test">
+    </div>
+
+    <mat-card-content>
+      <p class="text">
+        <span class="cardName">{{JSONData.name}} </span>, {{JSONData.locale}}
+      </p>
+    </mat-card-content>
+    
+    <div class="actions">
+        <div class="line"></div>
+      <mat-card-actions>
+        <button type="button" mat-icon-button color="primary" disabled><mat-icon>restaurant_menu</mat-icon></button>
+        <button type="button" (click)="onViewDetails()" mat-icon-button color="primary"><mat-icon>info</mat-icon></button>
+        <button mat-icon-button color="accent"><mat-icon>menu_book</mat-icon></button>
+      </mat-card-actions>
+    </div>
+  </mat-card>
