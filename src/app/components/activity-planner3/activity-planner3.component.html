@@ -1,0 +1,133 @@
+<div class="mainContainer">
+    <div class="innerCardContainer">
+        <mat-grid-list cols="3" rowHeight="70px">
+
+            <mat-grid-tile colspan="3" rowspan="5">
+                <mat-accordion class="example-headers-align">
+                    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+                        <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Location
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Type a destination or location
+                            <mat-icon>location_on</mat-icon>
+                        </mat-panel-description>
+                        </mat-expansion-panel-header>
+                    
+                        <app-planner-search></app-planner-search>
+
+                        <mat-action-row>
+                        <button mat-button color="primary" (click)="nextStep()">Next</button>
+                        </mat-action-row>
+                    </mat-expansion-panel>
+                    
+                    <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+                        <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Date range
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Check in and out dates
+                            <mat-icon>event</mat-icon>
+                        </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        
+                        <!--<div class="content">
+                        <mat-form-field class="dateRangeField" appearance="fill">
+                            <mat-label>Enter a date range</mat-label>
+                            <mat-date-range-input [rangePicker]="picker">
+                            <input matStartDate placeholder="Start date">
+                            <input matEndDate placeholder="End date">
+                            </mat-date-range-input>
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-date-range-picker #picker></mat-date-range-picker>
+                        </mat-form-field>
+                        </div>-->
+                        <div class="content">
+                            <mat-form-field class="datePickerForm" appearance="outline">
+                                <mat-label>Enter a date range</mat-label>
+                                <mat-date-range-input [rangePicker]="picker">
+                                <input matStartDate placeholder="Start date">
+                                <input matEndDate placeholder="End date">
+                                </mat-date-range-input>
+                                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                <mat-date-range-picker #picker></mat-date-range-picker>
+                            </mat-form-field>
+                        </div>
+                    
+                        <mat-action-row>
+                        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                        <button mat-button color="primary" (click)="nextStep()">Next</button>
+                        </mat-action-row>
+                    </mat-expansion-panel>
+                    
+                    <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+                        <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Guests Attending
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Specifiy the number of people
+                            <mat-icon>groups</mat-icon>
+                        </mat-panel-description>
+                        </mat-expansion-panel-header>
+
+                        <mat-grid-list cols="3" rowHeight="66px">
+                            <mat-grid-tile class="guestTiles">
+                                <div class="guestContainer">
+                                    <mat-icon class="guestIcons">people</mat-icon>
+                                    <mat-form-field appearance="outline" class="guestForms">
+                                        <mat-label>Adults</mat-label>
+                                        <mat-select>
+                                        <mat-option *ngFor="let AdultOption of AdultOptions" [value]="AdultOption.value">
+                                            {{AdultOption.viewValue}}
+                                        </mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                            </mat-grid-tile>
+
+                            <mat-grid-tile>
+                                <div class="guestContainer">
+                                    <mat-icon class="guestIcons">escalator_warning</mat-icon>
+                                    <mat-form-field appearance="outline" class="guestForms">
+                                        <mat-label>Toddlers (0-2yrs)</mat-label>
+                                        <mat-select>
+                                        <mat-option *ngFor="let ChildOption of ChildOptions" [value]="ChildOption.value">
+                                            {{ChildOption.viewValue}}
+                                        </mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                            </mat-grid-tile>
+
+                            <mat-grid-tile>
+                                <div class="guestContainer">
+                                    <mat-icon class="guestIcons">child_friendly</mat-icon>
+                                    <mat-form-field appearance="outline" class="guestForms">
+                                        <mat-label>Children (2-18yrs)</mat-label>
+                                        <mat-select>
+                                        <mat-option *ngFor="let ChildOption of ChildOptions" [value]="ChildOption.value">
+                                            {{ChildOption.viewValue}}
+                                        </mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                            </mat-grid-tile>
+                        </mat-grid-list>
+
+                    
+                        <mat-action-row>
+                        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                        <button mat-button color="primary" (click)="nextStep()">End</button>
+                        </mat-action-row>
+                    </mat-expansion-panel>
+                    
+                    </mat-accordion>
+            </mat-grid-tile>
+
+        </mat-grid-list>
+
+    </div>
+</div>

@@ -1,0 +1,101 @@
+.mainContainer {
+    padding: 10px;
+}
+
+.mainCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerCardContainer {
+    width: 100%;
+}
+
+.titleCard {
+    border-radius: 0px;
+
+}
+
+
+.content {
+    text-align: center;
+    height: 52px;
+}
+
+.dateRangeField {
+    width: 300px;
+}
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 1;
+  width: 240px;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.mat-action-row {
+    align-items: center;
+    height: 44px;
+}
+
+.datePickerForm {
+    width: 300px;
+    height: 50px;
+}
+
+.guestIcons {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.575);
+    margin-top: 14px;
+    margin-right: 0px;
+}
+
+.guestContainer {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.guestForms{
+    width: 106px;
+}
+
+.content {
+    height: 72px;
+    width: 100%;
+}
+
+.innerContentGrid {
+    width: 100%;
+}
+
+.innerCard {
+    border-radius: 0px;
+}
+
+.checkbox {
+    padding-top: 8px;
+}
+
+.checkboxTiles {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.inlineIcon {
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-right: 12px;
+    color: rgb(77, 77, 77);
+}

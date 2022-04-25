@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="20px" viewBox="0 0 24 20" version="1.1">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>006 - Pound Coin</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="006---Pound-Coin" transform="translate(1.000000, 1.000000)" stroke="#40464C" stroke-width="2">
+            <circle id="Oval" cx="13" cy="9" r="9"/>
+            <path d="M13,0 L9,0 C4.0294373,7.4067156e-08 1.34110451e-07,4.0294373 1.34110451e-07,9 C1.3411045e-07,13.9705627 4.0294373,17.9999999 9,18 L13,18" id="Shape"/>
+            <path d="M11,13 L11,7 C11,5.34314575 12.3431458,4 14,4 C15.6568542,4 17,5.34314575 17,7" id="Shape"/>
+            <path d="M17.0000004,11 C17.0003186,11.5305306 16.7897072,12.0394236 16.4145654,12.4145654 C16.0394236,12.7897072 15.5305306,13.0003186 15,13 L9,13.0000004" id="Shape"/>
+            <path d="M9,9 L13,9" id="Shape"/>
+        </g>
+    </g>
+</svg>

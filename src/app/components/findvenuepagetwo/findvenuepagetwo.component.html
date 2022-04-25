@@ -2,55 +2,119 @@
 
     <mat-drawer #drawer class="example-sidenav" opened="true" mode="side">
 
-        <mat-form-field class="example-form-field">
-            <mat-label>Enter Your Location</mat-label>
-            <input matInput type="text">
-            <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
-                <mat-icon>close</mat-icon>
-            </button>
-        </mat-form-field>
-        <br>
-        <a mat-raised-button><mat-icon>location_on</mat-icon></a>
-        <br>
-        <br>
-        <h5>Distance (miles)</h5>
-        &nbsp;<mat-slider
-                thumbLabel
-                [displayWith]="formatLabel"
-                tickInterval="1"
-                min="1"
-                max="50">
-        </mat-slider>
-        <br>
-        <br>
-        <h5>Price</h5>
-        &nbsp;<mat-checkbox value="1">£0 - £60</mat-checkbox><br>
-        &nbsp;<mat-checkbox value="1">£60 - £80</mat-checkbox><br>
-        &nbsp;<mat-checkbox value="1">£80 - £100</mat-checkbox><br>
-        &nbsp;<mat-checkbox value="1">£100 - £120</mat-checkbox><br>
-        &nbsp;<mat-checkbox value="1">£120 +</mat-checkbox>
-    
-        <br>
-        <br>
+        <mat-card class="drawerCardsFirst">
+            <div class=searchGrid>
+                <mat-grid-list cols="2" rowHeight="32px">
+                    <mat-grid-tile colspan="2">
+                        <img class ="locationImg" src="assets/img/locationPink.svg"><h6>Location</h6>
+                    </mat-grid-tile>
+                    <br><div class="subLine"></div>
+                    <mat-grid-tile colspan="2" rowspan="2">
+                        <app-distance-filter-input></app-distance-filter-input>
+                    </mat-grid-tile>
 
-        <h5>Select features</h5>
-        &nbsp;<mat-checkbox value="1">Health & Fitness</mat-checkbox><br>
-        &nbsp;<mat-checkbox value="1">Beauty & Spa</mat-checkbox><br>
-        &nbsp;<mat-checkbox value="1">Personal Services</mat-checkbox><br>
-        &nbsp;<mat-checkbox value="1">Things to do</mat-checkbox><br>
-        &nbsp;<mat-checkbox value="1">Food & Drink</mat-checkbox><br>
-        &nbsp;<mat-checkbox value="1">Retail</mat-checkbox><br>
-        &nbsp;<mat-checkbox value="1">Sale</mat-checkbox><br>
+                </mat-grid-list>
+            </div>
         
-        <h5>Special Requirements</h5>
-        <mat-slide-toggle>&nbsp;<mat-icon>accessible_forward</mat-icon></mat-slide-toggle>
-        <br>
-        <br>
-        <mat-slide-toggle>&nbsp;<mat-icon>disabled_visible</mat-icon></mat-slide-toggle>
-        <br>
-        <br>
-        <mat-slide-toggle>&nbsp;<mat-icon>hearing_disabled</mat-icon></mat-slide-toggle>
-        <br>
+
+            
+            
+
+            <div class="distanceGrid">
+                <mat-grid-list cols="2" rowHeight="24px">
+                    <mat-grid-tile colspan="2">
+                        <span class="rangeLabel">Select a Range</span>
+                    </mat-grid-tile>
+                    <mat-grid-tile class="rangeTile" colspan="2" rowspan="1">
+                        <div class="rangetileDiv">
+                        <mat-slider
+                                thumbLabel
+                                [displayWith]="formatLabel"
+                                tickInterval="1"
+                                min="1"
+                                max="50">
+                        </mat-slider>
+                        </div>
+                    </mat-grid-tile>
+                </mat-grid-list>
+            </div>
+        </mat-card>
+
+        <mat-card class="drawerCards">
+            <div class="priceGrid">
+                <mat-grid-list cols="2" rowHeight="30px">
+                    <mat-grid-tile colspan="2">
+                        <img class ="logoImg" src="assets/img/poundWhite.svg"><h6>Price Range</h6>
+                    </mat-grid-tile>
+                    <mat-grid-tile colspan="1">
+                        <mat-checkbox class="priceCheckbox" value="1">£0-£60</mat-checkbox>
+                    </mat-grid-tile>
+                    <mat-grid-tile colspan="1">
+                        <mat-checkbox class="priceCheckbox" value="1">£60-£80</mat-checkbox>
+                    </mat-grid-tile>
+                    <mat-grid-tile colspan="1">
+                        <mat-checkbox class="priceCheckbox" value="1">£80-£100</mat-checkbox>
+                    </mat-grid-tile>
+                    <mat-grid-tile colspan="1">
+                        <mat-checkbox class="priceCheckbox" value="1">£100-£120</mat-checkbox>
+                    </mat-grid-tile>
+                    <mat-grid-tile colspan="1">
+                        <mat-checkbox class="priceCheckbox" value="1">£120 +</mat-checkbox>
+                    </mat-grid-tile>
+                </mat-grid-list>
+            </div>
+        </mat-card>
+
+        <mat-card class="drawerCards">
+            <div class="featureGrid">
+                <mat-grid-list cols="2" rowHeight="30px">
+                    <mat-grid-tile colspan="2">
+                        <img class ="logoImg" src="assets/img/surfer.svg"><h6>Select features</h6>
+                    </mat-grid-tile>
+                    <mat-grid-tile colspan="2">
+                        <mat-checkbox class="featureCheckbox" value="1">Health & Fitness</mat-checkbox>
+                    </mat-grid-tile>
+                    <mat-grid-tile colspan="2">
+                        <mat-checkbox class="featureCheckbox" value="1">Beauty & Spa</mat-checkbox>
+                    </mat-grid-tile>
+                    <mat-grid-tile colspan="2">
+                        <mat-checkbox class="featureCheckbox" value="1">Personal Services</mat-checkbox>
+                    </mat-grid-tile>
+                    <mat-grid-tile colspan="2">
+                        <mat-checkbox class="featureCheckbox" value="1">Things to do</mat-checkbox>
+                    </mat-grid-tile>
+                    <mat-grid-tile colspan="2">
+                        <mat-checkbox class="featureCheckbox" value="1">Food & Drink</mat-checkbox>
+                    </mat-grid-tile>
+                    <mat-grid-tile colspan="2">
+                        <mat-checkbox class="featureCheckbox" value="1">Retail</mat-checkbox>
+                    </mat-grid-tile>
+                    <mat-grid-tile colspan="2">
+                        <mat-checkbox class="featureCheckbox" value="1">Sale</mat-checkbox>
+                    </mat-grid-tile>
+                </mat-grid-list>
+            </div>
+        </mat-card>
+
+        <mat-card class="drawerCards">
+            <div class="priceGrid">
+                <mat-grid-list cols="2" rowHeight="35px">
+                    <mat-grid-tile colspan="2">
+                        <img class ="logoImg2" src="assets/img/wheelchairGrey.svg"><h6>Special Requirements</h6>
+                    </mat-grid-tile>
+                    <mat-grid-tile colspan="1">
+                        <mat-slide-toggle>&nbsp;<mat-icon>accessible_forward</mat-icon></mat-slide-toggle>
+                    </mat-grid-tile>
+                    <mat-grid-tile colspan="1">
+                        <mat-slide-toggle>&nbsp;<mat-icon>disabled_visible</mat-icon></mat-slide-toggle>
+                    </mat-grid-tile>
+                    <mat-grid-tile colspan="2">
+                        <mat-slide-toggle>&nbsp;<mat-icon>hearing_disabled</mat-icon></mat-slide-toggle>
+                    </mat-grid-tile>
+                    
+                </mat-grid-list>
+            </div>
+        </mat-card>
     </mat-drawer>
 
     <mat-grid-list cols="1" rowHeight="700px">

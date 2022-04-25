@@ -1,0 +1,120 @@
+
+.mainContainer{
+    padding: 14px 20px 0px 20px;
+}
+
+.titleCard {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleIcon {
+    font-size: 36px;
+    margin-bottom: 16px;
+    margin-right: 10px;
+}
+
+.titleSpan {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.filterContainer{
+    padding: 10px 0px 10px 0px;
+}
+
+table {
+    width: 100%;
+}
+
+.mat-icon-button{
+    margin-right: 8px;
+}
+
+
+.viewIcon{
+    color: steelblue;
+    margin-bottom: 4px;
+}
+
+.editIcon{
+    color: wheat;
+    margin-bottom: 2px;
+}
+
+.deleteIcon{
+    color: crimson;
+    margin-bottom: 2px;
+}
+
+.name {
+    width: 100px;
+}
+
+.mat-column-name {
+    width: 340px;
+}
+
+.mat-column-local {
+    width: 240px;
+}
+
+.mat-column-type {
+    width: 240px;
+}
+
+.mat-column-action {
+    text-align: left;
+    width: 200px;
+}
+
+.innerTableGrid {
+    width: 76%;
+    text-align: left;
+}
+
+mat-button-toggle-group {
+    height: 48px;
+}
+
+.innerGrid {
+    width: 100%;
+}
+
+mat-grid-tile {
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+.miniFab {
+    margin-bottom: 20px;
+}
+
+.sortToggle {
+    margin-bottom: 20px;
+}
+
+.innerx2Grid {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.example-additional-selection {
+    opacity: 0.75;
+    font-size: 0.75em;
+}
+
+.categoriesSelect {
+    width: 92%;
+}
+
+.filterButtons {
+    margin-bottom: 20px;
+}
+.venueSearch {
+    padding-bottom: 18px;
+}

@@ -46,6 +46,9 @@ import { ActivityplannerComponent } from './components/activityplanner/activityp
 import { ActivityResultsComponent } from './components/activity-results/activity-results.component';
 import { SearchComponent } from './components/search/search.component';
 import { SearchPageComponent } from './components/search-page/search-page.component';
+import { AdminLandingPageComponent } from './components/admin-landing-page/admin-landing-page.component';
+import { VenueEditPageComponent } from './components/venue-edit-page/venue-edit-page.component';
+import { TimelineTestComponent } from './components/timeline-test/timeline-test.component';
 
 const appRoutes: Routes = [
     //{ path: '', component: HomepageComponent, pathMatch: 'full'},
@@ -92,9 +95,12 @@ const appRoutes: Routes = [
     { path: 'musicFestival', component: VenueDetailsCheltenhamMusicFestivalComponent },
     { path: 'cotswoldOutdoor', component: VenueDetailsCotswoldOutdoorComponent },
     { path: 'activityResults', component: ActivityResultsComponent },
+    { path: 'activityResults2', component: TimelineTestComponent },
     { path: 'activity', component: ActivityplannerComponent },
     { path: 'activity', redirectTo: '' },
     { path: 'searchpage', component: SearchPageComponent},
+    { path: 'adminLandingPage', component: AdminLandingPageComponent},
+    { path: 'venueEditpage', component: VenueEditPageComponent},
 
     { path: '**', component: HomepageComponent }
     

@@ -1,0 +1,440 @@
+<div fxLayout="row" fxLayoutAlign="space-around center" class="mainContainer">
+    
+    <div class="titleContainer">
+        <mat-grid-list cols="4" rowHeight="100px">
+            <mat-grid-tile colspan="1">
+                <button mat-raised-button class="backButton" color="primary"><mat-icon class="backIcon">arrow_back</mat-icon>Back to admin portal</button>
+            </mat-grid-tile>
+            <mat-grid-tile colspan="2">
+                <mat-card class="titleCard"><mat-icon class="titleIcon">edit_note</mat-icon><h5>Edit - Cotswold Wildlife Park</h5></mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile colspan="1">
+                <button mat-raised-button class="saveButton" color="primary"><mat-icon class="saveIcon">done_all</mat-icon>Save Changes</button>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="space-around center" class="exampleDiv">
+        <div class="constraintClass">
+            <mat-grid-list cols="1" rowHeight="80px" gutterSize="0px">
+
+                <mat-grid-tile rowspan="2">
+                    <div class="innerGrid">
+                        <mat-card class="fieldCard">
+                            <mat-grid-list cols="4" rowHeight="78px">
+                                <mat-grid-tile colspan="1">
+                                    <mat-card class="nameCard">Name</mat-card>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="1">
+                                    <div class="line"></div>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="2">
+                                    <mat-form-field class="exampleInputField" appearance="fill">
+                                        <mat-label>Edit your venue name here</mat-label>
+                                        <input matInput placeholder="Name Here" value="Cotswold Wildlife Park">
+                                    </mat-form-field>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                        </mat-card>
+                    </div>
+                </mat-grid-tile>
+
+                <mat-grid-tile rowspan="5">
+                    <div class="innerGrid">
+                        <mat-card class="addressCard">
+                            <mat-grid-list cols="4" rowHeight="72px" gutterSize="0px">
+                                <mat-grid-tile colspan="1">
+                                    <mat-card class="nameCard">Address & Local</mat-card>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="1">
+                                    <div class="line"></div>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="2">
+                                    <mat-form-field class="exampleInputField" appearance="fill">
+                                        <mat-label>Address Line 1</mat-label>
+                                        <input matInput placeholder="Name Here" value="Cotswold Wildlife Park">
+                                    </mat-form-field>
+                                </mat-grid-tile>
+
+                                <mat-grid-tile colspan="1"></mat-grid-tile>
+                                <mat-grid-tile colspan="1"></mat-grid-tile>
+
+                                <mat-grid-tile colspan="2">
+                                    <mat-form-field class="exampleInputField" appearance="fill">
+                                        <mat-label>Address Line 2</mat-label>
+                                        <input matInput placeholder="Name Here" value="Bradwell Grove">
+                                    </mat-form-field>
+                                </mat-grid-tile>
+
+                                <mat-grid-tile colspan="1"></mat-grid-tile>
+                                <mat-grid-tile colspan="1"></mat-grid-tile>
+
+                                <mat-grid-tile colspan="2">
+                                    <mat-form-field class="exampleInputField" appearance="fill">
+                                        <mat-label>Address Line 3</mat-label>
+                                        <input matInput placeholder="Name Here" value="Burford">
+                                    </mat-form-field>
+                                </mat-grid-tile>
+
+                                <mat-grid-tile colspan="1"></mat-grid-tile>
+                                <mat-grid-tile colspan="1"></mat-grid-tile>
+
+                                <mat-grid-tile colspan="2">
+                                    <mat-form-field class="exampleInputField" appearance="fill">
+                                        <mat-label>Address Line 3</mat-label>
+                                        <input matInput placeholder="Name Here" value="Oxfordshire">
+                                    </mat-form-field>
+                                </mat-grid-tile>
+
+                                <mat-grid-tile colspan="1"></mat-grid-tile>
+                                <mat-grid-tile colspan="1"></mat-grid-tile>
+                                <mat-grid-tile colspan="1"></mat-grid-tile>
+
+                                <mat-grid-tile colspan="1" rowspan="1">
+                                    <mat-form-field class="postCodeInputField" appearance="fill">
+                                        <mat-label>Post Code</mat-label>
+                                        <input matInput placeholder="Name Here" value="OX18 4JP">
+                                    </mat-form-field>
+                                </mat-grid-tile>
+
+                            </mat-grid-list>
+                        </mat-card> 
+                    </div>
+                </mat-grid-tile>
+
+                <mat-grid-tile rowspan="3">
+                    <div class="innerGrid">
+                        <mat-card class="fieldCard">
+                            <mat-grid-list cols="4" rowHeight="80px">
+                                <mat-grid-tile colspan="1">
+                                    <mat-card class="nameCard">Venue Overview</mat-card> 
+                                </mat-grid-tile>
+
+                                <mat-grid-tile colspan="1">
+                                    <div class="line"></div>
+                                </mat-grid-tile>
+
+                                <mat-grid-tile colspan="2" rowspan="2">
+                                    <mat-form-field class="overViewInput" appearance="fill">
+                                        <mat-label>Write an brief overview (less than 200 characters)</mat-label>
+                                        <textarea matInput class="overViewTextArea" matInput placeholder="Ex. This is a cafe ..." value="{{ this.overview }}"></textarea>
+                                    </mat-form-field>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                        </mat-card>
+                    </div>
+                </mat-grid-tile>
+
+                <mat-grid-tile rowspan="5">
+                    <div class="innerGrid">
+                        <mat-card class="fieldCard">
+                            <mat-grid-list cols="4" rowHeight="80px">
+                                <mat-grid-tile colspan="1">
+                                    <mat-card class="nameCard">Venue Description</mat-card>
+                                </mat-grid-tile>
+
+                                <mat-grid-tile colspan="3"></mat-grid-tile>
+
+                                <mat-grid-tile colspan="4" rowspan="3">
+                                    <mat-form-field class="largeInput" appearance="fill">
+                                        <mat-label>Write a description (less than 1300 characters)</mat-label>
+                                        <textarea matInput class="descriptionTextArea" matInput placeholder="Ex. It makes me feel..." value="{{ this.description }}"></textarea>
+                                    </mat-form-field>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                        </mat-card>
+                    </div>
+                </mat-grid-tile>
+
+                <mat-grid-tile rowspan="3">
+                    <div class="innerGrid">
+                        <mat-card class="fieldCard">
+                            <mat-grid-list cols="4" rowHeight="80px">
+                                <mat-grid-tile colspan="1">
+                                    <mat-card class="nameCard">General Filter Options</mat-card>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="1">
+                                    <div class="line"></div>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="2" rowspan="2">
+                                    <div class="innerCheckboxGrid">
+                                        <mat-grid-list cols="2" rowHeight="40px">
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Parking available</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Disabled facilities</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Dog friendly</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Play area available</mat-checkbox></mat-grid-tile>
+
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Gift Vouchers</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Pre-Book</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Children Friendly</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Free WIFI</mat-checkbox></mat-grid-tile>
+                                        </mat-grid-list>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                        </mat-card>
+                    </div>
+                </mat-grid-tile>
+
+                <mat-grid-tile rowspan="4">
+                    <div class="innerGrid">
+                        <mat-card class="fieldCard">
+                            <mat-grid-list cols="4" rowHeight="80px">
+                                <mat-grid-tile colspan="1">
+                                    <mat-card class="nameCard">Food Related Options</mat-card>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="1">
+                                    <div class="line"></div>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="2" rowspan="3">
+                                    <div class="innerCheckboxGrid">
+                                        <mat-grid-list cols="2" rowHeight="40px">
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Breakfast</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Lunch</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Afternoon Tea</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Evening meal</mat-checkbox></mat-grid-tile>
+
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Take away food</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">British</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Italian</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Vegetarian</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Gluten Free</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Vegan</mat-checkbox></mat-grid-tile>
+                                        </mat-grid-list>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                        </mat-card>
+                    </div>
+                </mat-grid-tile>
+
+                <mat-grid-tile rowspan="3">
+                    <div class="innerGrid">
+                        <mat-card class="fieldCard">
+                            <mat-grid-list cols="4" rowHeight="80px">
+                                <mat-grid-tile colspan="1">
+                                    <mat-card class="nameCard">Categories</mat-card>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="1">
+                                    <div class="line"></div>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="2" rowspan="2">
+                                    <div class="innerCheckboxGrid">
+                                        <mat-grid-list cols="2" rowHeight="40px">
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Food & Drink</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Things To Do</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Information</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Hotels & Travel</mat-checkbox></mat-grid-tile>
+
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Retail</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Health & Wellbeing</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Cinema & Theatre</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Exhibition & Shows</mat-checkbox></mat-grid-tile>
+                                        </mat-grid-list>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                        </mat-card>
+                    </div>
+                </mat-grid-tile>
+
+                <mat-grid-tile rowspan="2">
+                    <div class="innerGrid">
+                        <mat-card class="fieldCard">
+                            <mat-grid-list cols="4" rowHeight="80px">
+                                <mat-grid-tile colspan="1">
+                                    <mat-card class="nameCard">Tour Options</mat-card>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="1">
+                                    <div class="line"></div>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="2" rowspan="1">
+                                    <div class="innerCheckboxGrid">
+                                        <mat-grid-list cols="3" rowHeight="40px">
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Tour</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Indoor</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Outdoor</mat-checkbox></mat-grid-tile>
+                                        </mat-grid-list>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                        </mat-card>
+                    </div>
+                </mat-grid-tile>
+
+                <mat-grid-tile rowspan="3">
+                    <div class="innerGrid">
+                        <mat-card class="fieldCard">
+                            <mat-grid-list cols="4" rowHeight="80px">
+                                <mat-grid-tile colspan="1">
+                                    <mat-card class="nameCard">Price Ranking</mat-card>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="1">
+                                    <div class="line"></div>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="2" rowspan="2">
+                                    <div class="innerCheckboxGrid">
+                                        <mat-grid-list cols="2" rowHeight="42px">
+                                            <mat-grid-tile><mat-checkbox class="example-margin">£0-£60</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">£60-£100</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">£100-£150</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">£150+</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Free of Charge</mat-checkbox></mat-grid-tile>
+                                        </mat-grid-list>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                        </mat-card>
+                    </div>
+                </mat-grid-tile>
+
+                <mat-grid-tile rowspan="3">
+                    <div class="innerGrid">
+                        <mat-card class="fieldCard">
+                            <mat-grid-list cols="4" rowHeight="80px">
+                                <mat-grid-tile colspan="1">
+                                    <mat-card class="nameCard">Health Options</mat-card>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="1">
+                                    <div class="line"></div>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="2" rowspan="2">
+                                    <div class="innerCheckboxGrid">
+                                        <mat-grid-list cols="2" rowHeight="42px">
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Gym</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Tennis Court</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Swimming Pool</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Spa</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Beauty Treatments</mat-checkbox></mat-grid-tile>
+                                        </mat-grid-list>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                        </mat-card>
+                    </div>
+                </mat-grid-tile>
+
+                <mat-grid-tile rowspan="3">
+                    <div class="innerGrid">
+                        <mat-card class="fieldCard">
+                            <mat-grid-list cols="4" rowHeight="80px">
+                                <mat-grid-tile colspan="1">
+                                    <mat-card class="nameCard">Recommended Duration</mat-card>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="1">
+                                    <div class="line"></div>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="2" rowspan="2">
+                                    <div class="innerCheckboxGrid">
+                                        <mat-grid-list cols="2" rowHeight="42px">
+                                            <mat-grid-tile><mat-checkbox class="example-margin">1-2 Hours</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">2-3 Hours</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">3-4 Hours</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">4+ Hours</mat-checkbox></mat-grid-tile>
+                                        </mat-grid-list>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                        </mat-card>
+                    </div>
+                </mat-grid-tile>
+
+                <mat-grid-tile rowspan="3">
+                    <div class="innerGrid">
+                        <mat-card class="fieldCard">
+                            <mat-grid-list cols="4" rowHeight="80px">
+                                <mat-grid-tile colspan="1">
+                                    <mat-card class="nameCard">Hiking Options</mat-card>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="1">
+                                    <div class="line"></div>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="2" rowspan="2">
+                                    <div class="innerCheckboxGrid">
+                                        <mat-grid-list cols="2" rowHeight="42px">
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Hiking Trail</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Difficulty - Easy</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Difficulty - Easy - Moderate</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Difficulty - Moderate</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Difficulty - Moderate - Hard</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Difficulty - Hard</mat-checkbox></mat-grid-tile>
+                                        </mat-grid-list>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                        </mat-card>
+                    </div>
+                </mat-grid-tile>
+
+                <mat-grid-tile rowspan="3">
+                    <div class="innerGrid">
+                        <mat-card class="fieldCard">
+                            <mat-grid-list cols="4" rowHeight="80px">
+                                <mat-grid-tile colspan="1">
+                                    <mat-card class="nameCard">Hotel Type</mat-card>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="1">
+                                    <div class="line"></div>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="2" rowspan="2">
+                                    <div class="innerCheckboxGrid">
+                                        <mat-grid-list cols="2" rowHeight="42px">
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Hotel</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Bed & Breakfast</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Campsite</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">Lodges</mat-checkbox></mat-grid-tile>
+                                        </mat-grid-list>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                        </mat-card>
+                    </div>
+                </mat-grid-tile>
+
+                <mat-grid-tile rowspan="3">
+                    <div class="innerGrid">
+                        <mat-card class="fieldCard">
+                            <mat-grid-list cols="4" rowHeight="80px">
+                                <mat-grid-tile colspan="1">
+                                    <mat-card class="nameCard">Rating</mat-card>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="1">
+                                    <div class="line"></div>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="2" rowspan="2">
+                                    <div class="innerCheckboxGrid">
+                                        <mat-grid-list cols="2" rowHeight="42px">
+                                            <mat-grid-tile><mat-checkbox class="example-margin">1 Star</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">2 Star</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">3 Star</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">4 Star</mat-checkbox></mat-grid-tile>
+                                            <mat-grid-tile><mat-checkbox class="example-margin">5 Star</mat-checkbox></mat-grid-tile>
+                                        </mat-grid-list>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                        </mat-card>
+                    </div>
+                </mat-grid-tile>
+
+                <mat-grid-tile rowspan="2">
+                    <div class="innerGrid">
+                        <mat-card class="finalCard">
+                            <mat-grid-list cols="4" rowHeight="80px">
+                                <mat-grid-tile colspan="2">
+                                    <button mat-raised-button class="backButton" color="primary"><mat-icon class="backIcon">arrow_back</mat-icon>Back to admin portal</button>
+                                </mat-grid-tile>
+                                <mat-grid-tile colspan="2">
+                                    <button mat-raised-button class="saveButton" color="primary"><mat-icon class="saveIcon">done_all</mat-icon>Save Changes</button>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                        </mat-card>
+                    </div>
+                </mat-grid-tile>
+
+            </mat-grid-list>
+        </div>
+        
+    </div>
+
+</div>

@@ -1,33 +1,186 @@
 .example-container {
-    width: auto;
-    height: 1000px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-  }
+  width: auto;
+  height: 1000px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: #f8faf7;
+}
+
+.example-sidenav {
+  padding: 4px;
+  padding-top: 0px;
+  width: 254px;
+  background-color: #f6f7fb;
+}
+
+.searchField {
+  width: 190px;
+}
   
-  .example-sidenav-content {
-    display: flex;
-    height: 100%;
-    align-items: center;
-  }
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.drawerCardsFirst {
+  text-align: left;
+  border-radius: 2px;
+  width: 240px;
+  background-color: white;
+  padding-left: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.drawerCards {
+  text-align: left;
+  border-radius: 2px;
+  width: 240px;
+  background-color: white;
+  padding-left: 14px;
+  margin-bottom: 10px;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.inputForm {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.locationSearch {
+  border-radius: 10px;
+}
+
+.locationCard {
+  border-radius: 10px;
+}
+
+mat-card {
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #fafafa;
+  text-align: center;
+  border-radius: 24px;
+}
+
+.distanceGrid {
+  padding-top: 16px;
+  width: auto;
+}
+
+.searchGrid {
+  width: 212px;
+}
+
+.priceGrid {
+  width: auto;
+}
+
+.featureGrid {
+  width: auto;
   
-  .example-sidenav {
-    padding: 20px;
-  }
+}
 
-  mat-slider {
-    width: 200px;
-  }
+.priceCheckbox {
+  font-size: 15px;
+  width: 100px;
+}
 
-  .mat-form-field + .mat-form-field {
-    margin-left: 8px;
-    width: 500px;
-    background-color: aqua;
-  }
+.featureCheckbox {
+  font-size: 15px;
+  width: 200px;
+}
 
-  mat-form-field {
-    width: 180px;
-  }
+.locationIcon {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
 
-  .mat-radio-button ~ .mat-radio-button {
-    margin-left: 16px;
-  }
+.locationButton {
+  height: 24px;
+  width: 24px;
+}
+
+mat-slider {
+  width: 200px;
+}
+
+.line0{
+  
+  width: 204px;
+  height: 0px;
+  border-bottom: 1px solid #ff4081;
+
+}
+
+.subLine{
+  width: 100px;
+  height: 0px;
+  border-bottom: 1px solid #d1d1d1;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  margin-left: 54px;
+}
+
+.rangeTile {
+  margin-top: 0px;
+}
+
+.rangetileDiv{
+  padding-top: 0px;
+}
+
+.slide_bar {
+  z-index: -1;
+  position:relative;
+}
+
+.locationImg{
+  height: 28px;
+  padding-right: 6px;
+  padding-bottom: 7px;
+}
+
+
+.logoImg {
+  padding-right: 6px;
+  padding-bottom: 7px;
+  height: 28px;
+}
+
+.logoImg2 {
+  padding-right: 6px;
+  padding-bottom: 7px;
+  height: 36px;
+}
+
+.line1{
+  
+  width: 244px;
+  height: 0px;
+  border-bottom: 1px solid #ff4081;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.mat-form-field + .mat-form-field {
+  margin-left: 8px;
+  width: 400px;
+  background-color: aqua;
+}
+
+mat-form-field {
+  width: 180px;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}

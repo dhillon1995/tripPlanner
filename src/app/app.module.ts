@@ -29,6 +29,7 @@ import {MatChipsModule} from '@angular/material/chips';
 
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 
 import { CardComponent } from './components/card/card.component';
@@ -84,8 +85,9 @@ import { VenueDetailsCineworldCheltenhamComponent } from './components/venue-det
 import { VenueDetailsCheltenhamMusicFestivalComponent } from './components/venue-details-cheltenham-music-festival/venue-details-cheltenham-music-festival.component';
 import { VenueDetailsCotswoldOutdoorComponent } from './components/venue-details-cotswold-outdoor/venue-details-cotswold-outdoor.component';
 import { ActivityplannerComponent } from './components/activityplanner/activityplanner.component';
+import { MatDividerModule } from '@angular/material/divider';
 
-import {MatSelectModule} from '@angular/material/select';
+import  {MatSelectModule } from '@angular/material/select';
 import { PlannerPremadeplansComponent } from './components/planner-premadeplans/planner-premadeplans.component';
 import { ActivityFiltersComponent } from './components/activity-filters/activity-filters.component';
 import { ActivityResultsComponent } from './components/activity-results/activity-results.component';
@@ -98,6 +100,15 @@ import { MiniCards4Component } from './components/mini-cards4/mini-cards4.compon
 import { MiniCards5Component } from './components/mini-cards5/mini-cards5.component';
 import { MiniCards6Component } from './components/mini-cards6/mini-cards6.component';
 import { SearchPageComponent } from './components/search-page/search-page.component';
+import { DistanceFilterInputComponent } from './components/distance-filter-input/distance-filter-input.component';
+import { AdminLandingPageComponent } from './components/admin-landing-page/admin-landing-page.component';
+import { VenueEditPageComponent } from './components/venue-edit-page/venue-edit-page.component';
+import { PortalVenueSearchComponent } from './components/portal-venue-search/portal-venue-search.component';
+import { PortalLocalSearchComponent } from './components/portal-local-search/portal-local-search.component';
+import { ActivityPlanner3Component } from './components/activity-planner3/activity-planner3.component';
+import { ActivityPlanner3Page2Component } from './components/activity-planner3-page2/activity-planner3-page2.component';
+import { PlannerSearchComponent } from './components/planner-search/planner-search.component';
+import { TimelineTestComponent } from './components/timeline-test/timeline-test.component';
 
 
 const routes: Routes = [
@@ -173,6 +184,15 @@ const routes: Routes = [
     MiniCards5Component,
     MiniCards6Component,
     SearchPageComponent,
+    DistanceFilterInputComponent,
+    AdminLandingPageComponent,
+    VenueEditPageComponent,
+    PortalVenueSearchComponent,
+    PortalLocalSearchComponent,
+    ActivityPlanner3Component,
+    ActivityPlanner3Page2Component,
+    PlannerSearchComponent,
+    TimelineTestComponent,
   ],
   imports: [
     BrowserModule,
@@ -205,7 +225,9 @@ const routes: Routes = [
     MatAutocompleteModule,
     FormsModule,
     ReactiveFormsModule,
-    MatSelectModule
+    MatSelectModule,
+    MatDividerModule,
+    MatButtonToggleModule
   ],
   exports: [RouterModule],
   providers: [

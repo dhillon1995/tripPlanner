@@ -1,0 +1,31 @@
+.example-form-field {
+  padding-top: 0rem;
+  width: 150px;
+  height: 100px;
+}
+
+mat-card {
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
+  height: 50px;
+  background-color: #fafafa;
+  text-align: center;
+  border-radius: 24px;
+}
+
+.searchContent {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
+
+.searchButton{
+  margin-left: 14px;
+  vertical-align: middle;
+  background-color: rgba(121, 121, 121, 0.055);
+}
+
+.formClass{
+  margin-left: 2px;
+}

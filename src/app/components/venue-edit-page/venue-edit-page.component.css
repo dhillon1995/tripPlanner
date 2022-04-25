@@ -1,0 +1,132 @@
+.mainContainer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.titleContainer {
+    width: 100%;
+}
+
+.titleIcon {
+    font-size: 38px;
+    margin-bottom: 16px;
+    margin-right: 2px;
+}
+
+.titleCard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 340px;
+    height: 46px;
+}
+
+.backIcon {
+    margin-right: 4px;
+    margin-bottom: 2px;
+}
+
+.backButton {
+    width: 192px;
+    text-align: center;
+}
+
+.saveIcon {
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+
+.saveButton {
+    width: 180px;
+    text-align: center;
+}
+
+.nameCard {
+    border-radius: 0px;
+    width: auto;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exampleCard {
+    text-align: center;
+}
+
+.exampleDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.constraintClass {
+    width: 60%;
+}
+
+.innerGrid {
+    width: 100%;
+    padding: 20px;
+}
+
+.innerCheckboxGrid {
+    width: 100%;
+    padding: 20px;
+    align-items: left;
+}
+
+.checkboxCard {
+    text-align: left;
+}
+
+.exampleInputField {
+    width: 80%;
+    height: 100%;
+}
+
+.postCodeInputField {
+    width: 80%;
+    height: 100%;
+    padding-right: 22px;
+}
+
+.line{
+    width: 60px;
+    height: 0px;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.212);
+}
+
+.addressCard {
+    width: inherit;
+    border-radius: 0px;
+}
+
+.fieldCard {
+    width: inherit;
+    border-radius: 0px;
+}
+
+.finalCard {
+    width: inherit;
+    border-radius: 0px;
+}
+
+.largeInput {
+    width: 96%;
+    height: inherit;
+}
+
+.overViewTextArea {
+    height: 100px;
+}
+
+.overViewInput {
+    width: 96%;
+    height: inherit;
+}
+
+.descriptionTextArea {
+    height: 180px;
+}

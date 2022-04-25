@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="54px" viewBox="0 0 60 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>016 - Dominos</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="016---Dominos" transform="translate(0.000000, 1.000000)">
+            <path d="M33,26 L33,50 C33,51.1045695 33.8954305,52 35,52 L57,52 C58.1045695,52 59,51.1045695 59,50 L59,2 C59,0.8954305 58.1045695,0 57,0 L35,0 C33.8954305,0 33,0.8954305 33,2 L33,26 Z" id="Shape" fill="#7F34A9" fill-rule="nonzero"></path>
+            <path d="M1,26 L1,50 C1,51.1045695 1.8954305,52 3,52 L25,52 C26.1045695,52 27,51.1045695 27,50 L27,2 C27,0.8954305 26.1045695,0 25,0 L3,0 C1.8954305,0 1,0.8954305 1,2 L1,26 Z" id="Shape" fill="#7F34A9" fill-rule="nonzero"></path>
+            <path d="M33,26 L33,50 C32.9220246,51.0172419 33.6758992,51.9083466 34.692,52 L53.308,52 C54.3241008,51.9083466 55.0779754,51.0172419 55,50 L55,2 C55.0779754,0.982758103 54.3241008,0.0916534175 53.308,0 L34.692,0 C33.6758992,0.0916534175 32.9220246,0.982758103 33,2 L33,26 Z" id="Shape" fill="#AE44BD" fill-rule="nonzero"></path>
+            <path d="M1,26 L1,50 C0.92202461,51.0172419 1.67589917,51.9083466 2.692,52 L21.308,52 C22.3241008,51.9083466 23.0779754,51.0172419 23,50 L23,2 C23.0779754,0.982758103 22.3241008,0.0916534175 21.308,0 L2.692,0 C1.67589917,0.0916534175 0.92202461,0.982758103 1,2 L1,26 Z" id="Shape" fill="#AE44BD" fill-rule="nonzero"></path>
+            <circle id="Oval" fill="#FDDC42" fill-rule="nonzero" cx="14" cy="13" r="2"></circle>
+            <circle id="Oval" fill="#FDDC42" fill-rule="nonzero" cx="7" cy="6" r="2"></circle>
+            <circle id="Oval" fill="#FDDC42" fill-rule="nonzero" cx="21" cy="6" r="2"></circle>
+            <circle id="Oval" fill="#FDDC42" fill-rule="nonzero" cx="21" cy="20" r="2"></circle>
+            <circle id="Oval" fill="#FDDC42" fill-rule="nonzero" cx="39" cy="32" r="2"></circle>
+            <circle id="Oval" fill="#FDDC42" fill-rule="nonzero" cx="53" cy="32" r="2"></circle>
+            <circle id="Oval" fill="#FDDC42" fill-rule="nonzero" cx="53" cy="46" r="2"></circle>
+            <circle id="Oval" fill="#FDDC42" fill-rule="nonzero" cx="39" cy="46" r="2"></circle>
+            <circle id="Oval" fill="#FDDC42" fill-rule="nonzero" cx="14" cy="39" r="2"></circle>
+            <circle id="Oval" fill="#FDDC42" fill-rule="nonzero" cx="46" cy="13" r="2"></circle>
+            <circle id="Oval" fill="#FDDC42" fill-rule="nonzero" cx="7" cy="32" r="2"></circle>
+            <circle id="Oval" fill="#FDDC42" fill-rule="nonzero" cx="21" cy="46" r="2"></circle>
+            <circle id="Oval" fill="#FDDC42" fill-rule="nonzero" cx="7" cy="20" r="2"></circle>
+            <path d="M33,26 L33,50 C33,51.1045695 33.8954305,52 35,52 L57,52 C58.1045695,52 59,51.1045695 59,50 L59,2 C59,0.8954305 58.1045695,0 57,0 L35,0 C33.8954305,0 33,0.8954305 33,2 L33,26 Z" id="Shape" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M1,26 L1,50 C1,51.1045695 1.8954305,52 3,52 L25,52 C26.1045695,52 27,51.1045695 27,50 L27,2 C27,0.8954305 26.1045695,0 25,0 L3,0 C1.8954305,0 1,0.8954305 1,2 L1,26 Z" id="Shape" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle id="Oval" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="14" cy="13" r="2"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="7" cy="6" r="2"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="21" cy="6" r="2"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="21" cy="20" r="2"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="39" cy="32" r="2"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="53" cy="32" r="2"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="53" cy="46" r="2"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="39" cy="46" r="2"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="14" cy="39" r="2"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="46" cy="13" r="2"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="7" cy="32" r="2"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="21" cy="46" r="2"></circle>
+            <circle id="Oval" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="7" cy="20" r="2"></circle>
+            <path d="M5,26 L23,26" id="Shape" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M37,26 L55,26" id="Shape" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

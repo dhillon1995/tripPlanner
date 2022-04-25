@@ -1,0 +1,129 @@
+<div class="mainContainer">
+    <div class="innerCardContainer">
+        <mat-grid-list cols="3" rowHeight="70px">
+
+            <mat-grid-tile colspan="3" rowspan="5">
+                <mat-accordion class="example-headers-align">
+                    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+                        <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Convenience & Requirements
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Comfort & Accessibility
+                            <mat-icon>wheelchair_pickup</mat-icon>
+                        </mat-panel-description>
+                        </mat-expansion-panel-header>
+
+                        <div class="content">
+                            <div class="innerContentGrid">
+                                <mat-grid-list cols="3" rowHeight="30px">
+                                    <mat-grid-tile class="checkboxTiles">
+                                        <mat-checkbox class="checkbox">Dog Friendly</mat-checkbox>
+                                    </mat-grid-tile>
+                                    <mat-grid-tile>
+                                        <mat-checkbox class="checkbox">Disability Access</mat-checkbox>
+                                    </mat-grid-tile>
+                                    <mat-grid-tile>
+                                        <mat-checkbox class="checkbox">Transport Links</mat-checkbox>
+                                    </mat-grid-tile>
+                                    <mat-grid-tile>
+                                        <mat-checkbox class="checkbox">Free WiFi</mat-checkbox>
+                                    </mat-grid-tile>
+                                    <mat-grid-tile>
+                                        <mat-checkbox class="checkbox">Parking Available</mat-checkbox>
+                                    </mat-grid-tile>
+                                    <mat-grid-tile>
+                                        <mat-checkbox class="checkbox">Place Holder</mat-checkbox>
+                                    </mat-grid-tile>
+                                </mat-grid-list>
+                            </div>
+                        </div>
+
+                        <mat-action-row>
+                        <button mat-button color="warn" (click)="testAction()">Previous</button>
+                        <button mat-button color="primary" (click)="nextStep()">Next</button>
+                        </mat-action-row>
+                    </mat-expansion-panel>
+                    
+                    <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+                        <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Personal Options
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Tell us more about you
+                            <mat-icon>person</mat-icon>
+                        </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        
+                        <div class="content">
+
+                            <mat-grid-list cols="2" rowHeight="66px">
+                                <mat-grid-tile class="guestTiles">
+                                    <div class="guestContainer">
+                                        <mat-icon class="guestIcons">nature_people</mat-icon>
+                                        <mat-form-field appearance="outline" class="guestClass">
+                                            <mat-label>Activities you enjoy</mat-label>
+                                            <mat-select [formControl]="activities" multiple>
+                                            <mat-option *ngFor="let activity of activityList" [value]="activity">{{activity}}</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                </mat-grid-tile>
+    
+                                <mat-grid-tile>
+                                    <div class="guestContainer">
+                                        <mat-icon class="guestIcons">event_note</mat-icon>
+                                        <mat-form-field appearance="outline">
+                                            <mat-label>Your Plans</mat-label>
+                                            <mat-select [formControl]="plans" multiple>
+                                              <mat-option *ngFor="let plan of planList" [value]="plan">{{plan}}</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                        </div>
+                    
+                        <mat-action-row>
+                        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                        <button mat-button color="primary" (click)="nextStep()">Next</button>
+                        </mat-action-row>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+                        <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Plan Options
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            What you need us to plan
+                            <mat-icon>filter_list</mat-icon>
+                        </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        
+                        <div class="content">
+                            <mat-grid-list cols="3" rowHeight="60px">
+                                <mat-grid-tile class="checkboxTiles">
+                                    <mat-icon class="inlineIcon">commute</mat-icon><mat-checkbox labelPosition='before' class="checkbox">Transportation</mat-checkbox>
+                                </mat-grid-tile>
+                                <mat-grid-tile>
+                                    <mat-icon class="inlineIcon">hotel</mat-icon><mat-checkbox labelPosition='before' class="checkbox">Accommodation</mat-checkbox>
+                                </mat-grid-tile>
+                                <mat-grid-tile>
+                                    <mat-icon class="inlineIcon">rowing</mat-icon><mat-checkbox labelPosition='before' class="checkbox">Things To Do</mat-checkbox>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                        </div>
+                    
+                        <mat-action-row>
+                        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                        <button mat-button color="primary" (click)="nextStep()">Next</button>
+                        </mat-action-row>
+                    </mat-expansion-panel>
+                    
+                    </mat-accordion>
+            </mat-grid-tile>
+
+        </mat-grid-list>

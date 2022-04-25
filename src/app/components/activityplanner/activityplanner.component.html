@@ -1,92 +1,48 @@
-<mat-card class="borderCard">
-  <div class="titleDiv">
-    <mat-card class=titleCard>
-      <mat-icon class="titleIcon">edit_calendar</mat-icon>&nbsp;<h3>Activity Planner</h3>
-    </mat-card>
-  </div>
-  <div class="info">
-    <p>Here you can plan your day around filters that select your; date range, number of people, favourite activities and pre-made plans.</p>
-  </div>
 
-<div class="newContainer">
+<div class="mainContainer2">
+  <mat-card class="mainCard">
+    <mat-grid-list cols="7" rowHeight="84px">
 
-    <mat-grid-list cols="6" rowHeight="144px">
-
-        <mat-grid-tile colspan="2" rowspan="1">
-            <div class="innerCardTitle">
-                <mat-card>
-                  <mat-icon class="subIcon">date_range</mat-icon>&nbsp;&nbsp;
-                    <mat-form-field appearance="fill">
-                        <mat-label>Enter a date range</mat-label>
-                        <mat-date-range-input [rangePicker]="picker">
-                        <input matStartDate placeholder="Start date">
-                        <input matEndDate placeholder="End date">
-                        </mat-date-range-input>
-                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                        <mat-date-range-picker #picker></mat-date-range-picker>
-                    </mat-form-field>
-                </mat-card>
-            </div>
-        </mat-grid-tile>
-
-        <mat-grid-tile colspan="2" rowspan="1">
-            <mat-card>
-            <mat-icon class="subIcon">groups</mat-icon>&nbsp;&nbsp;
-            <mat-form-field class="adultSelect" appearance="fill">
-                <mat-label>Adults</mat-label>
-                <mat-select [formControl]="adults" multiple>
-                  <mat-select-trigger>
-                    {{adults.value ? adults.value[0] : ''}}
-                    <span *ngIf="adults.value?.length > 1" class="example-additional-selection">
-                      (+{{adults.value.length - 1}} {{adults.value?.length === 2 ? 'other' : 'others'}})
-                    </span>
-                  </mat-select-trigger>
-                  <mat-option class="adultOptions" *ngFor="let adult of adultList" [value]="adult">{{adult}}</mat-option>
-                </mat-select>
-              </mat-form-field>
-              &nbsp;
-              <mat-form-field class="childrenSelect" appearance="fill">
-                <mat-label>Children</mat-label>
-                <mat-select [formControl]="children" multiple>
-                  <mat-select-trigger>
-                    {{children.value ? children.value[0] : ''}}
-                    <span *ngIf="children.value?.length > 1" class="example-additional-selection">
-                      (+{{children.value.length - 1}} {{children.value?.length === 2 ? 'other' : 'others'}})
-                    </span>
-                  </mat-select-trigger>
-                  <mat-option *ngFor="let children of childrenList" [value]="children">{{children}}</mat-option>
-                </mat-select>
-              </mat-form-field>  
-            </mat-card>
-        </mat-grid-tile>
-
-        <mat-grid-tile colspan="2" rowspan="1">
-          <mat-card>
-          <mat-icon class="subIcon">library_add</mat-icon>&nbsp;&nbsp;
-          <mat-form-field appearance="fill">
-            <mat-label>Further Options</mat-label>
-            <mat-select [formControl]="toppings" multiple>
-              <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </mat-card>
+      <mat-grid-tile colspan="7">
+        <mat-card class="titleCard"><mat-icon class="titleIcon">edit_calendar</mat-icon><h6>Activity Planner</h6></mat-card>
       </mat-grid-tile>
 
-        <mat-grid-tile colspan="3" rowspan="2">
-            <app-planner-premadeplans></app-planner-premadeplans>
-        </mat-grid-tile>
+      <mat-grid-tile colspan="2" rowspan="4">
+        <button mat-fab color="primary" aria-label="Example icon button with a home icon" (click)="onBackTabButton()">
+          <mat-icon>chevron_left</mat-icon>
+        </button>
+      </mat-grid-tile>
 
-        <mat-grid-tile colspan="3" rowspan="2">
-            <app-activity-filters></app-activity-filters>
-        </mat-grid-tile>
+      <mat-grid-tile colspan="3" rowspan="4">
+        <mat-tab-group [selectedIndex]="selectedTab.value">
+          <mat-tab class="cardTab">
+            <div class="innerTab">
+              <app-activity-planner3></app-activity-planner3>
+            </div>
+          </mat-tab>
+
+          <mat-tab class="cardTab">
+            <div class="innerTab">
+              <app-activity-planner3-page2></app-activity-planner3-page2>
+            </div>
+          </mat-tab>
+
+          <mat-tab class="cardTab">
+            <div class="innerTab">
+              <app-timeline-test></app-timeline-test>
+            </div>
+          </mat-tab>
+
+        </mat-tab-group>
+      </mat-grid-tile>
+
+      <mat-grid-tile colspan="2" rowspan="4">
+        <button mat-fab color="primary" aria-label="Example icon button with a home icon" (click)="onNextTabButton()">
+          <mat-icon>chevron_right</mat-icon>
+        </button>
+      </mat-grid-tile>
 
     </mat-grid-list>
-
+    
+  </mat-card>
 </div>
-
-<div class="buttonContainer">
-
-    <button mat-raised-button routerLink="activityResults" color="accent">Apply Filters&nbsp;<mat-icon>refresh</mat-icon></button>
-
-</div>
-</mat-card>
